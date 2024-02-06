@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+	<title>자동차 금융</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<script src="../../js/jquery-1.12.4.min.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=block" rel="stylesheet">
+
+<style>
+*, *:after, *:before { -webkit-box-sizing: border-box; box-sizing: border-box; -webkit-text-size-adjust: none; text-size-adjust: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); -webkit-font-smoothing: antialiased; -webkit-touch-callout:none; font:inherit;}
+body {user-select:none; -webkit-user-select: none; -moz-user-select:none;}
+html,body {height:100%; margin:0; padding:0;}
+body { background-color: #fff; font: 1rem/1.2 'Noto Sans KR', 'Noto Sans', Sans-serif; letter-spacing:-0.05em; color: #222; font-weight:300; -webkit-text-size-adjust:none; }
+img {width:100%; max-width:100%;}
+
+header {position:relative; width:100%; background-color:#fff; z-index:20;}
+header .ui_header {position:relative; top:0; right:0; left:0; height:48px; background-color:#fff; justify-content:space-between;}
+header .ui_header .title {display:block; width:100%; height:100%; line-height:48px; text-align:center; font-size:1em;}
+header .ui_header .title strong {font-weight:700}
+header .ui_header span::before {content:""; display:block;}
+header .ui_header span::after {content:""; display:block;}
+header .ui_header span a {display:block; position:relative; width:100%; height:100%; font-size:0;}
+header .ui_header .prev {position:absolute; top:0; left:0; width:56px; height:100%;}
+header .ui_header .prev::before {position:absolute; top:50%; left:22px; width:13px; height:13px; border-top:2px solid #222; border-left:2px solid #222; -webkit-transform:translateY(-50%) rotate(-45deg); -ms-transform:translateY(-50%) rotate(-45deg); transform:translateY(-50%) rotate(-45deg);}
+header .ui_header .prev::after {}
+header .ui_header button {display:block; width:100%; height:100%; margin:0; padding:0; border:0 none; background-color:transparent; font-size:0;}
+header .ui_header .home {position:absolute; top:0; left:0; width:56px; height:100%;}
+header .ui_header .close {position:absolute; top:0; right:0; width:60px; height:100%;}
+header .ui_header .close::before,
+header .ui_header .close::after {position:absolute; top:50%; left:53%; width:41%; height:2px; background-color:#222; border-radius:100px;}
+header .ui_header .close::before {-webkit-transform:translate(-50%,-50%) rotate(-45deg); -ms-transform:translate(-50%,-50%) rotate(-45deg); transform:translate(-50%,-50%) rotate(-45deg);}
+header .ui_header .close::after {-webkit-transform:translate(-50%,-50%) rotate(45deg); -ms-transform:translate(-50%,-50%) rotate(45deg); transform:translate(-50%,-50%) rotate(45deg)}
+
+
+/* Noto Sans */
+@font-face { font-family: 'Noto Sans'; font-style: normal; font-weight: 100; src:local(※), url(../../css/font/NotoSansKR-Thin-Hestia.woff2) format('woff2'), url(../../css/font/NotoSansKR-Thin-Hestia.woff) format('woff'); text-rendering: optimizeLegibility; }
+@font-face { font-family: 'Noto Sans'; font-style: normal; font-weight: 200; src:local(※), url(../../css/font/NotoSansKR-Light-Hestia.woff2) format('woff2'), url(../../css/font/NotoSansKR-Light-Hestia.woff) format('woff'); text-rendering: optimizeLegibility; }
+@font-face { font-family: 'Noto Sans'; font-style: normal; font-weight: 300; src:local(※), url(../../css/font/NotoSansKR-DemiLight-Hestia.woff2) format('woff2'), url(../../css/font/NotoSansKR-DemiLight-Hestia.woff) format('woff'); text-rendering: optimizeLegibility; }
+@font-face { font-family: 'Noto Sans'; font-style: normal; font-weight: 400; src:local(※), url(../../css/font/NotoSansKR-Regular-Hestia.woff2) format('woff2'), url(../../css/font/NotoSansKR-Regular-Hestia.woff) format('woff'); text-rendering: optimizeLegibility; }
+@font-face { font-family: 'Noto Sans'; font-style: normal; font-weight: 500; src:local(※), url(../../css/font/NotoSansKR-Medium-Hestia.woff2) format('woff2'), url(../../css/font/NotoSansKR-Medium-Hestia.woff) format('woff'); text-rendering: optimizeLegibility; }
+@font-face { font-family: 'Noto Sans'; font-style: normal; font-weight: 700; src:local(※), url(../../css/font/NotoSansKR-Bold-Hestia.woff2) format('woff2'), url(../../css/font/NotoSansKR-Bold-Hestia.woff) format('woff'); text-rendering: optimizeLegibility; }
+@font-face { font-family: 'Noto Sans'; font-style: normal; font-weight: 900; src:local(※), url(../../css/font/NotoSansKR-Bold-Hestia.woff2) format('woff2'), url(../../css/font/NotoSansKR-Bold-Hestia.woff) format('woff'); text-rendering: optimizeLegibility; }
+
+.insurance_wrap .car_finance_bnr_list {padding:20px;}
+.insurance_wrap .car_finance_bnr_list .item + .item {margin-top:1em;}
+</style>
+</head>
+
+
+<body>
+
+<div class="wrap">
+	
+	<header class="header">
+		<div class="ui_header">
+			<div class="inner">
+				<!-- <span class="home"><button type="button">이전</button></span> -->
+				<!-- <span class="prev"><button type="button">이전</button></span> -->
+				<div class="title"><strong>자동차 금융</strong></div>
+				<span class="close"><button type="button">닫기</button></span>
+			</div>
+		</div>
+	</header><!-- // header -->
+
+	<section class="section">
+
+		<div class="insurance_wrap">
+
+			<div class="car_finance_bnr_list">
+				<!-- <div class="item"><a href="#g"><img src="../../img/temp/sam_car_finance_bnr1.png" alt="자동차 보험"></a></div> -->
+				<div class="item"><img src="../../img/temp/sam_car_finance_bnr1.png" alt="자동차 보험"></div>
+				<div class="item"><img src="../../img/temp/sam_car_finance_bnr2.png" alt="자동차 대출"></div>
+				<div class="item"><img src="../../img/temp/sam_car_finance_bnr3.png" alt="프로모션"></div>
+			</div>
+		</div>
+
+	</section><!-- // section -->
+
+</div><!-- // wrap -->
+
+
+
+<script>
+/* 테스트 샘플 */
+$(document).ready(function(){
+
+	$(".car_finance_bnr_list .item").on("click", function(){
+		alert("클릭")
+	})
+
+	$("button").on("click", function(){
+		alert("닫기")
+	})
+
+})
+</script>
+
+</body>
+</html>

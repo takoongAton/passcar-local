@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+	<title>PASS 자동차</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="../../css/jquery-ui.css">
+	<link rel="stylesheet" href="../../css/common.css">
+	<link rel="stylesheet" href="../../css/passcar.css">
+	<link rel="stylesheet" href="../../css/passcar_skt_lgup.css">
+	<script src="../../js/jquery-1.12.4.min.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.min.js"></script>
+<style>
+
+</style>
+<script>
+function fitImage(obj){
+
+	var naturalWidth = obj.naturalWidth; // img 너비
+
+	var naturalHeight = obj.naturalHeight; // img 높이
+
+	var imgWidth = $(obj).parent().width(); // div 너비
+
+	var imgHeight = $(obj).parent().height(); // div 높이
+// (img 너비 / div 너비) 와 (img 높이 / div 높이) 를 이용해 비율을 구한다.
+
+	if(Math.abs(naturalWidth / imgWidth) < Math.abs(naturalHeight / imgHeight)){
+
+// 작게 나온 쪽으로 크기를 100% 맞춘다.
+
+		$(obj).css('width', '100%')
+
+// 너비가 100%일때 높이가 가변적이므로 top 속성을 이용해 높이를 구해 가운데로 위치시킨다.
+
+		var fitHeight = $(obj).height();
+
+		$(obj).css('top', ((imgHeight - fitHeight) / 2) + 'px');
+
+		$(obj).css('left', '0');
+
+	}else{
+
+		$(obj).css('height', '100%')
+
+		var fitWidth = $(obj).width();
+
+		$(obj).css('top', '0');
+
+		$(obj).css('left', ((imgWidth - fitWidth) / 2) + 'px');
+
+	}
+
+}
+
+</script>
+</head>
+<body>
+
+<div class="ui_page"><!-- 기본 -->
+
+	<div class="ui_header">
+		<div class="inner">
+			<span class="prev"><button type="button">이전</button></span>
+			<div class="title"><strong>PASS 자동차</strong></div>
+			<!-- <span class="close"><button type="button">닫기</button></span> -->
+		</div>
+	</div>
+
+	<div class="section">
+
+		<div class="ui_content">
+			<div class="sell_wrap">
+
+				<div class="sell_step_wrap">
+					<div class="pageTit sell">
+						<h2 class="tit">견적완료! 유효기간 내<br />판매 요청이 가능합니다.</h2>
+						<div class="txtBox">
+							<div class="btnBox">
+								<button type="button" class="left">삼성 SM5뉴임프레션LPLILE익스클루시브<span class="arrow"></span></button>
+								<button type="button" class="right">판매취소</button>
+							</div>
+							<div class="txt">견적 종료일 : 2019.06.15  15:11:35</div>
+							<div class="txt">견적 유효기간 : 2019.07.30  15:11:35</div>
+						</div>
+					</div>
+
+					<div class="sellConBox">
+				
+						<div class="dealerPrice">
+							<dl>
+								<dt>최고가</dt>
+								<dd>1,950 만원</dd>
+							</dl>
+							<dl>
+								<dt>최저가</dt>
+								<dd>1,800 만원</dd>
+							</dl>
+						</div>
+				
+						<div class="dealer_list">
+							<div class="dealer_item">
+								<div class="dealer_thum">
+									<!-- <div class="thum"><img src="../../img/common/dealer_img1.png" alt=""></div> -->
+									<div class="thum"><img src="https://d3kxs6kpbh59hp.cloudfront.net/community/COMMUNITY/c3eb195dd72b468ea4b27df89fda0cf4/5b7638405621476b9eb5e1196277ed77_1577200972.jpg" onload="fitImage(this)" /></div>
+								</div>
+								<div class="dealer_info">
+									<div class="price">1,950 만원</div>
+									<div class="info">
+										<p class="name">장만월 딜러</p>
+										<p>평점 4.5 · 고객후기 2건</p>
+									</div>
+								</div>
+								<span class="arrow"></span>
+							</div>	
+							<div class="dealer_item">
+								<div class="dealer_thum">
+									<!-- <div class="thum"><img src="../../img/common/dealer_img1.png" alt=""></div> -->
+									<div class="thum"><img src="https://www.waglebagle.net/uploads/editor/20190611142816.png" onload="fitImage(this)" /></div>
+								</div>
+								<div class="dealer_info">
+									<div class="price">1,950 만원</div>
+									<div class="info">
+										<p class="name">구찬성 딜러</p>
+										<p>평점 4.5 · 고객후기 2건</p>
+									</div>
+								</div>
+								<span class="arrow"></span>
+							</div>							
+						</div>
+				
+						<div class="innerBoxT">
+							<div class="after_wrap">
+								<div class="tit">이후 진행절차는 이렇게 진행돼요!</div>
+								<div class="after_list">
+									<dl class="after_item">
+										<dt><span>1</span>딜러선택(연락처교환)</dt>
+										<dd>견적완료 시 마음에 드는 딜러를 선택해주세요.</dd>
+									</dl>
+									<dl class="after_item">
+										<dt><span>2</span>방문예약</dt>
+										<dd>선택한 인증딜러가 고객님과 전화상담을 통하여 장소,날짜,시간 등 방문예약을 진행합니다.</dd>
+									</dl>
+									<dl class="after_item">
+										<dt><span>3</span>방문검차</dt>
+										<dd>담당 인증딜러는 5일 이내, 고객님께 직접 방문하여 차량검차 서비스를 진행합니다.</dd>
+									</dl>
+									<dl class="after_item">
+										<dt><span>4</span>판매결정</dt>
+										<dd>검차 진행 후 최종금액(감가견적)을 확인하고 판매를 결정합니다.</dd>
+									</dl>
+									<dl class="after_item">
+										<dt><span>5</span>판매완료</dt>
+										<dd>고객과 딜러가 차량 매입 계약서류 작성 후 명의 이전을 받으면 판매가 완료됩니다.</dd>
+									</dl>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div><!-- // sell_step_wrap -->
+
+				<!-- <div class="btn_fixed2">
+					<div class="inner">
+						<div class="btn"><button type="button">홍길동 딜러 선택!</button></div>
+					</div>
+				</div> -->
+
+			</div><!-- // sell_wrap -->
+		</div><!-- // ui_content -->
+
+	</div><!-- // section -->
+
+</div><!-- // ui_page -->
+
+
+
+<script src="../../js/temp.js"></script>
+</body>
+</html>

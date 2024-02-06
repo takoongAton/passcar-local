@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+	<title>PASS 자동차</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="../../css/jquery-ui.css">
+	<link rel="stylesheet" href="../../css/common.css">
+	<link rel="stylesheet" href="../../css/passcar.css">
+	<link rel="stylesheet" href="../../css/passcar_skt_lgup.css">
+	<script src="../../js/jquery-1.12.4.min.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.min.js"></script>
+</head>
+<body>
+
+<div class="ui_page"><!-- 기본 -->
+
+	<div class="ui_header">
+		<div class="inner">
+			<span class="prev"><button type="button">이전</button></span>
+			<div class="title"><strong>PASS 자동차</strong></div>
+			<span class="close"><button type="button">닫기</button></span>
+		</div>
+	</div>
+
+	<div class="section">
+
+		<div class="setpBox">
+			<div class="stepBar"><span class="bar" style="left:75%;"></span></div>
+			<div class="tit">내차팔기 진행상태</div>
+			<p><span>75</span>%</p>
+		</div>
+
+		<div class="ui_content">
+			<div class="sell_wrap">
+
+				<div class="sell_step_wrap">
+					<div class="pageTit">
+						<h2 class="tit">사고내용이나<br />수리한 이력이 있나요?</h2>
+						<!-- 삭제 <div class="txtBox">
+							<div class="txt">사고내용이나 수리한 부분을 자세히 적으시면<br />불필요한 차량가격 감가를 막을 수 있습니다.</div>
+						</div> -->
+					</div>
+
+					<div class="spaceT"></div>
+					
+					<div class="sellConBox">
+						<div class="list-type2">
+							<ul class="col2">
+								<li><label><input type="radio" name="name"><span class="checkmark"></span><span class="txt">있음</span></label></li>
+								<li><label><input type="radio" name="name"><span class="checkmark"></span><span class="txt">없음</span></label></li>
+								<!-- <li><label><input type="radio" name="name"><span class="checkmark"></span><span class="txt">모름</span></label></li> -->
+							</ul>
+						</div>
+
+						<div class="trouble_wrap" style="display:block;"><!-- 유사고 일때만 보여짐, 무사고, 모름일때는 안보임 -->
+							<div class="textarea">
+								<label>
+									<textarea name="" id="" cols="30" rows="5"></textarea>
+									<div class="placeholder">보험처리 이력이 있다면 따로 기입하지 않으셔도 됩니다.</div>
+								</label>
+							</div>
+							
+							<div class="tagWrap">
+								<ul>
+									<li><label><input type="checkbox" /><span class="txt">#운전석 단순교환</span></label></li>
+									<li><label><input type="checkbox" /><span class="txt">#운전석 문짝교환</span></label></li>
+									<li><label><input type="checkbox" /><span class="txt">#조수석 단순교환</span></label></li>
+									<li><label><input type="checkbox" /><span class="txt">#조수석 문짝교환</span></label></li>
+									<li><label><input type="checkbox" /><span class="txt">#본넷 단순교환</span></label></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="unfair_wrap">
+							<div class="txt_list_type1">
+								<ul class="txt_list2">
+									<li class="txt_item">사고 및 수리이력을 자세히 입력하시면, 예상치 못한 감가를 피할 수 있습니다.</li>
+								</ul>
+							</div>
+						</div>
+
+					</div>
+				</div><!-- // sell_step_wrap -->
+
+				<div class="btn_fixed2">
+					<div class="inner">
+						<div class="btn"><button type="button">다음</button></div>
+					</div>
+				</div><!-- // btn_fixed2 -->
+
+			</div><!-- // sell_wrap -->
+		</div><!-- // ui_content -->
+
+	</div><!-- // section -->
+
+</div><!-- // ui_page -->
+
+
+<script>
+$(document).ready(function() {
+	function form_placeholder(){
+		var $form_placeholder = "input, textarea";
+		$($form_placeholder).each(function(){
+			$(this).bind("focus",function(){
+				$(this).siblings(".placeholder, label").css({
+					"display" : "none"
+				})
+			});
+			$(this).bind("blur",function(){
+				if($(this).val() == ""){
+					$(this).siblings(".placeholder, label").css({
+						"display" : "block"
+					})
+				}
+			});
+		});
+	}
+	form_placeholder();
+});
+</script>
+
+
+<script src="../../js/temp.js"></script>
+</body>
+</html>

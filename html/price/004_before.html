@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+	<title>PASS 자동차</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="../../css/jquery-ui.css">
+	<link rel="stylesheet" href="../../css/common.css">
+	<link rel="stylesheet" href="../../css/passcar.css">
+	<link rel="stylesheet" href="../../css/passcar_skt.css">
+	<script src="../../js/jquery-1.12.4.min.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.min.js"></script>
+	
+	<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js" integrity="sha256-Uv9BNBucvCPipKQ2NS9wYpJmi8DTOEfTA/nH2aoJALw=" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="../../css/owl.carousel.css">
+	<link rel="stylesheet" href="../../css/owl.theme.default.css">
+	<script src="../../js/owl.carousel.js"></script>
+	
+<style>
+.mycarPrice .chart {padding:0 10px;	}
+</style>
+</head>
+<body class="skt">
+
+<div class="wrap"><!-- 모달팝업시 fixed 추가 예)class="wrap fixed" -->
+
+	<header class="header">
+		<div class="ui_header">
+			<div class="inner">
+				<!-- <span class="home"><button type="button">이전</button></span> -->
+				<span class="prev"><button type="button">이전</button></span>
+				<div class="title"><strong>자동차</strong></div>
+				<!-- <span class="close"><button type="button">닫기</button></span> -->
+			</div>
+		</div>
+	</header><!-- // header -->
+
+	<section class="section">
+
+		<div class="naviWrap">
+			<div class="navi">
+				<ul>
+					<li class="on"><a href="#g"><span>내차정보</span></a></li>
+					<li><a href="#g"><span>내차팔기</span></a></li>
+					<li><a href="#g"><span>내차사기</span></a></li>
+					<li><a href="#g"><span>보험/대출</span></a></li>
+				</ul>
+			</div>
+			<div class="mypage"><!-- <span>my</span> --></div>
+		</div>
+
+		<!-- <div class="price_index before">
+			<div class="areaBox">
+				<div class="innerBoxH">
+					
+				</div>
+			</div>
+		</div> --><!-- // price_index before -->
+
+		<div class="price_index after">
+
+			<div><img src="../../img/temp/bnr_free02.png" alt="차량 등록하러 가기"></div>
+			
+			<!-- <div class="price_before">
+				<div class="img"><img src="../../img/temp/aaaaa.png" alt=""></div>
+				<dl>
+					<dt class="tit"><span>차량번호만 등록해도</span><strong>한번에 하는 내차 관리</strong></dt>
+					<dd class="txt">시세조회, 인증딜러 매칭, 보험 및 대출까지!</dd>
+					<dd class="btn"><button type="button"><span>차량 등록하러 가기</span></button></dd>
+				</dl>
+			</div> -->
+
+			<div class="innerBoxH">
+				<div class="">
+					<dl class="test_drive">
+						<dt>인기차량 <strong>무료</strong> 시승</dt>
+						<dd class="txt">간편신청하기<span class="arrow"></span></dd>
+					</dl>
+				</div>
+			</div><!-- // innerBoxH -->
+
+			<div class="innerBoxH">
+				<div class="">
+					<dl class="table_panal free">
+						<dt>내차 시세</dt>
+						<dd>*,***만원</dd>
+					</dl>
+				</div>
+			</div><!-- // innerBoxH -->
+
+			<div class="innerBoxH">
+				<div>
+					<dl class="table_panal free">
+						<dt>차량정보</dt>
+						<dd><span class="arrow"></span></dd>
+					</dl>
+				</div>
+			</div><!-- // innerBoxH -->
+
+
+			<div class="innerBoxH">
+				<div class="mydirect free">
+					<div class="tit">자동차 보험 조회</div>
+					<button type="button" class="reg"><span>등록하기</span></button>
+					<div class="cont">
+						<!-- 보험정보 등록 전 -->
+						<p>보험정보를 등록해주세요.</p>
+
+						<!-- 보험정보 등록 후 -->
+						<!-- <div class="logo"><img src="../../img/temp/logo3.png" alt="DB손해보험"></div>
+						<dl>
+							<dt>보험만기일까지 <span>5개월</span> 남았어요.</dt>
+							<dd><span>DB손해보험 긴급출동</span> <a href="tel://1-555-555-5555" class="tel">1588-0100</a></dd>
+						</dl> -->
+					</div>
+				</div>
+			</div>
+
+			<!-- <div class="innerBoxH">
+				<div class="withCar">
+					<div class="tit">내차로 서비스</div>
+					<div class="item-list">
+						<dl class="item">
+							<dt>시세가 더 떨어지기 전</dt>
+							<dd class="txt">인증딜러에게 내차 팔기</dd>
+							<dd class="icon"><img src="../../img/temp/withcar_img1.png" alt="이미지"></dd>
+						</dl>
+						<dl class="item">
+							<dt>비대면 간편 대출</dt>
+							<dd class="txt">내차로 돈 빌리기</dd>
+							<dd class="icon"><img src="../../img/temp/withcar_img2.png" alt="이미지"></dd>
+						</dl>
+						<dl class="item">
+							<dt>김패스님꼐 추천하는 팁!</dt>
+							<dd class="txt">속도위반 Vs 과태료 비교표</dd>
+							<dd class="icon"><img src="../../img/temp/withcar_img3.png" alt="이미지"></dd>
+						</dl>
+						<dl class="item">
+							<dt>운전면허 등록</dt>
+							<dd class="txt">운전관리 소식 확인하기</dd>
+							<dd class="icon"><img src="../../img/temp/withcar_img4.png" alt="이미지"></dd>
+						</dl>
+					</div>
+				</div>
+			</div> -->
+
+			<div class="index_footer">
+				<div><img src="../../img/temp/bnr_376x99.png" alt=""></div>
+				<div class="inner">
+					<div class="row">
+						<div class="logo"><img src="../../img/common/logo_passcar.png" alt="패스자동차 로고" /></div>
+						<span>서비스 이용약관</span>
+						<span>개인정보처리방침</span>
+					</div>
+					<p>PASS자동차는 중고차 매매의 당사자가 아니며, 상품거래 정보 및 거래에 관련한 의무와 책임은 각 판매자에게 있습니다.</p>
+				</div>
+			</div><!-- // index_footer -->
+
+		</div><!-- // price_index after -->
+
+	</section><!-- section -->
+
+	<footer class="footer"></footer><!-- // footer -->
+
+</div><!-- // wrap -->
+
+<div class="dim" style="display:none;"></div>
+<div class="modal_default" style="display:none;"><!-- 기본 -->
+	<div class="modalCon">
+		<div class="txtWrap Type1">
+			<div class="tit">잠깐!</div>
+			<p class="txt">운전면허가 내 휴대폰 속으로!<br /><span>모바일운전면허</span>도 함께 등록해보세요.</p>
+		</div>
+	</div><!-- // modalCon -->
+
+	<div class="btn_group type1"><!-- type1,2 버튼 하단 간격이 다름 -->
+		<div class="btn"><button type="button">등록</button></div>
+		<div class="btn"><button type="button">취소</button></div>
+	</div><!-- // btn_group -->
+</div><!-- // modalCon -->
+
+<!-- <style>
+div.ev2005 {position:fixed; top:50%; left:0; padding:0 20px; transform:translateY(-50%); z-index:100; animation-name:evPop; animation-iteration-count:1; animation-duration:0.8s;}
+@keyframes evPop {
+	0% {transform:scale(0) translateY(-50%); opacity:0;}
+	50% {transform:scale(0) translateY(-50%);  opacity:0;}
+	85% {transform:scale(1.05) translateY(-50%);  opacity:1;}
+	100% {transform:scale(1) translateY(-50%);}
+}
+div.ev2005::before {position:fixed; top:0; right:0;}
+div.ev2005 div.inwrap {position:relative; border-radius:10px; overflow:hidden; box-shadow:0 0 5px rgba(255,255,255,1);}
+div.ev2005 div.btn {position:absolute; bottom:0; left:0; width:100%; padding:0 15px 20px;}
+div.ev2005 div.btn button {display:block; position:relative; width:100%; height:45px; background-color:#222; color:#fff; border-radius:8px; font-size:1em; font-weight:700;}
+@media screen and (max-width:360px) {
+	div.ev2005 div.btn {padding:0 14px 19px;}
+	div.ev2005 div.btn button {height:45px;}
+}
+@media screen and (max-width:320px) {
+	div.ev2005 div.btn {padding:0 12px 17px;}
+	div.ev2005 div.btn button {height:41px;}
+}
+</style>
+<div class="ev2005">
+	<div class="inwrap">
+		<div class="img"><img src="../../img/event/ev2005_img.png" alt="배너이미지"></div>
+		<div class="btn"><button type="button">응모완료</button></div>
+	</div>
+</div>
+<script>
+$(document).ready(function(){
+	$(".ev2005 button").on("click", function(){
+		$(".ev2005").hide();``
+	})
+})
+</script> -->
+
+
+<script>
+var ctx = document.getElementById('myChart').getContext('2d');
+var myChart = new Chart(ctx, {
+    
+    type: 'line',
+    data: {
+        labels: ['현재', '1년후', '2년후', '3년후'],
+        datasets: [{
+            data: [1800, 1650, 1600, 1300],
+            backgroundColor: [
+                'rgba(230, 98, 0, 0.1)',
+            ],
+            borderColor: [
+                'rgba(230, 98, 0, 0.25)'
+            ],
+            borderWidth: [1],
+            pointBackgroundColor: [
+            	'rgba(230,98,0,1)',
+            	'rgba(230,98,0,0.4)',
+            	'rgba(230,98,0,0.4)',
+            	'rgba(230,98,0,0.4)'
+            ],
+            strokeColor: 'rgba(1,1,1,1)'
+        }]
+    },
+    options: {
+    	animation:{duration:1000},
+    	layout: {
+    		
+    	},
+    	legend: {
+	        display: false
+	    },
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        }
+    }
+});
+
+$(".btn_graph_toggle").on("click", function(){
+	$(".chart").toggle(0)
+})
+
+
+$(".insurance_bnr_wrap .img_bnr").owlCarousel({
+	items: 1,
+	loop:true,
+	margin:0,
+	nav:false,
+	dots:true
+});
+</script>
+
+
+<script src="../../js/temp.js"></script>
+</body>
+</html>

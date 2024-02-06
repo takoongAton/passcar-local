@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+	<title>PASS 자동차</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="../../css/jquery-ui.css">
+	<link rel="stylesheet" href="../../css/common.css">
+	<link rel="stylesheet" href="../../css/passcar.css">
+	<link rel="stylesheet" href="../../css/passcar_skt_lgup.css">
+	<script src="../../js/jquery-1.12.4.min.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.min.js"></script>
+</head>
+<body>
+
+<div class="ui_popup"><!-- ui_page, ui_popup은 z-index값이 다릅니다. -->
+
+	<div class="ui_header">
+		<div class="inner">
+			<span class="close"><button type="button">닫기</button></span>
+		</div>
+	</div><!-- // ui_header -->
+
+
+	<div class="section">
+		<div class="pageTit">
+			<h2 class="tit">
+				제70-19-017228호<br />
+				[현대] LF소나타 하이브리드
+			</h2>
+		</div>
+
+		<div class="ui_content">
+			<div class="buy_wrap">				
+				<div class="innerBoxH">
+
+					<div class="car_checklist">
+						<div class="topbox">본 페이지는 성능ㆍ상태점검기록부의 내용을 서비스상에 표현하기 위해 제작된 것으로, 차량상담 시 판매자에게 꼭 원본을 요청하시어 확인하시기 바랍니다.</div>
+
+						<div class="table1_list">
+							<dl class="table1_item">
+								<dt><span class="tit">자동차등록번호</span></dt>
+								<dd><span class="txt">123가1234</span></dd>
+							</dl>
+							<dl class="table1_item">
+								<dt><span class="tit">연식</span></dt>
+								<dd><span class="txt">2019</span></dd>
+							</dl>
+							<dl class="table1_item">
+								<dt><span class="tit">최초 등록일</span></dt>
+								<dd><span class="txt">2019.05.05</span></dd>
+							</dl>
+							<dl class="table1_item">
+								<dt><span class="tit">검사 유효기간</span></dt>
+								<dd><span class="txt">2019.09.12 ~ 2020.09.11</span></dd>
+							</dl>
+							<dl class="table1_item">
+								<dt><span class="tit">변속기</span></dt>
+								<dd><span class="txt">자동</span></dd>
+							</dl>
+							<dl class="table1_item">
+								<dt><span class="tit">사용연료</span></dt>
+								<dd><span class="txt">가솔린</span></dd>
+							</dl>
+							<dl class="table1_item">
+								<dt><span class="tit">원동기형식</span></dt>
+								<dd><span class="txt">-</span></dd>
+							</dl>
+							<dl class="table1_item">
+								<dt><span class="tit">보증유형</span></dt>
+								<dd><span class="txt">보험사보증</span></dd>
+							</dl>
+						</div>
+
+						<div class="chelist_inwrap">
+							<div class="tit">자동차 종합 상태</div>
+							<div class="table1_list">
+								<dl class="table1_item">
+									<dt><span class="tit">주행거리 계기상태</span></dt>
+									<dd><button type="button" class="btn">상세</button></dd>
+								</dl>
+								<div class="table3_list">
+									<dl class="table3_item">
+										<dt><span class="tit">세부내역</span></dt>
+										<dd><span class="txt">-</span></dd>
+									</dl>
+								</div>
+
+								<dl class="table1_item">
+									<dt><span class="tit">주행거리 상태</span></dt>
+									<dd><button type="button" class="btn">상세</button></dd>
+								</dl>
+								<div class="table3_list">
+									<dl class="table3_item">
+										<dt><span class="tit">세부내역</span></dt>
+										<dd><span class="txt">-</span></dd>
+									</dl>
+								</div>
+
+								<dl class="table1_item">
+									<dt><span class="tit">차대번호 표기</span></dt>
+									<dd><button type="button" class="btn">상세</button></dd>
+								</dl>
+								<div class="table3_list">
+									<dl class="table3_item">
+										<dt><span class="tit">세부내역</span></dt>
+										<dd><span class="txt">-</span></dd>
+									</dl>
+								</div>
+
+								<dl class="table1_item">
+									<dt><span class="tit">배출가스</span></dt>
+									<dd><button type="button" class="btn">상세</button></dd>
+								</dl>
+								<div class="table3_list">
+									<dl class="table3_item">
+										<dt><span class="tit">세부내역</span></dt>
+										<dd><span class="txt">-</span></dd>
+									</dl>
+								</div>
+
+								<dl class="table1_item">
+									<dt><span class="tit">튜닝</span></dt>
+									<dd><button type="button" class="btn">상세</button></dd>
+								</dl>
+								<div class="table3_list">
+									<dl class="table3_item">
+										<dt><span class="tit">세부내역</span></dt>
+										<dd><span class="txt">-</span></dd>
+									</dl>
+								</div>
+
+								<dl class="table1_item">
+									<dt><span class="tit">특별이력</span></dt>
+									<dd><button type="button" class="btn">상세</button></dd>
+								</dl>
+								<div class="table3_list">
+									<dl class="table3_item">
+										<dt><span class="tit">세부내역</span></dt>
+										<dd><span class="txt">-</span></dd>
+									</dl>
+								</div>
+
+								<dl class="table1_item">
+									<dt><span class="tit">용도변경</span></dt>
+									<dd><button type="button" class="btn">상세</button></dd>
+								</dl>
+								<div class="table3_list">
+									<dl class="table3_item">
+										<dt><span class="tit">세부내역</span></dt>
+										<dd><span class="txt">-</span></dd>
+									</dl>
+								</div>
+							</div>
+						</div>
+
+						<div class="chelist_inwrap">
+							<div class="tit">사고, 교환, 수리 등 이력</div>
+							<p class="txt">가격조사 산정액 및 특기사항은 매수인이 자동차 가격조사 산정을 원하는 경우에만 기재합니다.</p>
+
+							<div class="img">
+								<img src="../../img/common/car_crashpoint.gif" alt="샘플">
+								<span class="point1 red">X</span>
+								<span class="point2 blue">W</span>
+								<span class="point3 brown">A</span>
+								<span class="point4 gray">U</span>
+								<span class="point5 orange">C</span>
+								<span class="point6 green">T</span>
+								<span class="point7">X</span>
+								<span class="point8">X</span>
+								<span class="point9 none">X</span>
+								<span class="point10 none">X</span>
+
+								<span class="point11">X</span>
+								<span class="point12">X</span>
+								<span class="point13">X</span>
+								<span class="point14">X</span>
+								<span class="point15">X</span>
+								<span class="point16">X</span>
+								<span class="point17">X</span>
+								<span class="point18">X</span>
+								<span class="point19">X</span>
+								<span class="point20">X</span>
+
+								<span class="point21">X</span>
+								<span class="point22">X</span>
+								<span class="point23">X</span>
+								<span class="point24">X</span>
+								<span class="point25 none">X</span>
+								<span class="point26">X</span>
+								<span class="point27">X</span>
+								<span class="point28">X</span>
+								<span class="point29">X</span>
+								<span class="point30">X</span>
+
+								<span class="point31 none">X</span>
+								<span class="point32 none">X</span>
+								<span class="point33 none">X</span>
+								<span class="point34 none">X</span>
+								<span class="point35">X</span>
+								<span class="point36">X</span>
+								<span class="point37">X</span>
+								<span class="point38">X</span>
+								<span class="point39">X</span>
+								<span class="point40">X</span>
+
+								<span class="point41 none">X</span>
+								<span class="point42 none">X</span>
+								<span class="point43">X</span>
+								<span class="point44">X</span>
+								<span class="point45">X</span>
+								<span class="point46">X</span>
+								<span class="point47">X</span>
+								<span class="point48">X</span>
+								<span class="point49">X</span>
+								<span class="point50 none">X</span>
+							</div>
+							<p class="txt">상태표시 부호 : 
+								<span class="badge red">X</span>교환
+								<span class="badge blue">W</span>판금/용접
+								<span class="badge brown">A</span>흠집
+								<span class="badge gray">U</span>요철
+								<span class="badge orange">C</span>부식
+								<span class="badge green">T</span>손상
+							</p>
+							
+						</div> 
+
+						<div class="chelist_inwrap">
+							<div class="tit">사고 · 이상여부</div>
+							<div class="table1_list">
+								<dl class="table1_item">
+									<dt><span class="tit">사고이력</span></dt>
+									<dd><button type="button" class="btn">상세</button></dd>
+								</dl>
+								<div class="table3_list">
+									<dl class="table3_item">
+										<dt><span class="tit">세부내역</span></dt>
+										<dd><span class="txt">-</span></dd>
+									</dl>
+								</div>
+							</div>
+						</div> 
+
+						<div class="chelist_inwrap">
+							<div class="tit">자동차 세부 상태</div>
+							<p class="txt">가격조사 산정액 및 특기사항은 매수인이 자동차 가격조사 산정을 원하는 경우에만 기재합니다.</p>
+							<div class="table1_list">
+								<dl class="table1_item">
+									<dt><span class="tit">원동기</span></dt>
+									<dd><button type="button" class="btn">상세</button></dd>
+								</dl>
+								<div class="table3_list">
+									<dl class="table3_item">
+										<dt><span class="tit">세부내역</span></dt>
+										<dd><span class="txt">-</span></dd>
+									</dl>
+								</div>
+								<dl class="table1_item">
+									<dt><span class="tit">변속기</span></dt>
+									<dd><button type="button" class="btn">상세</button></dd>
+								</dl>
+								<div class="table3_list">
+									<dl class="table3_item">
+										<dt><span class="tit">세부내역</span></dt>
+										<dd><span class="txt">-</span></dd>
+									</dl>
+								</div>
+								<dl class="table1_item">
+									<dt><span class="tit">동력전달</span></dt>
+									<dd><button type="button" class="btn">상세</button></dd>
+								</dl>
+								<div class="table3_list">
+									<dl class="table3_item">
+										<dt><span class="tit">세부내역</span></dt>
+										<dd><span class="txt">-</span></dd>
+									</dl>
+								</div>
+								<dl class="table1_item">
+									<dt><span class="tit">조항</span></dt>
+									<dd><button type="button" class="btn">상세</button></dd>
+								</dl>
+								<div class="table3_list">
+									<dl class="table3_item">
+										<dt><span class="tit">세부내역</span></dt>
+										<dd><span class="txt">-</span></dd>
+									</dl>
+								</div>
+								<dl class="table1_item">
+									<dt><span class="tit">제동</span></dt>
+									<dd><button type="button" class="btn">상세</button></dd>
+								</dl>
+								<div class="table3_list">
+									<dl class="table3_item">
+										<dt><span class="tit">세부내역</span></dt>
+										<dd><span class="txt">-</span></dd>
+									</dl>
+								</div>
+								<dl class="table1_item">
+									<dt><span class="tit">전기</span></dt>
+									<dd><button type="button" class="btn">상세</button></dd>
+								</dl>
+								<div class="table3_list">
+									<dl class="table3_item">
+										<dt><span class="tit">세부내역</span></dt>
+										<dd><span class="txt">-</span></dd>
+									</dl>
+								</div>
+								<dl class="table1_item">
+									<dt><span class="tit">기타 주요장치</span></dt>
+									<dd><button type="button" class="btn">상세</button></dd>
+								</dl>
+								<div class="table3_list">
+									<dl class="table3_item">
+										<dt><span class="tit">세부내역</span></dt>
+										<dd><span class="txt">-</span></dd>
+									</dl>
+								</div>
+								<dl class="table1_item">
+									<dt><span class="tit">성능ㆍ상태 점검자의 의견</span></dt>
+									<dd><button type="button" class="btn">상세</button></dd>
+								</dl>
+								<div class="table3_list">
+									<dl class="table3_item">
+										<dt><span class="tit">세부내역</span></dt>
+										<dd><span class="txt">-</span></dd>
+									</dl>
+								</div>
+							</div>
+						</div> 
+					</div><!-- // car_checklist -->
+
+					<div class="ama_date">
+						<p>『자동차관리법』제58조 제1항 및 같은법 시행규칙 제120조 제1항에 따라 중고자동차의 성능ㆍ상태를 점검하였음을 확인합니다.</p>
+						<div class="date">2019.09.26</div>
+						<p>
+							중고자동차 성능ㆍ상태 점검자 : ㈜오토허브서비스 김재근(인)<br />
+							중고자동차 성능ㆍ상태 고지자 : 지오모터스(인)
+						</p>
+					</div>
+				</div><!-- // innerBoxH -->
+
+				<div class="buy_total_footer">
+					<ul class="txt_list2">
+						<li class="txt_item"><p>자동차 관리법령에 의해 차량상태와 구매보증까지 약속 받은 중요한 문서입니다. 점검내용사항이 실제와 다를 경우 30일, 2,000km 이내에서 무상보증수리 및 보상을 요구할 수 있습니다.</p></li>
+						<li class="txt_item"><p>기록부의 유효기간은 점검일로부터 120일 이내만 유효함으로, 날짜가 지난 문서는 반드시 재점검 후 교부요청을 해야 합니다. 최종 계약 시 반드시 점검자와 고지자의 서명이 있는지 확인하십시오.</p></li>
+					</ul>
+				</div>
+			</div><!-- // buy_wrap -->
+		</div><!-- // ui_content -->
+	</div><!-- // section -->
+	
+</div><!-- // ui_popup -->
+
+
+<script>
+$(document).ready(function(){
+	/* 테스트 샘플 */
+	$("dl.table1_item dd button").click(function(){
+		console.log("aaa");
+		var bbb = $(this).parent().parent().next('div');
+		bbb.slideToggle(150);
+	})
+})
+</script>
+
+
+<!-- <script src="../../js/temp.js"></script> -->
+</body>
+</html>

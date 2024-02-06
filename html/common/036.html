@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+	<title>PASS 자동차</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="../../css/jquery-ui.css">
+	<link rel="stylesheet" href="../../css/common.css">
+	<link rel="stylesheet" href="../../css/passcar.css">
+	<link rel="stylesheet" href="../../css/passcar_skt_lgup.css">
+	<link rel="stylesheet" href="../../css/popup.css">
+	<script src="../../js/jquery-1.12.4.min.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.min.js"></script>
+
+
+
+</head>
+<body>
+
+<div class="ui_popup"><!-- 기본 -->
+	<div class="ui_header">
+		<div class="inner">
+			<span class="close"><button type="button">닫기</button></span>
+		</div>
+	</div>
+
+	<div class="section">
+
+		<div class="pageTit">
+			<h2 class="tit">차량을 선택해주세요.</h2>
+			<div class="txtBox">
+				<!-- 선택 완료된것은 텍스트 변경 class on 추가
+				<div class="txt">
+					<span class="">제조사</span>
+					<span class="">모델</span>
+					<span class="">세부모델</span>
+					<span class="">등급</span>
+					<span class="">세부등급</span>
+				</div>
+				-->
+				<div class="txt">
+					<span class="on">현대</span>
+					<span class="on">아반떼</span>
+					<span>세부모델</span>
+					<span>등급</span>
+					<span>세부등급</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="ui_content">
+
+			<div class="innerBoxH">
+					<div class="car_detail_wrap">
+						<form action="">
+							<div class="tab-group_car">
+								<dl class="on">
+									<dt>제조사</dt><dd>현대</dd>
+								</dl>
+								<!--
+								<ul class="select1_list" style="display:none;">
+									<li class="select1_item"><label><input type="radio" name="area"><span class="checkmark"></span><span class="tit">현대</span></label></li>
+									<li class="select1_item"><label><input type="radio" name="area"><span class="checkmark"></span><span class="tit">쌍용</span></label></li>
+									<li class="select1_item"><label><input type="radio" name="area"><span class="checkmark"></span><span class="tit">대우</span></label></li>
+								</ul>
+								-->
+								<ul class="select1_list" style="display:none;">
+									<li class="select1_item"><label><input type="radio" name="area"><span class="tit">현대</span></label></li>
+									<li class="select1_item"><label><input type="radio" name="area"><span class="tit">쌍용</span></label></li>
+									<li class="select1_item"><label><input type="radio" name="area"><span class="tit">대우</span></label></li>
+								</ul>
+							</div>
+							<div class="tab-group_car">
+								<dl class="on">
+									<dt>모델</dt><dd>아반떼</dd>
+								</dl>
+								<ul class="select1_list" style="display:none;">
+									<li class="select1_item"><label><input type="radio" name="area"><span class="tit">아이오닉</span></label></li>
+									<li class="select1_item"><label><input type="radio" name="area"><span class="tit">아반떼</span></label></li>
+								</ul>
+							</div>
+							<div class="tab-group_car">
+								<dl>
+									<dt>세부모델</dt><dd><!-- 세부모델 --></dd>
+								</dl>
+								<ul class="select1_list2" style="display:block;">
+									<li class="select1_item"><label><input type="radio" name="area"><span class="tit">더 뉴아반떼 AD</span></label></li>
+									<li class="select1_item"><label><input type="radio" name="area"><span class="tit">아반떼 AD</span></label></li>
+								</ul>
+							</div>
+							<div class="tab-group_car">
+								<dl>
+									<dt>등급</dt><dd><!-- 등급 --></dd>
+								</dl>
+								<ul class="select1_list" style="display:none;">
+									<li class="select1_item"><label><input type="radio" name="area"><span class="tit">등급 선택</span></label></li>
+									<li class="select1_item"><label><input type="radio" name="area"><span class="tit">등급 선택</span></label></li>
+								</ul>
+							</div>
+							<div class="tab-group_car">
+								<dl>
+									<dt>세부등급</dt><dd><!-- 세부등급 --></dd>
+								</dl>
+								<ul class="select1_list" style="display:none;">
+									<li class="select1_item"><label><input type="radio" name="area"><span class="tit">세부등급 선택</span></label></li>
+									<li class="select1_item"><label><input type="radio" name="area"><span class="tit">세부등급 선택</span></label></li>
+								</ul>
+							</div>
+						</form>
+					</div>
+				
+			</div>
+		</div><!-- // ui_content -->
+	</div><!-- // section -->
+	<div class="btn_fixed2">
+		<div class="inner">
+			<div class="btn"><button type="buttom">다음</button></div>
+		</div>
+	</div>
+</div><!-- // ui_page -->
+
+
+<script src="../../js/temp.js"></script>
+</body>
+</html>

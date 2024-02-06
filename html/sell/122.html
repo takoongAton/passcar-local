@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+	<title>PASS 자동차</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="../../css/jquery-ui.css">
+	<link rel="stylesheet" href="../../css/common.css">
+	<link rel="stylesheet" href="../../css/passcar.css">
+	<link rel="stylesheet" href="../../css/passcar_skt_lgup.css">
+	<link rel="stylesheet" href="../../css/popup.css">
+	<script src="../../js/jquery-1.12.4.min.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.min.js"></script>
+	
+</head>
+<body>
+
+<div class="ui_popup"><!-- 기본 -->
+
+	<div class="ui_header">
+		<div class="inner">
+			<!-- <span class="prev"><button type="button">이전</button></span>
+			<div class="title"><strong>PASS 자동차</strong></div> -->
+			<span class="close"><button type="button">닫기</button></span>
+		</div>
+	</div>
+
+	<div class="section">
+
+		<div class="ui_content">
+			<div class="sell_wrap">
+
+				<div class="sell_step_wrap" style="display:block;">
+					<div class="pageTit">
+						<h2 class="tit">차량에 장착된<br />옵션을 선택해주세요!</h2>
+					</div>
+
+					<div class="spaceT"></div>
+					
+					<div class="sellConBox">
+						<div class="list-type2">
+							<ul class="col3 option">
+								<li><label><input type="checkbox" name="name"><span class="checkmark blackbox"></span><span class="txt">블랙박스</span></label></li>
+								<li><label><input type="checkbox" name="name"><span class="checkmark navi"></span><span class="txt">네비게이션</span></label></li>
+								<li><label><input type="checkbox" name="name"><span class="checkmark sunroof"></span><span class="txt">썬루프</span></label></li>
+								<li><label><input type="checkbox" name="name"><span class="checkmark rear"></span><span class="txt">후방카메라</span></label></li>
+								<li><label><input type="checkbox" name="name"><span class="checkmark sensor"></span><span class="txt">전/후방감지센서</span></label></li>
+								<!-- <li><label><input type="checkbox" name="name"><span class="checkmark breakaway"></span><span class="txt">차선이탈방지</span></label></li> -->
+								<li><label><input type="checkbox" name="name"><span class="checkmark hipass"></span><span class="txt">하이패스</span></label></li>
+							</ul>
+						</div>
+						<div class="not_option"><label><input type="radio" name="name"><span class="checkmark"></span><span class="txt">선택사항이 없습니다.</span></label></div>
+					</div>
+				</div><!-- // sell_step_wrap -->
+
+				<div class="btn_fixed2">
+					<div class="inner">
+						<div class="btn"><button type="button">저장</button></div>
+					</div>
+				</div><!-- // btn_fixed2 -->
+
+			</div><!-- // sell_wrap -->
+		</div><!-- // ui_content -->
+
+	</div><!-- // section -->
+
+</div><!-- // ui_popup -->
+
+
+
+
+<script>
+$(document).ready(function(){
+
+	$(".popup .close").click(function(){
+		$(".dim").hide();
+		$(".popup").hide();
+		$("body").removeClass("fixed");
+	});
+
+	$(".btn_sample").click(function(){
+		$(".dim").show();
+		$(".popup").show();
+		$("body").addClass("fixed");
+	})
+});
+</script>
+<script src="../../js/temp.js"></script>
+</body>
+</html>

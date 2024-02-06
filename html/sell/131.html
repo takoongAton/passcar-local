@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+	<title>PASS 자동차</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="../../css/jquery-ui.css">
+	<link rel="stylesheet" href="../../css/common.css">
+	<link rel="stylesheet" href="../../css/passcar.css">
+	<link rel="stylesheet" href="../../css/passcar_skt_lgup.css">
+	<script src="../../js/jquery-1.12.4.min.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.min.js"></script>
+</head>
+<body>
+
+<div class="ui_page"><!-- 기본 -->
+
+	<div class="ui_header">
+		<div class="inner">
+			<!-- <span class="prev"><button type="button">이전</button></span>
+			<div class="title"><strong>PASS 자동차</strong></div> -->
+			<span class="close"><button type="button">닫기</button></span>
+		</div>
+	</div>
+
+	<div class="section">
+
+		<div class="ui_content">
+			<div class="sell_wrap">
+
+				<div class="estimate_detail">
+					<div class="dealer_item2">
+						<div class="dealer_thum">
+							<div class="thum"><img src="../../img/common/dealer_base.png" alt="딜러기본이미지 96x96"></div>
+							<button type="button" class="call"><span>전화걸기</span></button>
+						</div>
+						<div class="dealer_info">
+							<div class="name">홍길동 딜러</div>
+							<div class="co">국민차<br />공항점 근무</div>
+						</div>
+						<span class="arrow"></span>
+					</div>
+
+					<div class="rating_stars_tit">판매자분은 어떠셨나요?</div>
+				
+					<div class="rating_stars">
+						<ul class="stars" id="stars">
+							<li class="star" title="Poor" data-value="1"><span class="fa">★</span></li>
+							<li class="star" title="Fair" data-value="2"><span class="fa">★</span></li>
+							<li class="star" title="Good" data-value="3"><span class="fa">★</span></li>
+							<li class="star" title="Excellent" data-value="4"><span class="fa">★</span></li>
+							<li class="star" title="WOW!!!" data-value="5"><span class="fa">★</span></li>
+						</ul>
+						<div class="rating_message">평점을 남겨주세요.</div>
+					</div>
+				</div>
+				
+				<div class="sell_step_wrap" style="display:block;">
+					<div class="sellConBox">
+						<div class="miniWrap">
+							<h3>딜러 후기를 작성해주세요.</h3>
+
+							<div class="textareaWrap">
+								<textarea name="" id="" cols="20" rows="5" placeholder="딜러의 인상, 에티튜드, 말투, 행동에 대한 &#x0a;의견을 작성해주세요!"></textarea>
+								<ul class="addphoto_list">
+									<li class="addphoto_item on"><!-- 사진이 첨부 됐을때 on -->
+										<input type="file" id="camera1" name="camera">
+										<div class="thum"><img src="../../img/temp/sam_126x126.png" alt="대표사진"></div>
+										<div class="txt">
+											<button><span>삭제</span></button>
+										</div>
+									</li>
+									<li class="addphoto_item">
+										<input type="file" id="camera2" name="camera">
+										<div class="txt">
+											<p>+추가사진<span>(선택)</span></p>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<!-- <div class="textarea">
+								<textarea name="" id="" cols="30" rows="7" placeholder="딜러의 인상, 에티튜드, 말투, 행동에 대한&#10; 의견을 작성해주세요!"></textarea>
+							</div> -->
+						</div>
+					</div>
+				</div><!-- // sell_step_wrap -->
+
+				<div class="btn_fixed2">
+					<div class="inner">
+						<div class="btn"><button type="button">평가 등록하기</button></div>
+					</div>
+				</div><!-- // btn_fixed2 -->
+
+			</div><!-- // sell_wrap -->
+		</div><!-- // ui_content -->
+
+	</div><!-- // section -->
+	
+</div><!-- // ui_page -->
+
+
+<script>
+$(document).ready(function(){
+  
+  /* 1. Visualizing things on Hover - See next part for action on click */
+  $('#stars li').on('mouseover', function(){
+    var onStar = parseInt($(this).data('value'), 10); // The star currently mouse on
+   
+    // Now highlight all the stars that's not after the current hovered star
+    $(this).parent().children('li.star').each(function(e){
+      if (e < onStar) {
+        $(this).addClass('hover');
+      }
+      else {
+        $(this).removeClass('hover');
+      }
+    });
+    
+  }).on('mouseout', function(){
+    $(this).parent().children('li.star').each(function(e){
+      $(this).removeClass('hover');
+    });
+  });
+  
+  
+  /* 2. Action to perform on click */
+  $('#stars li').on('click', function(){
+    var onStar = parseInt($(this).data('value'), 10); // The star currently selected
+    var stars = $(this).parent().children('li.star');
+    
+    for (i = 0; i < stars.length; i++) {
+      $(stars[i]).removeClass('selected');
+    }
+    
+    for (i = 0; i < onStar; i++) {
+      $(stars[i]).addClass('selected');
+    }
+    
+    // JUST RESPONSE (Not needed)
+    var ratingValue = parseInt($('#stars li.selected').last().data('value'), 10);
+    var msg = "";
+    if (ratingValue == 1) {
+        msg = "기억이 좋지 않아요.";
+    }
+    else if (ratingValue == 2) {
+        msg = "예상했던 것보다 별로예요.";
+    }
+    else if (ratingValue == 3) {
+        msg = "나름 괜찮았어요.";
+    }
+    else if (ratingValue == 4) {
+        msg = "너무 좋았어요.";
+    }
+    else  {
+        msg = "완벽했어요. 추천하고 싶네요!";
+    }
+    responseMessage(msg);
+    
+  });
+});
+
+function responseMessage(msg) {
+  $('div.rating_message').html("<span>" + msg + "</span>");
+}
+
+$("textarea").focus(function(){
+	$(".btn_fixed2").after("<div class='space' style='height:200px; background-color:#fff;'></div>")
+})
+$("textarea").focusout(function(){
+	$(".space").remove()
+})
+</script>
+
+<script src="../../js/temp.js"></script>
+</body>
+</html>

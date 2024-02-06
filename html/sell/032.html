@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+	<title>PASS 자동차</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="../../css/jquery-ui.css">
+	<link rel="stylesheet" href="../../css/common.css">
+	<link rel="stylesheet" href="../../css/passcar.css">
+	<link rel="stylesheet" href="../../css/passcar_skt_lgup.css">
+	<script src="../../js/jquery-1.12.4.min.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.min.js"></script>
+</head>
+<body>
+
+<div class="wrap"><!-- 모달팝업시 fixed 추가 예)class="wrap fixed" -->
+
+	<header class="header">
+		<div class="ui_header">
+			<div class="inner">
+				<span class="prev"><button type="button">이전</button></span>
+				<div class="title"><strong>PASS 자동차</strong></div>
+				<!-- <span class="close"><button type="button">닫기</button></span> -->
+			</div>
+		</div>
+	</header><!-- // header -->
+
+	
+	<section class="section">
+			<div class="naviFixed">
+				<div class="naviWrap">
+					<div class="navi">
+						<ul>
+							<li><a href="#g"><span>시세조회</span></a></li>
+							<li class="on"><a href="#g"><span>내차팔기</span></a></li>
+							<li><a href="#g"><span>내차사기</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="sell_index after" style="display:block;">
+
+				<div class="index_addcar">
+					<div class="inner">
+						<p class="txt">이소애님 보유차량 <strong>3건</strong></p>
+						<div class="btn"><button class="add">차량추가</button></div>
+						<!-- <div class="btn"><button class="change">차량변경</button></div> -->
+					</div>
+				</div>
+				<div class="index_car_count">
+					<dl class="item">
+						<dt><span>판매차량</span></dt>
+						<dd>총 <strong>3건</strong>이 등록되었습니다.</dd>
+					</dl>
+				</div>
+
+				<div class="innerBoxH">
+					<div class="sell_my_step">
+						<div class="sell_ing_list">
+							<div class="sell_ing_item line">
+								<div class="thum"><img src="../../img/temp/sam_126x126.png" alt="대표사진"></div>
+								<div class="info">
+									<div class="tit"><span class="green">차량등록중</span></div>
+									<div class="txtWrap">
+										<p class="number">12가1234</p>
+										<p class="txt1"><span>37</span>% 진행중</p>
+										<p class="txt2">1분이면 내 차를 높은 가격에 팔 수 있어요</p>
+									</div>
+								</div>
+								<div class="del"><button type="button"><span>삭제</span></button></div>
+							</div>
+
+							<div class="sell_ing_item line">
+								<div class="thum"><img src="../../img/temp/sam_126x126.png" alt="대표사진"></div>
+								<div class="info">
+									<div class="tit"><span class="ing">심사진행중</span></div>
+									<div class="txtWrap">
+										<p class="number">12가1234</p>
+										<p class="txt2">검토후, 24시간(평일) 이내 승인될 예정입니다</p>
+									</div>
+								</div>
+							</div>
+							
+							<div class="sell_ing_item line">
+								<div class="thum"><img src="../../img/temp/sam_126x126.png" alt="대표사진"></div>
+								<div class="info">
+									<div class="tit"><span class="return">심사반려</span></div>
+									<div class="txtWrap">
+										<p class="number">12가1234</p>
+										<p class="txt2">견적진행이 불가능합니다. 사유를 확인하세요</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="sell_ing_item line">
+								<div class="thum"><img src="../../img/temp/sam_126x126.png" alt="대표사진"></div>
+								<div class="info">
+									<div class="tit"><span class="ing">견적진행중</span></div>
+									<div class="txtWrap">
+										<p class="number">12가1234 (9명 입찰)</p>
+										<p class="txt1">최고 <span>1,800</span>만원 / 최저 <span>1,200</span>만원</p>
+										<p class="txt2">지금까지 딜러 136명이 조회했어요.</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="sell_ing_item line">
+								<div class="thum"><img src="../../img/temp/sam_126x126.png" alt="대표사진"></div>
+								<div class="info">
+									<div class="tit"><span class="ing">견적진행중</span></div>
+									<div class="txtWrap">
+										<p class="number">12가1234</p>
+										<p class="txt1">5명 조회 / 0명 입찰</p>
+										<p class="txt2">견적시간 : 35시간 12분 남았습니다</p>
+									</div>
+								</div>
+							</div>
+
+
+							<div class="sell_ing_item line">
+								<div class="thum"><img src="../../img/temp/sam_126x126.png" alt="대표사진"></div>
+								<div class="info">
+									<div class="tit"><span class="">견적완료</span></div>
+									<div class="txtWrap">
+										<p class="number">12가1234 (9명 입찰)</p>
+										<p class="txt1">최고 <span>1,800</span>만원 / 최저 <span>1,200</span>만원</p>
+										<p class="txt2">24시간 00분 내 판매요청이 가능해요</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="sell_ing_item line">
+								<div class="thum"><img src="../../img/temp/sam_126x126.png" alt="대표사진"></div>
+								<div class="info">
+									<div class="tit"><span class="">견적완료</span></div>
+									<div class="txtWrap">
+										<p class="number">12가1234</p>
+										<p class="txt2">딜러 견적 건수가 0건으로 견적이 종료되었습니다.</p>
+									</div>
+								</div>
+							</div>
+							
+							<div class="sell_ing_item line">
+								<div class="thum"><img src="../../img/temp/sam_126x126.png" alt="대표사진"></div>
+								<div class="info">
+									<div class="tit"><span class="green">견적완료</span></div>
+									<div class="txtWrap">
+										<p class="number">12가1234 (9명 입찰)</p>
+										<p class="txt1">최고 <span>1,800</span>만원 / 최저 <span>1,200</span>만원</p>
+										<p class="txt2">24시간 00분 내 딜러선택이 가능해요</p>
+									</div>
+								</div>
+							</div>
+							
+							<div class="sell_ing_item line">
+								<div class="thum"><img src="../../img/temp/sam_126x126.png" alt="대표사진"></div>
+								<div class="info">
+									<div class="tit"><span class="return">견적취소</span></div>
+									<div class="txtWrap">
+										<p class="number">12가1234 (9명 입찰)</p>
+										<p class="txt1">최고 <span>1,800</span>만원 / 최저 <span>1,200</span>만원</p>
+										<p class="txt2">24시간 이내 딜러를 선택하지 않아 취소되었습니다</p>
+									</div>
+								</div>
+							</div>
+							
+							
+							<div class="sell_ing_item line">
+								<div class="thum"><img src="../../img/temp/sam_126x126.png" alt="대표사진"></div>
+								<div class="info">
+									<div class="tit"><span class="ing">딜러선택(연락처교환)</span></div>
+									<div class="txtWrap">
+										<p class="txt1"><span>1,800</span>만원 / 홍길동 딜러 선택</p>
+										<p class="txt2">24시간 이내에 딜러가 전화드릴 예정입니다</p>
+									</div>
+								</div>
+							</div>
+							
+							<div class="sell_ing_item line">
+								<div class="thum"><img src="../../img/temp/sam_126x126.png" alt="대표사진"></div>
+								<div class="info">
+									<div class="tit"><span class="return">견적취소</span></div>
+									<div class="txtWrap">
+										<p class="number">12가1234</p>
+										<p class="txt1"><span>1,800</span>만원 / 홍길동 딜러 선택</p>
+										<p class="txt2">딜러가 견적을 확정하지 않아 견적이 취소되었습니다</p>
+									</div>
+								</div>
+							</div>
+							
+							<div class="sell_ing_item line">
+								<div class="thum"><img src="../../img/temp/sam_126x126.png" alt="대표사진"></div>
+								<div class="info">
+									<div class="tit"><span class="ing">검차방문</span></div>
+									<div class="txtWrap">
+										<p class="txt1"><span>1,800</span>만원 / 홍길동 딜러 선택</p>
+										<p class="txt2">홍길동 딜러가 5일 이내 방문 할 예정이예요</p>
+									</div>
+								</div>
+							</div>
+							
+							<div class="sell_ing_item line">
+								<div class="thum"><img src="../../img/temp/sam_126x126.png" alt="대표사진"></div>
+								<div class="info">
+									<div class="tit"><span class="green">검차완료</span></div>
+									<div class="txtWrap">
+										<p class="txt1">홍길동 딜러 / 010-1234-1234</p>
+										<p class="txt2">검차결과를 확인하고, 판매를 완료하세요</p>
+									</div>
+								</div>
+							</div>
+							
+							<div class="sell_ing_item line">
+								<div class="thum"><img src="../../img/temp/sam_126x126.png" alt="대표사진"></div>
+								<div class="info">
+									<div class="tit"><span class="return">판매취소(딜러방문X)</span></div>
+									<div class="txtWrap">
+										<p class="txt1">홍길동 딜러 / 010-1234-1234</p>
+										<p class="txt2">기간 내 딜러가 방문하지 않아 취소되었습니다</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="sell_ing_item line">
+								<div class="thum"><img src="../../img/temp/sam_126x126.png" alt="대표사진"></div>
+								<div class="info">
+									<div class="tit"><span class="return">구매철회</span></div>
+									<div class="txtWrap">
+										<p class="txt1">홍길동 딜러 / 010-1234-1234</p>
+										<p class="txt2">딜러의 요청으로 거래가 취소되었습니다.</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="sell_ing_item line">
+								<div class="thum"><img src="../../img/temp/sam_126x126.png" alt="대표사진"></div>
+								<div class="info">
+									<div class="tit"><span class="return">거래취소</span></div>
+									<div class="txtWrap">
+										<p class="txt1">홍길동 딜러 / 010-1234-1234</p>
+										<p class="txt2">검차 후, 홍길동 딜러가 거래를 취소했습니다</p>
+									</div>
+								</div>
+							</div>
+							
+							<div class="sell_ing_item line">
+								<div class="thum"><img src="../../img/temp/sam_126x126.png" alt="대표사진"></div>
+								<div class="info">
+									<div class="tit"><span class="">판매완료</span></div>
+									<div class="txtWrap">
+										<p class="txt1">홍길동 딜러 / 010-1234-1234</p>
+										<p class="txt2">홍길동딜러의 거래 과정을 평가해주세요</p>
+									</div>
+								</div>
+							</div>
+							
+							<div class="sell_ing_item line">
+								<div class="thum"><img src="../../img/temp/sam_126x126.png" alt="대표사진"></div>
+								<div class="info">
+									<div class="tit"><span class="return">판매취소</span></div>
+									<div class="txtWrap">
+										<p class="number">12가1234</p>
+										<p class="txt2">고객님 요청으로 차량 판매가 취소되었습니다</p>
+									</div>
+								</div>
+							</div>
+							
+							<div class="sell_ing_item line">
+								<div class="thum"><img src="../../img/temp/sam_126x126.png" alt="대표사진"></div>
+								<div class="info">
+									<div class="tit"><span class="">유효기간 만료</span></div>
+									<div class="txtWrap">
+										<p class="number">12가1234</p>
+										<p class="txt2">차량판매 유효기간이 만료되었습니다</p>
+									</div>
+								</div>
+								<div class="del"><button type="button"><span>삭제</span></button></div>
+							</div>
+							
+						</div>
+						<div class="go_new"><a href="#g">+ 새 견적 요청하기</a></div>
+					</div>
+				</div>
+
+			</div><!-- // sell_index after -->
+
+
+			<div class="index_footer fixed">
+				<div class="inner">
+					<div class="row">
+						<div class="logo"><img src="../../img/common/logo_passcar.png" alt="패스자동차 로고" /></div>
+						<span>서비스 이용약관</span>
+						<span>개인정보처리방침</span>
+					</div>
+					<p>PASS자동차는 중고차 매매의 당사자가 아니며, 상품거래 정보 및 거래에 관련한 의무와 책임은 각 판매자에게 있습니다.</p>
+				</div>
+			</div><!-- // index_footer -->
+
+
+	</section><!-- section -->
+
+</div><!-- // wrap -->
+
+
+
+
+<script src="../../js/temp.js"></script>
+</body>
+</html>

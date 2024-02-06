@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+	<title>PASS 자동차</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="../../css/jquery-ui.css">
+	<link rel="stylesheet" href="../../css/common.css">
+	<link rel="stylesheet" href="../../css/passcar.css">
+	<link rel="stylesheet" href="../../css/passcar_skt.css">
+	<script src="../../js/jquery-1.12.4.min.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.min.js"></script>
+	
+	<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js" integrity="sha256-Uv9BNBucvCPipKQ2NS9wYpJmi8DTOEfTA/nH2aoJALw=" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="../../css/owl.carousel.css">
+	<link rel="stylesheet" href="../../css/owl.theme.default.css">
+	<script src="../../js/owl.carousel.js"></script>
+</head>
+<body class="skt">
+
+<div class="wrap"><!-- 모달팝업시 fixed 추가 예class="wrap fixed" -->
+
+	<header class="header">
+		<div class="ui_header">
+			<div class="inner">
+				<!-- <span class="home"><button type="button">이전</button></span> -->
+				<span class="prev"><button type="button">이전</button></span>
+				<div class="title"><strong>자동차</strong></div>
+				<!-- <span class="close"><button type="button">닫기</button></span> -->
+			</div>
+		</div>
+	</header><!-- // header -->
+
+	<section class="section">
+
+		<div class="naviWrap">
+			<div class="navi">
+				<ul>
+					<li class="on"><a href="#g"><span>내차정보</span></a></li>
+					<li><a href="#g"><span>자동차금융몰</span></a></li>
+					<li><a href="#g"><span>내차팔기</span></a></li>
+					<li><a href="#g"><span>내차사기</span></a></li>
+				</ul>
+			</div>
+			<div class="mypage"><!-- <span>my</span> --></div>
+		</div>
+
+
+		<!-- <div class="price_index before">
+			<div class="areaBox">
+				<div class="innerBoxH">
+					
+				</div>
+			</div>
+		</div> --><!-- // price_index before -->
+
+		<div class="price_index after">
+			<!-- 삭제 <div class="index_addcar">
+				<div class="inner">
+					<p class="txt">이소애님 보유차량 <strong>3대</strong></p>
+					<div class="btn">
+						<button type="button" class="add"><span>차량추가</span></button>
+						<button type="button" class="change"><span>차 변경</span></button>
+					</div>
+				</div>
+			</div> -->
+
+			<!-- 삭제 <div class="myCarList">
+				<dl>
+					<dt>이소애님의 보유차량<span>3건</span></dt>
+					<dd><button type="button">+ 차량추가</button></dd>
+				</dl>
+			</div> -->
+
+			<div class="innerBoxH">
+				<div class="mycar">
+					<div class="info">
+						<div class="mycar_type_wrap">
+
+							<div>
+								<div class="tit">내차 차량정보</div>
+								<p>[현대] 그랜저 HG</p>
+								<div class="txt"><!-- <span>41다9006</span> --><span>하이브리드</span></div>
+							</div>
+							<div>
+								<button type="button" class="btn_test_drive"><span>인기차량<br />무료시승</span></button>
+							</div>
+						</div>
+						<!-- <div class="img"><img src="https://images.carmanager.co.kr/REP/CarCodeNew/1001406.png" alt="차량사진" /></div> -->
+					</div>
+
+					<div class="img_wrap">
+						<div class="img"><img src="https://images.carmanager.co.kr/REP/CarCodeNew/1001406.png" alt="차량사진" /></div>
+						<div class="info">
+							<dl>
+								<dt><span>차량번호</span></dt>
+								<dd><strong>12가1234</strong></dd>
+							</dl>
+							<dl>
+								<dt><span>최초등록일</span></dt>
+								<dd><strong>2021.01.01</strong><span class="model">(2021년형)</span></dd>
+							</dl>
+							<dl>
+								<dt><span>주행예상거리</span> <button type="button"><span>수정</span></button></dt>
+								<dd><strong class="mile">900,000Km</strong></dd>
+							</dl>
+						</div>
+					</div>
+					<!-- <div class="graph2">
+						<div>
+							<dl>
+								<dt>중고차 시세</dt>
+								<dd>1,670~2,592만원</dd>
+							</dl>
+							<dl>
+								<dt>신차 시세</dt>
+								<dd>7,370~8,592만원</dd>
+							</dl>
+						</div>
+					</div> -->
+				</div><!-- // mycar -->
+			</div><!-- // innerBoxH -->
+
+			<div class="mycar_btn_add">
+				<div><button type="button" class="add"><span>차량추가</span></button></div>
+				<!-- <div><button type="button" class="change"><span>차 변경</span></button></div> -->
+			</div>
+
+
+			<!-- <div class="spaceGray"></div> -->
+			<div class="innerBoxH">
+				<div class="mycarPrice">
+					<div class="info">
+						<div>
+							<div class="tit"><strong>내차 시세</strong><span class="help"><img src="../../img/common/icon_help.png" alt="도움말"></span><!-- <span class="link">주행거리를 입력해주세요.</span> --></div>
+							<div class="price"><span>최저 </span>2억1,800만원 ~ <br /><span>최고 </span>2억7,290만원</div>
+						</div>
+
+						<div class="used">
+							<dl>
+								<dt>잔존가치</dt>
+								<dd>50%</dd>
+							</dl>
+							<dl>
+								<dt>감가율</dt>
+								<!-- <dd><div class="up">78%</div></dd> -->
+								<dd><div class="down">30%</div></dd>
+							</dl>
+						</div>
+					</div>
+
+					<div class="mydirect" style="margin:0 0 30px 0;">
+						<div class="tit">자동차 보험 조회</div>
+						<button type="button" class="reg"><span>변경하기</span></button>
+						<div class="cont">
+							<!-- 보험정보 등록 전 -->
+							<!-- <p>보험정보를 등록해주세요.</p> -->
+
+							<!-- 보험정보 등록 후 -->
+							<!-- <div class="logo"><img src="../../img/temp/logo3.png" alt="DB손해보험"></div> -->
+							<div class="logo">
+								<span class="company">삼성화재 다이렉트</span>
+								<span class="date">가입일 : 20.07</span>
+							</div>
+							<dl>
+								<dt>보험만기일까지 <span>5개월</span> 남았어요.</dt>
+								<dd><span>DB손해보험 긴급출동</span> <a href="tel://1-555-555-5555" class="tel">1588-0100</a></dd>
+							</dl>
+						</div>
+					</div>
+
+
+					<div class="insurance_bnr_wrap">
+						<div class="tit"><strong>추천! 자동차금융몰</strong><span class="link">전체보기</span></div>
+						<div class="img_bnr owl-carousel">
+							<div class="xx1"><img src="../../img/temp/bnr_sam_335x88.png" alt=""></div>
+							<div class="xx2"><img src="../../img/temp/bnr_sam_335x88_2.png" alt=""></div>
+						</div>
+					</div>
+
+					<div class="barType4_wrap" style="display:none;">
+						<div class="barType4">
+							<!-- <span class="min">최소<em>2,542</em></span> -->
+							<div class="bar">
+								<!-- <div class="average" style="right:10%; left:20%;"><p>평균 3,500 ~ 4,000만원</p></div> -->
+								<div class="my" style="left:38%;">
+									<p>내차</p>
+								</div>
+							</div>
+							<div class="price_section">
+								<span>1,000</span>
+								<span>2,000</span>
+								<span>3,000</span>
+								<span>4,000</span>
+								<span>5,000</span>
+							</div>
+							<!-- <span class="max">최대<em>7,454</em></span> -->
+						</div>
+					</div>
+
+					
+
+					<div class="my_recall">
+						<div class="tit">
+							<!-- 리콜차량 있는 경우
+							<span class="icon">리콜 차량 없음</span>
+							 -->
+							<!-- 리콜차량 없는 경우 -->
+							<span class="icon recall_icon">리콜 차량 있음</span>
+							<p>리콜 현황</p>
+							<span class="help"><img src="../../img/common/icon_help.png" alt="도움말"></span>
+							<span class="more">펼쳐보기</span>
+						</div>
+						<div class="recallType">
+							<!--  리콜 없는 경우
+							<p><span>123차4567</span>차량은 리콜대상 차량이 아닙니다.</p>
+							-->
+							<!-- 리콜 있는 경우 -->
+							<p class="ing"><span>123차4567</span>차량의 리콜사항이 있습니다.</p>
+							<span class="source"><a href="https://www.car.go.kr/home/main.do">제공 : 자동차리콜센터</a></span>
+						</div>
+
+						<div class="recallStep" style="display:none;">
+							<div class="item">
+								<dl class="repair">
+									<dt><span>리콜필요</span></dt>
+									<dd>시정기간 : 2020-05-25~</dd>
+									<dd><p>[현대] 그랜저 - ABS/ESC 모듈 관련 리콜</p></dd>
+								</dl>
+							</div>
+							<div class="item">
+								<dl class="complete">
+									<dt><span>리콜완료</span></dt>
+									<dd>시정기간 : 2020-05-25~</dd>
+									<dd><p>[현대] 그랜저 - ABS/ESC 모듈 관련 리콜 [현대] 그랜저 - ABS/ESC 모듈 관련 리콜 [현대] 그랜저 - ABS/ESC 모듈 관련 리콜 [현대] 그랜저 - ABS/ESC 모듈 관련 리콜</p></dd>
+								</dl>
+							</div>
+						</div><!-- // recallStep -->
+					</div><!-- // my_recall -->
+
+
+					<!-- <div class="bnr_wrap">
+						<div class="bnr_inner bnr_type2">
+							<dl>
+								<dt>그랜저 HG 하이브리드 프리미엄</dt>
+								<dd>최저가 자동차 보험료는 얼마?</dd>
+							</dl>
+						</div>
+					</div> -->
+					
+					<!-- <div class="used">
+						<div class="tit"><strong>가치평가</strong></div>
+						<dl>
+							<dt>잔존가치</dt>
+							<dd>22.0%</dd>
+						</dl>
+						<dl>
+							<dt>감가율</dt>
+							<dd><div class="down">78.0%</div></dd>
+						</dl>
+					</div> -->
+				</div><!-- // mycarPrice -->
+			</div><!-- // innerBoxH -->
+
+
+			<div class="mycarPrice">
+				<div class="changePrice">
+					<div class="info">
+						<div class="tit">
+							<strong>주행거리 기준 예측 시세</strong>
+							<span class="btn_graph_toggle">그래프보기</span>
+						</div>
+					</div>
+					<div class="chart"><canvas id="myChart"></canvas></div>
+					<div class="tableType1" style="display:none;">
+						<dl>
+							<dt>1년 후</dt>
+							<dd>1,650만원</dd>
+							<dd><span class="down">78.0%</span></dd>
+						</dl>
+						<dl>
+							<dt>2년 후</dt>
+							<dd>1,650만원</dd>
+							<dd><span class="down">78.0%</span></dd>
+						</dl>
+						<dl>
+							<dt>3년 후</dt>
+							<dd>1,650만원</dd>
+							<dd><span class="down">78.0%</span></dd>
+						</dl>
+					</div>
+				</div><!-- // changePrice -->
+			</div>
+
+<style>
+.price_bnr_area {padding-bottom:20px;}
+</style>
+
+			<div class="innerBoxH">
+				<div class="price_bnr_area"><img src="../../img/temp/pass_lgup_bnr.png" alt="이미지" /></div>
+			</div>
+
+			<div class="innerBoxH">
+				<div class="btn_fixed">
+					<div class="inner">
+						<div class="btn"><button type="button">정확한 견적 받고 내차팔기</button></div>
+					</div>
+				</div>
+			</div><!-- // innerBoxH -->
+
+			
+
+			<!-- <div class="innerBoxH">
+				<div class="withCar">
+					<div class="tit">내차로 서비스</div>
+					<div class="item-list">
+						<dl class="item">
+							<dt>시세가 더 떨어지기 전</dt>
+							<dd class="txt">인증딜러에게 내차 팔기</dd>
+							<dd class="icon"><img src="../../img/common/withcar_img1.png" alt="이미지"></dd>
+						</dl>
+						<dl class="item">
+							<dt>비대면 간편 대출</dt>
+							<dd class="txt">내차로 돈 빌리기</dd>
+							<dd class="icon"><img src="../../img/common/withcar_img2.png" alt="이미지"></dd>
+						</dl>
+						<dl class="item">
+							<dt>김패스님꼐 추천하는 팁!</dt>
+							<dd class="txt">속도위반 Vs 과태료 비교표</dd>
+							<dd class="icon"><img src="../../img/common/withcar_img3.png" alt="이미지"></dd>
+						</dl>
+						<dl class="item">
+							<dt>운전면허 등록</dt>
+							<dd class="txt">운전관리 소식 확인하기</dd>
+							<dd class="icon"><img src="../../img/common/withcar_img4.png" alt="이미지"></dd>
+						</dl>
+					</div>
+				</div>
+			</div> -->
+
+<!-- <style>
+.plus_package {margin-top:30px;}
+.plus_package > div.tit {}
+.plus_package > div.tit strong {font-size:1.125em; font-weight:700;}
+.plus_package .plus_sign {margin-top:20px;}
+.plus_package .plus_sign button {display:block; width:100%; height:52px; background-color:#fff; border:1px solid #d3d3d3; border-radius:0.5em;}
+.plus_package .plus_sign button * {vertical-align:top;}
+.plus_package .plus_sign button span {display:inline-block; height:24px; line-height:24px; color:var(--main-txt-color);}
+.plus_package .plus_sign button span::after {content:""; display:inline-block; position:absolute; width:24px; height:24px; margin-left:8px; border-radius:100%; border:1px solid #ddd;}
+.plus_package ul {margin-top:5px;}
+.plus_package ul li {display:flex; width:100%; padding:13px 0; align-items:center; border-bottom:1px solid #f4f4f4;}
+.plus_package ul li > div {display:flex; align-items:center; justify-content:center; width:86px; height:66px; background-color:#eee; border-radius:4px; text-align:center}
+.plus_package ul li > div div.img {padding:9px 6px;}
+.plus_package ul li > div div.img img {max-width:100%; max-height:100%}
+.plus_package ul li > dl {flex:1; padding-left:20px;}
+.plus_package ul li > dl span {font-size:0.875em;}
+.plus_package ul li > dl dd span {font-weight:700;}
+.plus_package div.btn {margin-top:15px; text-align:center;}
+.plus_package div.btn button.more {display:inline-block; text-decoration:underline;}
+.plus_package div.btn button.more span {color:#222; font-size:0.875em;}
+</style>
+			<div class="innerBoxH">
+				<div class="plus_package">
+					<div class="tit"><strong>혜택도 받고,<br />차량관리도 쉽게!</strong></div>
+					<div class="plus_sign"><button><span>플러스 패키지 멤버십 구독</span></button></div>
+					<ul>
+						<li>
+							<div>
+								<div class="img"><img src="../../img/temp/pass_lgup_bnr.png" alt="이미지" /></div>
+							</div>
+							<dl>
+								<dt><span>SpeedMate</span></dt>
+								<dd><span>와이퍼 교환권</span></dd>
+							</dl>
+						</li>
+						<li>
+							<div>
+								<div class="img"><img src="../../img/temp/pass_lgup_bnr.png" alt="이미지" /></div>
+							</div>
+							<dl>
+								<dt><span>GS칼텍스</span></dt>
+								<dd><span>주유소 5천원 할인권</span></dd>
+							</dl>
+						</li>
+						<li>
+							<div>
+								<div class="img"><img src="../../img/temp/pass_lgup_bnr.png" alt="이미지" /></div>
+							</div>
+							<dl>
+								<dt><span>S-Oil</span></dt>
+								<dd><span>주유소 5천원 할인권</span></dd>
+							</dl>
+						</li>
+						<li>
+							<div>
+								<div class="img"><img src="../../img/temp/pass_lgup_bnr.png" alt="이미지" /></div>
+							</div>
+							<dl>
+								<dt><span>오토오아시스</span></dt>
+								<dd><span>에어컨가스교체 2만원 할인</span></dd>
+							</dl>
+						</li>
+					</ul>
+					<div class="btn"><button class="more"><span>혜택 더보기</span></button></div>
+				</div>
+			</div> -->
+
+			<div class="index_footer">
+				<div><img src="../../img/temp/bnr_376x99.png" alt=""></div>
+				<div class="inner">
+					<div class="row">
+						<div class="logo"><img src="../../img/common/logo_passcar.png" alt="패스자동차 로고" /></div>
+						<span>서비스 이용약관</span>
+						<span>개인정보처리방침</span>
+					</div>
+					<p>PASS자동차는 중고차 매매의 당사자가 아니며, 상품거래 정보 및 거래에 관련한 의무와 책임은 각 판매자에게 있습니다.</p>
+				</div>
+			</div><!-- // index_footer -->
+
+		</div><!-- // price_index after -->
+
+	</section><!-- section -->
+
+	<footer class="footer"></footer><!-- // footer -->
+
+</div><!-- // wrap -->
+
+<div class="dim" style="display:none;"></div>
+<div class="modal_default" style="display:none;"><!-- 기본 -->
+	<div class="modalCon">
+		<div class="txtWrap Type1">
+			<div class="tit">잠깐!</div>
+			<p class="txt">운전면허가 내 휴대폰 속으로!<br /><span>모바일운전면허</span>도 함께 등록해보세요.</p>
+		</div>
+	</div><!-- // modalCon -->
+
+	<div class="btn_group type1"><!-- type1,2 버튼 하단 간격이 다름 -->
+		<div class="btn"><button type="button">등록</button></div>
+		<div class="btn"><button type="button">취소</button></div>
+	</div><!-- // btn_group -->
+</div><!-- // modalCon -->
+
+
+<div class="layer help" id="ddddd"  style="display:none;">
+	<!-- <div class="dim"></div> -->
+	<div class="content">
+		<span></span>
+		리콜조치 여부는 자동차 관리법에 의해 분기별로 제작사가 국토교통부에 보고한 리콜내역을 바탕으로 제공되어 이전 년도까지의 리콜 조치여부 확인이 가능합니다.<br />*자동차리콜센터 업무시간(평일, 09:00~18:00)외에는 자동차 정보조회 불가 등의 사유로 리콜 대상확인 서비스가 제한될 수 있습니다.
+		<div class="close"><button type="button"><span>닫기</span></button></div>
+	</div>
+	
+</div>
+
+<!-- <style>
+div.ev2005 {position:fixed; top:50%; left:0; padding:0 20px; transform:translateY(-50%); z-index:100; animation-name:evPop; animation-iteration-count:1; animation-duration:0.8s;}
+@keyframes evPop {
+	0% {transform:scale(0) translateY(-50%); opacity:0;}
+	50% {transform:scale(0) translateY(-50%);  opacity:0;}
+	85% {transform:scale(1.05) translateY(-50%);  opacity:1;}
+	100% {transform:scale(1) translateY(-50%);}
+}
+div.ev2005::before {position:fixed; top:0; right:0;}
+div.ev2005 div.inwrap {position:relative; border-radius:10px; overflow:hidden; box-shadow:0 0 5px rgba(255,255,255,1);}
+div.ev2005 div.btn {position:absolute; bottom:0; left:0; width:100%; padding:0 15px 20px;}
+div.ev2005 div.btn button {display:block; position:relative; width:100%; height:45px; background-color:#222; color:#fff; border-radius:8px; font-size:1em; font-weight:700;}
+@media screen and (max-width:360px) {
+	div.ev2005 div.btn {padding:0 14px 19px;}
+	div.ev2005 div.btn button {height:45px;}
+}
+@media screen and (max-width:320px) {
+	div.ev2005 div.btn {padding:0 12px 17px;}
+	div.ev2005 div.btn button {height:41px;}
+}
+</style>
+<div class="ev2005">
+	<div class="inwrap">
+		<div class="img"><img src="../../img/event/ev2005_img.png" alt="배너이미지"></div>
+		<div class="btn"><button type="button">응모완료</button></div>
+	</div>
+</div>
+<script>
+$(document).ready(function(){
+	$(".ev2005 button").on("click", function(){
+		$(".ev2005").hide();``
+	})
+})
+</script> -->
+
+
+<script>
+
+/* 리콜이 있는 경우 토글 */
+$(".my_recall span.more").on("click", function(){
+	$(this).toggleClass("on");
+	$(".recallType").toggle();
+	$(".recallStep").toggle();
+})
+
+
+var ctx = document.getElementById('myChart').getContext('2d');
+var myChart = new Chart(ctx, {
+    
+    type: 'line',
+    data: {
+        labels: ['현재', '1년후', '2년후', '3년후'],
+        datasets: [{
+            data: [1800, 1650, 1600, 1300],
+            backgroundColor: [
+                'rgba(230, 98, 0, 0.1)',
+            ],
+            borderColor: [
+                'rgba(230, 98, 0, 0.25)'
+            ],
+            borderWidth: [1],
+            pointBackgroundColor: [
+            	'rgba(230,98,0,1)',
+            	'rgba(230,98,0,0.4)',
+            	'rgba(230,98,0,0.4)',
+            	'rgba(230,98,0,0.4)'
+            ],
+            strokeColor: 'rgba(1,1,1,1)'
+        }]
+    },
+    options: {
+    	animation:{duration:1000},
+    	layout: {
+    		
+    	},
+    	legend: {
+	        display: false
+	    },
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        }
+    }
+});
+
+$(".btn_graph_toggle").on("click", function(){
+	$(this).toggleClass("on");
+	$(".changePrice .tableType1").toggle(0);
+	$(".chart").toggle(0)
+})
+
+
+$(".insurance_bnr_wrap .img_bnr").owlCarousel({
+	items: 1,
+	loop:true,
+	margin:0,
+	nav:false,
+	dots:true
+});
+
+
+/* 도움말 테스트 */
+$(".layer.help .dim").on("click", function(){
+	$(this).parents(".layer").hide();
+})
+$(".layer .close").on("click", function(){
+	$(this).parents(".layer").hide();
+})
+
+$("div.tit span.help").on("click", function(){
+	$(".layer.help").hide();
+	var helpTriger = $(this);
+	var helpTrigerOffset = helpTriger.offset();
+
+	var helpLayer = $(".layer.help");
+	var helpLayerY = helpTrigerOffset.top + helpTriger.innerHeight() + 6; // 레이어 Y값
+	
+	$(".layer.help .content").css({
+		top : helpLayerY
+	})
+
+	var helpBul = $(".layer.help .content > span");
+	var helpBulX = helpTriger.innerWidth() + (helpTriger.innerWidth() / 2);
+
+	helpBul.css({
+		left : helpTrigerOffset.left + (helpTriger.innerWidth() / 2) - 20
+	})
+	$(".layer.help").show();
+	$(".layer.help .dim").show();
+	console.log("asdfa")
+})
+
+$(".img_wrap dl dt button").on("click", function(){
+	alert("주행거리 수정하기")
+})
+</script>
+
+
+<script src="../../js/temp.js"></script>
+</body>
+</html>

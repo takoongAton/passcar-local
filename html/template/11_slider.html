@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+	<title>PASS 자동차</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="../../css/jquery-ui.css">
+	<link rel="stylesheet" href="../../css/common.css">
+	<link rel="stylesheet" href="../../css/passcar.css">
+	<script src="../../js/jquery-1.12.4.min.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.min.js"></script>
+</head>
+
+<body>
+<div class="innerBoxH innerBoxV">
+
+
+<div class="rangeSlider">
+	<div id="range-mileage"></div>
+</div>
+
+
+<script>
+$(function(){
+	var $mileageTxt = $("#mileageTxt");
+	$( "#range-mileage" ).slider({
+		range: true,
+		min: 0,
+		max: 30,
+		values: [0, 30],
+		step: 1,
+		slide: function( event, ui ) {
+			$("#amount").val(ui.values[0] + "$" + "-"  + ui.values[1] + "$");
+			$mileageTxt.html('<span class="value mileage_min">' + ui.values[0] + "</span>" + "<span>km</span><span> ~ </span>" + '<span class="value mileage_max">' + ui.values[1] + "</span>" + "<span>km</span>");
+		}
+	});
+
+	var $budgetTxt = $("#budgetTxt");
+	$( "#range-budget" ).slider({
+		range: true,
+		min: 0,
+		max: 10000,
+		values: [0,10000],
+		step: 100,
+		slide: function( event, ui ) {
+			$("#amount").val(ui.values[0] + "$" + "-"  + ui.values[1] + "$");
+			$budgetTxt.html('<span class="value budget_min">' + ui.values[0] + "</span>" + "<span>만원</span><span> ~ </span>" + '<span class="value budget_max">' + ui.values[1] + "</span>" + "<span>만원</span>");
+		}
+	});
+});
+</script>
+
+<script src="../../js/temp.js"></script>
+</body>
+</html>

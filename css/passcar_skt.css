@@ -1,0 +1,364 @@
+@charset "utf-8";
+
+:root {
+  --main-bg-color:#e66200;
+  --main-border-color:#e66200;
+  --main-txt-color:#e66200;
+}
+
+/* a.mod {color:#e66200;}
+a.mod::visited {color:#e66200;} */
+
+header .ui_header .prev::before {top:6.5px; left:20px; width:31px; height:31px; background:url('../img/common/btn_top_back_skt.png') no-repeat left top; background-size:contain; border:0 none; transform:rotate(0);}
+
+
+/* v3.6 미만 */
+.naviWrap {height:50px; background-color:#f4f4f4;}
+.naviWrap .navi {height:50px;}
+.naviWrap .navi ul li {/*padding-left:20px;*/}
+.naviWrap .navi ul li.on a span:before {display:none;}
+.naviWrap .navi ul li.on span {color:#222; font-weight:400;}
+.naviWrap .navi ul li span {height:50px; padding:0; color:#a7a7a7; line-height:50px; font-weight:400; font-size:14px;}
+.naviWrap .navi ul li a {padding:0;}
+.naviWrap .mypage {top:50%; transform: translateY(-50%); text-indent:-27px;}
+.naviWrap .mypage span {opacity:1;}
+
+/* v3.6 이상 */
+.naviWrap.v36 {height:52px; background-color:#fff;}
+.naviWrap.v36::before {display:none;}
+.naviWrap.v36 .navi {height:auto;}
+@media screen and (min-width:375px) {
+	.naviWrap.v36 .navi ul li + li {/*padding-left:30px;*/}
+}
+.naviWrap.v36 .navi ul li.on a span:before {bottom:16px; display:block;}
+.naviWrap.v36 .navi ul li.on span {color:#222; font-weight:500;}
+.naviWrap.v36 .navi ul li span {height:52px; color:#222; line-height:42px; font-size:16px;}
+.naviWrap.v36 .mypage {top:7px; transform:translateY(0); text-indent:-27px;}
+.naviWrap.v36 + .price_index .mycar{padding-top:0;}
+@media screen and (max-width:320px) {
+	.naviWrap.v36 .navi ul li span {font-size:13.5px;}
+}
+
+
+.index_addcar {/* display:none; */}
+
+.pageSearchWrap.buy {background-color:#fff;}
+
+
+/* 사용안함
+div.ui_page .titBox div.sell button:last-child {color:#e66200;}
+div.ui_page .titBox div.sell div.txt p.sellCar {color:#e66200;}
+div.ui_page .titBox div.sell div.txt div:first-child button:last-child {color:#e66200;}
+*/
+
+.pageTit {padding-top:10px;}
+/* .pageTit div.price {color:#e66200;} */
+
+/* .pageTit h2.tit span {color:#e66200;} */
+
+/* 사용안함 .pageTit div.txtBox div.estimate {color:#e66200;} */
+
+/* .pageTit div.txtBox div.txt button {color:#e66200;} */
+
+/* .pageTit div.txtBox div.txt span.on {color:#e66200;} */
+
+/* .pageTit div.txtBox div.btnBox button {color:#e66200;} */
+
+/* .pageTit.carTit div.price {color:#e66200;} */
+.buy_info .info dl:nth-child(1) dt p {background-image:url('../img/common/icon_year.png');}
+.buy_info .info dl:nth-child(2) dt p {background-image:url('../img/common/icon_mile.png');}
+.buy_info .info dl:nth-child(3) dt p {background-image:url('../img/common/icon_trouble.png');}
+
+/* .pageTit .inner > div.btn button {color:#e66200;} */
+
+/* 사용안함 div.ui_popup .titBox div.sell button {color:#e66200;} */
+/* .direct_chk label input:checked + span.checkmark {background-color: #e66200; border-color:#e66200;} */
+
+/* .direct_chk div.label.on {background-color: #e66200; border-color:#e66200;} */
+
+.joinWrap .inputWrap {margin-top:20px;}
+/* .joinWrap .inputWrap .txt {color:#e66200;} */
+.joinWrap {padding:20px 20px 0;}
+
+/* 사용안함 dl.sk_table dd span.state {color:#e66200;} */
+
+/* .price_index .mycar .info div.txt span:last-child {color:#e66200;} */
+/* .price_index .mycar .info .btn button {background-color: #e66200;} */
+
+/* 사용불가
+.mycarPrice .barType1 div.my::after {background-color:#e66200;}
+.mycarPrice .barType1 div.my span.txt {color:#e66200;}
+*/
+/* 사용안함 .mycarPrice .info div.txt {color:#e66200; text-decoration:underline;} */
+
+/* dl.table1_item dd.on span.txt {color:#e66200;} */
+/* dl.table1_item dd button {color:#e66200;} */
+/* dl.table3_item dd.on span.txt {color:#e66200;} */
+
+/* dl.table3_item dd button {color:#e66200;} */
+
+/* dl.list1_item.on span {color:#e66200;} */
+
+/* .select1_item label input:checked ~ span {color:#e66200;} */
+/* .select1_item label input:checked + span.checkmark ~ span {color:#e66200;} */
+/* .btnGroup1 button {color:#e66200;} */
+
+.list-type2 ul li input:checked + span.checkmark {background-color:#222; border-color:#222;}
+/* .list-type2 ul.option2 li.on span.txt {color:#e66200;} */
+
+/* div.addphoto_wrap div:first-child button {color:#e66200;} */
+
+/* .error .txt2 {color:#e66200;} */
+
+/* 사용안함
+.sell_index.before .info2 div.tit span {color:#e66200;}
+.sell_index.before .info2 {background:url('../img/common/sell_icon3.png') no-repeat; background-size:256px auto; background-position:right 67px;}
+*/
+
+.sell_index .info3 div.inwrap div.img {background-image:url('../img/common/info3_img_skt.png');}
+
+/* 사용안함 div.sell_ing_item div.info div.tit strong {color:#e66200;} */
+/* 사용안함 div.sell_ing_item div.info p.number2 {color:#e66200;} */
+
+/* 사용안함 .region_wrap .tab-group label input:checked ~ span.txt {color:#e66200;} */
+
+/* div.region_depth1 label input:checked ~ span.txt {color:#e66200;} */
+/* div.region_depth1.on span.txt {color:#e66200;} */
+
+/* .tab-group_car dl.on {color:#e66200;} */
+
+/* .car_grade_wrap .tab-group > label.on {color:#e66200;} */
+/* .sellConBox textarea:focus {border:2px solid #e66200;} */
+
+/* .setpBox {color:#e66200;} */
+/* .setpBox .stepBar {background-color:#e66200;;} */
+
+/* .sell_step div.subTit button{color:#e66200;} */
+
+/* .stepInput input[type="text"]:focus {border-color:#e66200;}
+.stepInput input[type="text"].on {border-color:#e66200;} */
+
+/* dl.after_item::before {border:4px solid #e66200;} */
+/* dl.after_item dt span {color:#e66200;} */
+/* .dealerPrice2 dl:nth-child(2) dd {color:#e66200;} */
+
+/* .dealer_item div.dealer_thum button.call {background-color: #e66200; background-color:#e66200;} */
+
+/* .dealer_item2 div.dealer_thum button.call {background-color: #e66200; background-color:#e66200;} */
+
+/* 사용안함
+.dealer_item2 div.dealer_info .info {color:#e66200;}
+.dealer_item2 div.dealer_info .price {color:#e66200;}
+*/
+
+/* .sellConBox2 .subTit button {color:#e66200;} */
+
+/* .sellConBox2 .myCar .item div.info div.number {color:#e66200;} */
+
+/* 사용안함 .estimate_detail .pointWrap .icon {color:#e66200;} */
+
+/* .estimate_detail .contact div strong {color:#e66200;} */
+
+/* .index_info button {color:#e66200;}
+.index_info button::before {border-bottom:1px solid #e66200;} */
+
+/* .search_slide_wrap div.list_wrap > div ul li div.price {margin-top:10px; color:#e66200;} */
+
+/* 사용안함 .in_dealer_wrap .tit + div.list_wrap > div ul li div.name {color:#e66200;} */
+
+/* .perf_chk .item dl button {color:#e66200;} */
+/* .perf_chk .item ul li.on span {color:#e66200;} */
+
+/* .rangeSlider .ui-slider .ui-slider-range {background-color:#e66200; }
+.rangeSlider .ui-slider .ui-slider-handle {background-color: #e66200;} */
+
+
+/* 사용안함 .pageSearchWrap .pageSearch .search:focus {border-color:#e66200;} */
+/* .pageSearchWrap ul li span {color:#e66200;} */
+
+
+/* .model_year_wrap ul li label input[type="radio"]:checked ~ span {color:#e66200;} */
+
+/* 사용안함
+div.car_thum_item div.info div.tit strong {color:#e66200;}
+div.car_thum_item div.info div.tit span.ing {color:#e66200;} */
+
+/* .car_list.gallery div.price {color:#e66200;} */
+
+.car_list button.like {background-image: url('../img/common/icon_like_list.png');}
+.car_list.gallery div.thum_wrap button.like {background-image:url('../img/common/icon_like.png');}
+.car_list label.like input[type="checkbox"] + span.checkmark {background-image:url('../img/common/icon_like_list.png');}
+.car_list.gallery label.like input[type="checkbox"] + span.checkmark {background-image:url('../img/common/icon_like.png');}
+.car_item div.info button.like {background-image:url('../img/common/icon_like_view.png');}
+.car_item div.info label.like input[type="checkbox"] + span.checkmark {background-image:url('../img/common/icon_like_view.png')}
+
+/* 사용안함
+.car_item div.info div.tit strong {color:#e66200;}
+.car_item div.info div.tit span.ing {color:#e66200;}
+*/
+
+
+/* .buy_detail_view div.txt button {color:#e66200;} */
+
+/* 사용불가
+.buy_detail_view .barType2 div.my::after {background-color:#e66200;}
+.buy_detail_view .barType2 div.my span.txt {color:#e66200;}
+*/
+
+/* .barType4 .bar div.average {background-color:rgba(230,98,0,0.5);} */
+/* .barType4 .bar div.my p {color:#e66200;} */
+/* .barType4 .bar div.my::after {background-color:#e66200;} */
+
+/* 사용안함 .buy_detail_view .pointWrap div.icon {color:#e66200;} */
+/* ul.stars li.star.selected > span.fa {color:#e66200;} */
+/* .rating_stars ul > li.star.selected > span.fa {color:#e66200;} */
+
+
+/* 사용안함 .buy_detail_view .seller_info div.info dl dt {color:#e66200;} */
+
+/* 사용안함 .buy_detail_view p.tel span {background-color: #e66200;} */
+
+/* .dealer_review .rating ul li.selected span {color:#e66200;} */
+
+
+/* .dealer_info2 .info .tit {color:#e66200;} */
+/* div.input input[type="text"]:focus {border-color:#e66200;}
+div.input input[type="text"].on {border-color:#e66200;}
+div.input input[type="tel"]:focus {border-color:#e66200;}
+div.input input[type="tel"].on {border-color:#e66200;}
+div.input input[type="number"]:focus {border-color:#e66200;}
+div.input input[type="number"].on {border-color:#e66200;}
+div.input input[type="phone"]:focus {border-color:#e66200;}
+div.input input[type="phone"].on {border-color:#e66200;} */
+
+
+/* .textarea textarea:focus {border:2px solid #e66200;} */
+/* .textareaWrap {border:2px solid #e66200;} */
+/* .bnr_wrap div.bnr_inner dl.bnr_type1 dt.tit {color:#e66200;} */
+
+
+/* .txt_list .txt_item p em {color:#e66200;} */
+/* .unfair button {color:#e66200;} */
+/* .notfound p em {color:#e66200;} */
+
+
+
+/* .mypage_alert em {color:#e66200;} */
+
+/* .footer_txt p.txt em {color:#e66200;} */
+
+
+/* .modal_default .modalCon .Type1 p.txt span {color:#e66200;} */
+/* .modalCon .addCarList dl.on {color:#e66200;}
+.modalCon .addCarList input:checked + dl {color:#e66200;} */
+
+
+
+.list-type2 ul.option li span.blackbox::before,
+.list-type2 ul.option2 li span.blackbox::before {
+	background-image:url('../img/common/icon_blackbox_all.png');
+}
+
+.list-type2 ul.option li span.navi::before,
+.list-type2 ul.option2 li span.navi::before {
+	background-image:url('../img/common/icon_navi_all.png');
+}
+
+.list-type2 ul.option li span.sunroof::before,
+.list-type2 ul.option2 li span.sunroof::before {
+	background-image:url('../img/common/icon_sunroof_all.png');
+}
+
+.list-type2 ul.option li span.rear::before,
+.list-type2 ul.option2 li span.rear::before {
+	background-image:url('../img/common/icon_rear_all.png');
+}
+
+.list-type2 ul.option li span.sensor::before,
+.list-type2 ul.option2 li span.sensor::before {
+	background-image:url('../img/common/icon_sensor_all.png');
+}
+
+.list-type2 ul.option li span.hipass::before,
+.list-type2 ul.option2 li span.hipass::before {
+	background-image:url('../img/common/icon_hipass_all.png');
+}
+/* ================================ */
+
+
+
+/* 페에지 하단 고정 버튼 */
+.btn_fixed2 {box-sizing:content-box; position:relative; min-height:72px; padding-top:10px; z-index:5;}
+.btn_fixed2 .inner {position:relative; margin-top:30px; padding:0 20px 0; background-color:#fff; z-index:2;}
+.btn_fixed2 .inner p.txt {padding-bottom:14px; font-size:.875em;}
+.btn_fixed2 .inner div.btn {text-align:center;}
+.btn_fixed2 .inner div.btn button {display:block; width:100%; height:52px; background-color:#222; color:#fff; border-radius:8px;}
+.btn_fixed2 .inner div.btn + div.btn button {background-color:#fff; color:#7a7a7a;}
+.btn_fixed2 .inner div.btn:last-child {padding-bottom:20px;}
+.btn_fixed2 .inner div.btn + div.btn:last-child {margin-bottom:4px;}
+
+.btn_fixed2 .inner div.btn button.dim,
+.btn_fixed2 .inner div.btn button.false {background-color:#a7a7a7;}
+.btn_fixed2 .inner div.btn button:disabled {background-color:#a7a7a7;}
+.btn_fixed2 .inner + ::after {height:100px;}
+.btn_fixed2.type1 {height:82px;}/* 버튼 하나 */
+.btn_fixed2.type2 {height:120px;}/* 버튼 둘 */
+
+.popup.join {padding:30px 20px 20px 20px;}
+.popup.join div.tit {text-align:left; font-size:1.125em; font-weight:500; word-break:keep-all;}
+.popup.join .agreeWrap {padding:0;}
+.popup.join .agreeWrap div.all input[type="checkbox"].self2:checked + .checkmark {}
+
+/* join 모달팝업 하단 버튼 */
+.popup.join .btn_group {display:-webkit-flex; -webkit-flex-direction:row-reverse; display:flex; flex-direction:row-reverse; column-gap:8px;; margin-top:30px; text-align:center;}
+.popup.join .btn_group button {display:block; width:100%; padding:12px 0 16px 0; text-align:center; border:0 none; font-weight:300; line-height:24px; border:1px solid #222; border-radius:8px;}
+.popup.join .btn_group .btn {width:100%; background-color:#222222; color:#fff; border-radius:8px;}
+.popup.join .btn_group .btn + .btn  {background-color:#fff; color:#222;}
+.popup.join .btn_group .close {color:#222;}
+.popup.join .insure_chk {margin:0; margin-top:1em;}
+
+/* 모달팝업 */
+.modal_default  {padding:30px 20px 20px 20px;}
+.modal_default .modalCon {padding:0;}
+.modal_default .modalCon .Type1 {padding:0; text-align:left;}
+.modal_default .modalCon .Type3 {padding:0;}
+
+/* 모달팝업 하단 버튼 */
+.modal_default .modalCon {}
+.modal_default .modalCon div.tit {font-size:1.125em; font-weight:500 !important;}
+.modal_default .modalCon div.tit + div {margin-top:10px;}
+.modal_default .modalCon p.txt {margin-top:0.93333em !important; color:#7A7A7A; font-size:0.9375em; line-height:1.46666em;}
+
+.modal_default .btn_group {display:flex; flex-direction:row-reverse; justify-content:space-between; align-items:center; column-gap:11px; box-sizing:border-box; width:100%; margin-top:20px;}
+.modal_default .btn_group > div {width:100%;;}
+.modal_default .btn_group.type2 {}
+
+.modal_default .btn_group button {display:block; width:100%; height:52px; border:1px solid #000; text-align:center;}
+.modal_default .btn_group button:first-child {background-color:#222; color:#fff; border-radius:8px;}
+.modal_default .btn_group button + button {margin:4px 0 6px;}
+.modal_default .btn_group button.next {}
+.modal_default .btn_group button.close {background-color:#fff;}
+.modal_default .btn_group button.disabled {background-color:#d3d3d3; color:#fff;}
+
+.modal_default .btn_group .btn {text-align:center;}
+.modal_default .btn_group .btn button {display:block; width:100%; height:52px; text-align:center;}
+.modal_default .btn_group .btn button.ok {}
+.modal_default .btn_group .btn button.cancel {}
+.modal_default .btn_group .btn:first-child button {background-color:#222; color:#fff; border-radius:8px;}
+.modal_default .btn_group .btn + .btn button {background-color:#fff; color:#222;}
+
+
+
+
+
+/* 마이페이지 수정 */
+.mypage_bnr > div.bnr_item1::after {
+	background-image:url('../img/common/mypage_gnr1_bg_skt.png');
+}
+.mypage_bnr > div.bnr_item2 p {
+	background-image:url('../img/common/mypage_gnr2_bg_skt.png');
+}
+
+
+/* 에러페이지 */
+.error {position:relative; top:auto; right:auto; left:auto; padding-top:80px; padding-bottom:0; transform: none;}

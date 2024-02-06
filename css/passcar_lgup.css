@@ -1,0 +1,234 @@
+@charset "utf-8";
+
+:root {
+  --main-bg-color:#ff3a4a;
+  --main-border-color:#ff3a4a;
+  --main-txt-color:#ff3a4a;
+}
+
+button {letter-spacing:-0.025em;}
+
+.naviWrap .navi ul {justify-content:flex-start; gap:18px;}
+.naviWrap .navi ul li span {color:#999; font-size:14px; font-weight:bold;}
+.naviWrap .navi ul li.on span {color:#000; font-weight:bold;}
+
+/* header 높이값, 이미지 변경 */
+.ui_header {height:48px;}
+.ui_header .inner {height:48px;}
+.ui_header .title {line-height:48px; font-size:1em;}
+.ui_header .title strong {font-weight:700;}
+.ui_header .prev::before {top:12px; left:18px; width:24px; height:24px; background:url('../img/common/btn_top_back_lgup.png') no-repeat left top; background-size:24px 24px; border:0 none; transform:rotate(0);}
+.ui_header .btn_more {height:48px;}
+header .ui_header {height:48px;}
+header .ui_header .title {line-height:48px;}
+header .ui_header .title strong {font-weight:bold;}
+header .ui_header .prev::before {top:12px; left:18px; width:24px; height:24px; background:url('../img/common/btn_top_back_lgup.png') no-repeat left top; background-size:24px 24px; border:0 none; transform:rotate(0);}
+header .ui_header .home::before {position:absolute; top:12px; left:18px; width:24px; height:24px; background:url('../img/common/btn_top_home_lgup.png') no-repeat left top; background-size:24px 24px; border:0 none; transform:rotate(0);}
+
+/* 메인 노출 */
+.header div.mainChk {position:absolute; top:3px; right:18px; height:42px; cursor:pointer;}
+.header div.mainChk * {vertical-align:top;}
+.header div.mainChk p {display:inline-block; padding-right:6px; color:#999; font-size:12px; line-height:42px;}
+.header div.mainChk > span {display:inline-block !important; position:relative; width:36px; height:18px; margin:12px 0; padding:2px; border-radius:9px; background-color: #e7e7e7; transition: all 0.1s;}
+.header div.mainChk > span::before {content:""; display:block; float:left; width:14px; height:14px; margin-left:0; background-color:#fff; float:left; border-radius:50%; transition: all 0.1s;}
+.header div.mainChk.on > span {background-color: #ff3a4a;}
+.header div.mainChk.on > span::before {margin-left:18px;}
+
+
+/* LGT 닫기 버튼 */
+.ui_header .close {position:absolute; top:0; right:6px; width:60px; height:100%;}
+.ui_header .close::before,
+.ui_header .close::after {content:unset;}
+
+header .ui_header .close {display:flex; justify-content:center; align-items:center; width:48px; height:48px;}
+header .ui_header .close button {display:block; width:24px; height:24px; background:url('../img/common/btn_top_close.png') no-repeat left top / contain;}
+
+.buy_info .info dl:nth-child(1) dt p {background-image:url('../img/common/icon_year_lgup.png');}
+.buy_info .info dl:nth-child(2) dt p {background-image:url('../img/common/icon_mile_lgup.png');}
+.buy_info .info dl:nth-child(3) dt p {background-image:url('../img/common/icon_trouble_lgup.png');}
+
+.list-type2 ul li input:checked + span.checkmark {background-color:#ff3a4a; border-color:#ff3a4a;}
+
+.sell_index .info3 div.inwrap div.img {background-image:url('../img/common/info3_img_lgup.png');}
+
+.car_list button.like {background-image: url('../img/common/icon_like_list_lgup.png');}
+.car_list.gallery div.thum_wrap button.like {background-image:url('../img/common/icon_like_lgup.png');}
+.car_list label.like input[type="checkbox"] + span.checkmark {background-image:url('../img/common/icon_like_list_lgup.png');}
+.car_list.gallery label.like input[type="checkbox"] + span.checkmark {background-image:url('../img/common/icon_like_lgup.png');}
+.car_item div.info button.like {background-image:url('../img/common/icon_like_view_lgup.png');}
+.car_item div.info label.like input[type="checkbox"] + span.checkmark {background-image:url('../img/common/icon_like_view_lgup.png')}
+
+
+.list-type2 ul.option li span.blackbox::before,
+.list-type2 ul.option2 li span.blackbox::before {
+	background-image:url('../img/common/icon_blackbox_all_lgup.png');
+}
+
+.list-type2 ul.option li span.navi::before,
+.list-type2 ul.option2 li span.navi::before {
+	background-image:url('../img/common/icon_navi_all_lgup.png');
+}
+
+.list-type2 ul.option li span.sunroof::before,
+.list-type2 ul.option2 li span.sunroof::before {
+	background-image:url('../img/common/icon_sunroof_all_lgup.png');
+}
+
+.list-type2 ul.option li span.rear::before,
+.list-type2 ul.option2 li span.rear::before {
+	background-image:url('../img/common/icon_rear_all_lgup.png');
+}
+
+.list-type2 ul.option li span.sensor::before,
+.list-type2 ul.option2 li span.sensor::before {
+	background-image:url('../img/common/icon_sensor_all_lgup.png');
+}
+
+.list-type2 ul.option li span.hipass::before,
+.list-type2 ul.option2 li span.hipass::before {
+	background-image:url('../img/common/icon_hipass_all_lgup.png');
+}
+
+.popup.join .agreeWrap ul li button {color:#ff3a4a;}
+/* ================================ */
+
+
+/* 페에지 하단 고정 버튼 */
+.btn_fixed2 {box-sizing:content-box; position:relative; min-height:72px; padding-top:10px; z-index:5;}
+.btn_fixed2 .inner {position:relative; margin-top:30px; padding:0 20px 0; background-color:#fff; z-index:2;}
+.btn_fixed2 .inner p.txt {padding-bottom:14px; font-size:.875em;}
+.btn_fixed2 .inner div.btn {text-align:center;}
+.btn_fixed2 .inner div.btn button {display:block; width:100%; height:52px; background-color:#222; color:#fff; border-radius:8px;}
+.btn_fixed2 .inner div.btn + div.btn button {background-color:#fff; color:#7a7a7a;}
+.btn_fixed2 .inner div.btn:last-child {padding-bottom:20px;}
+.btn_fixed2 .inner div.btn + div.btn:last-child {margin-bottom:4px;}
+.btn_fixed2 .inner div.btn button.dim,
+.btn_fixed2 .inner div.btn button.false {background-color:#a7a7a7;}
+.btn_fixed2 .inner div.btn button:disabled {background-color:#a7a7a7;}
+.btn_fixed2 .inner + ::after {height:100px;}
+.btn_fixed2.type1 {height:82px;}/* 버튼 하나 */
+.btn_fixed2.type2 {height:120px;}/* 버튼 둘 */
+
+.popup.join .agreeWrap div.all input[type="checkbox"].self2:checked + .checkmark {background-color:#ff3a4a;}
+
+
+/* join 모달팝업 하단 */
+.popup.join .btn_group {box-sizing:border-box; display:table; display:-webkit-flex; -webkit-flex-direction:row-reverse; display:flex; flex-direction:row-reverse; width:100%; margin:30px 0 0 0; padding:0 20px; border-top:1px solid #f4f4f4;}
+.popup.join .btn_group button {display:block; width:100%; height:60px; color:#000; text-align:center; border:0 none; font-weight:400; line-height:24px;}
+.popup.join .btn_group .btn {display:table-cell; width:100%; min-width:50%; color:#fff; border-radius:8px;}
+.popup.join .btn_group .btn:first-child button {color:#ff3a4a; font-weight:700;}
+.popup.join .btn_group .btn + .btn button {/* color:#7a7a7a; */}
+
+
+/* 모달 */
+.modal_default .modalCon .Type1 {padding:30px 0 36px;}
+.modal_default .modalCon .Type1 div.cp_name {display:flex; justify-content:center; align-items:center; min-height:27px;}
+.modal_default .modalCon .Type1 div.cp_name strong {font-size:18px; line-height:24px; font-weight:bold;}
+.modal_default .modalCon .Type1 div.cp_name + div.tit,
+.modal_default .modalCon .Type1 div.cp_name + p.txt {margin-top:17px;}
+.modal_default .modalCon .Type1 p.txt {margin-top:17px;}
+.modal_default .modalCon .Type1 p.txt {color:#000; font-size:14px; line-height:24px;}
+
+/* 모달팝업 하단 */
+.modal_default .modalCon div.con {padding-top:28px; padding-bottom:30px;}
+.modal_default .modalCon div.con div.tit {font-size:1.25em;}
+.modal_default .modalCon div.con div.tit + div {margin-top:10px;}
+
+.modal_default .btn_group {box-sizing:border-box; display:table; display:-webkit-flex; -webkit-flex-direction:row-reverse; display:flex; flex-direction:row-reverse; width:100%; margin:0; border-top:1px solid #f4f4f4;}
+.modal_default .btn_group.type2 {/*padding-bottom:20px;*/ border-radius:0 0 10px 10px; overflow:hidden;}
+
+.modal_default .btn_group > button {display:table-cell; box-sizing:border-box; display:inline-block; width:100%; min-width:50%; height:60px; font-size:1.125em; text-align:center;}
+.modal_default .btn_group > button:last-child {color:#000;}
+.modal_default .btn_group > button:first-child {color:#ff3a4a; font-weight:700;}
+.modal_default .btn_group > button.close {background-color:#fff;}
+.modal_default .btn_group > button.disabled {background-color:#d3d3d3; color:#fff;}
+
+.modal_default .btn_group .btn {display:table-cell; width:100%; min-width:50%; text-align:center;}
+.modal_default .btn_group .btn button {display:block; width:100%; height:60px; text-align:center; color:#000; font-size:1.125em;}
+.modal_default .btn_group .btn:last-child button {color:#000;}
+.modal_default .btn_group .btn:first-child button {/* color:#ff3a4a; */ color:var(--main-txt-color); font-weight:700;}
+
+
+
+
+
+/* 무료페이지 추가 004_lgt_1,2*/
+.freePage .barType4_wrap {padding-top:30px;}
+.freePage .barType4_wrap + div.bnr {margin-top:20px;}
+.freePage .mycar .info div.title {position:relative; font-size:1.5em;}
+.freePage .mycar .info div.title span {display:block; font-weight:bold;}
+.freePage .mycar .info div.title > p.price {position:absolute; bottom:0; right:0; padding-right:25px; /* transform:translateY(-50%); */ font-size:1em;}
+.freePage .mycar .info div.title > p.price::after {content:""; display:block; position:absolute; right:5px; top:50%; width:8px; height:8px; border-top:1.5px solid #d3d3d3; border-right:1.5px solid #d3d3d3; transform:translateY(-50%) rotate(45deg);}
+.freePage .mycar .info div.title + p {position:relative; margin-top:10px; font-size:1em; font-weight:normal;}
+.freePage .mycar .info div.title + p span.txt {display:block; position:relative; color:#a7a7a7; font-size:14px; text-overflow:ellipsis; white-space:nowrap; word-wrap:normal; overflow:hidden;}
+.freePage .mycar .info .img {position:relative;}
+.freePage .mycar .info .img span.txt {display:block; color:#a7a7a7; font-size:14px; text-align:center;}
+.freePage .mycar .info .img span.sample {position:absolute; top:-21px; right:0; display:inline-block; width:80px; height:21px; background-color:#ff3a4a; border-radius:10px; color:#fff; line-height:21px; font-size:14px; font-weight:bold; text-align:center;}
+.freePage .free_txt {padding:10px 0 20px; color:#7a7a7a; font-size:14px; letter-spacing:-0.08em;}
+.freePage .btn_fixed2 .inner {background-color:transparent;}
+
+
+
+
+
+
+/* 마이페이지 수정 */
+.mypage_bnr > div.bnr_item1::after {
+	background-image:url('../img/common/mypage_gnr1_bg_lgup.png');
+}
+.mypage_bnr > div.bnr_item2 p {
+	background-image:url('../img/common/mypage_gnr2_bg_lgup.png');
+}
+
+
+/* 에러페이지 */
+.error {position:relative; top:auto; right:auto; left:auto; padding-top:80px; padding-bottom:0; transform: none;}
+
+
+
+
+/* 24.01 U+ PASS CP 가이드 적용 */
+.wrap {height:auto;}
+.cp_pass_nav_wrap {position:fixed; right:0; bottom:0; left:0; width:100%; margin:0 auto; z-index:3000;}
+.nav_wrap {display:flex; justify-content:space-between; column-gap:13px; width:100%; height:54px; padding:0 14px; background-color:#fff; box-shadow:0 -2px 3px rgba(0,0,0,0.12);}
+.nav_wrap .item.nav {width:100%;}
+.nav_wrap .item.nav button {display:block; width:100%; min-width:50px; height:auto; padding:6px 0 9px; text-align:center; background-color:#fff;}
+.nav_wrap .item.nav button::before {content:""; display:inline-block; width:24px; height:24px; background-repeat:no-repeat; background-position:left top; background-size:cover; color:transparent; text-indent:-1000px; overflow:hidden;}
+.nav_wrap .item.nav button.active::before,
+.nav_wrap .item.nav button.on::before {background-position:0 -24px;}
+
+
+.nav_wrap .item.nav button[disabled]::before {background-position:0 -48px;}
+.nav_wrap .item.nav button.btn_prev::before {background-image:url('../img/common/ico_web_back.png');}
+.nav_wrap .item.nav button.btn_next::before {background-image:url('../img/common/ico_web_forward.png');}
+.nav_wrap .item.nav button.btn_home::before {background-image:url('../img/common/ico_web_home.png');}
+.nav_wrap .item.nav button.btn_replace::before {background-image:url('../img/common/ico_web_refresh.png');}
+.nav_wrap .item.nav button.btn_setting::before {background-image:url('../img/common/ico_web_setting.png');}
+
+.nav_wrap .item.nav button span.txt {display:block; height:15px; color:#999; font-size:10px; line-height:15px; overflow:hidden;}
+.nav_wrap .item.nav button[disabled] > span.txt {color:#ddd;}
+.nav_wrap .item.nav button.active span.txt {color:#FF3A4A; font-weight:bold;}
+
+.layer.slideUp {position:fixed; bottom:0; right:0; left:0; width:100%; z-index:2000; transform:translateY(120%); transition:all 0.2s ease-in;}
+.layer.slideUp.active {transform:translateY(0);}
+.layer.slideUp .inner {position:relative; padding-top:8px; background-color:#fff; border-radius:14px 14px 0 0;}
+.layer.slideUp .inner div.tit {display:flex; justify-content:center; align-items:center; height:48px; color:#000; font-size:18px; line-height:1.5em; font-weight:bold; text-align:center;}
+.layer.slideUp .inner::before,
+.layer.slideUp .inner::after {content:""; display:block; position:absolute; top:0; width:28px; height:20px; background-color:#fff; border-radius:100%;}
+.layer.slideUp .inner::before {left:0;}
+.layer.slideUp .inner::after {right:0;}
+.layer.slideUp .btn {position:absolute; top:20px;right:18px; width:24px; height:24px; z-index:1;}
+.layer.slideUp .btn .btn_close {width:24px; height:24px; overflow:hidden;}
+
+.layer.slideUp .setting_list {padding-bottom:8px; background-color:#fff;}
+.layer.slideUp .setting_list .setting_item {}
+.layer.slideUp .setting_list .setting_item button {position:relative; width:100%; height:48px; padding:0 18px; text-align:left;}
+.layer.slideUp .setting_list .setting_item button::before {content:""; display:block; position:absolute; top:50%; right:18px; width:14px; height:14px; background:url('../img/common/ico_arrow_list_small_right.png') no-repeat left top / contain; transform:translateY(-50%);}
+.layer.slideUp .setting_list .setting_item button span {color:0000; font-size:16px;}
+/* // 24.01 U+ PASS CP 가이드 */
+
+
+/* U+ PASS CP 가이드 로딩 */
+.loading_pass div.dim {display:block; position:fixed; top:0; right:0; bottom:0; left:0; background-color:rgba(0,0,0,0.7); z-index:1000;}
+.loading_pass div.loading_ico {position:fixed; top:50%; left:50%; width:54px; height:54px; transform:translate(-50%,-50%); z-index:1000;}
+/* // U+ PASS CP 가이드 로딩 */

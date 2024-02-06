@@ -1,0 +1,13 @@
+@charset "utf-8";
+/*
+.ui_popup div.section > .titBox {padding:10px 20px 0;}
+.ui_popup div.section > .titBox h2.tit {color:#222; font-size:1.25em; line-height:1.25em;}
+.ui_popup div.section > .titBox p.txt {margin-top:10px; height:39px; color:#a7a7a7; font-size:.875em;}
+.ui_popup div.section > .titBox p.txt span {display:inline-block; position:relative; padding-right:5px;}
+.ui_popup div.section > .titBox p.txt span:not(:first-child) {padding-left:10px;}
+.ui_popup div.section > .titBox p.txt span:not(:first-child)::before {content:""; display:block; position:absolute; top:41%; left:0; width:5px; height:5px; border-top:1px solid #d3d3d3; border-right:1px solid #d3d3d3;
+-webkit-transform:rotate(45deg); -ms-transform:rotate(45deg); transform:rotate(45deg)}
+.ui_popup div.section > .titBox p.txt span.on {color:#418cf3;}
+*/
+/* .ui_popup div.section > .ui_content {margin-top:8px;} */
+.ui_popup .miniWrap:not(:last-child) {padding-bottom:30px;}

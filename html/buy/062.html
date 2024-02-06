@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+	<title>PASS 자동차</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="../../css/jquery-ui.css">
+	<link rel="stylesheet" href="../../css/common.css">
+	<link rel="stylesheet" href="../../css/passcar.css">
+	<link rel="stylesheet" href="../../css/passcar_skt_lgup.css">
+	<script src="../../js/jquery-1.12.4.min.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.min.js"></script>
+</head>
+<body>
+
+<div class="ui_popup"><!-- ui_page, ui_popup은 z-index값이 다릅니다. -->
+
+	<div class="ui_header">
+		<div class="inner">
+			<span class="close"><button type="button">닫기</button></span>
+		</div>
+	</div><!-- // ui_header -->
+
+
+	<div class="section">
+		<div class="pageTit"><!-- 페이지 타이틀은 상황에 따라서 ui_content 안으로 들어가는 경우가 있습니다. 예) 내차팔기 step -->
+			<h2 class="tit">12가1234의<br />
+			 전체 옵션 정보입니다.</h2>
+		</div>
+
+		<div class="ui_content">
+			<div class="buy_wrap">
+				<div class="perf_chk_wrap">
+					<div class="perf_chk">
+						<div class="item">
+							<dl>
+								<dt>주요옵션</dt>
+								<dd>1개</dd>
+								<dd><button type="button">상세</button></dd>
+							</dl>
+							<ul>
+								<li><span>선루프</span></li>
+								<li><span>블랙박스</span></li>
+								<li><span>네비게이션</span></li>
+								<li><span>스마트키</span></li>
+								<li><span>전방 감지 센서</span></li>
+								<li><span>후방 감지 센서</span></li>
+								<li><span>후방 카메라</span></li>
+								<li><span>차선이탈경보장치</span></li>
+								<li><span>하이패스</span></li>
+								<li><span>전동조절스티어링휠</span></li>
+								<li><span>열선핸들</span></li>
+								<li><span>에어컨</span></li>
+								<li><span>오토도어록</span></li>
+								<li class="on"><span>오토라이트</span></li>
+								<li><span>원격시동장치</span></li>
+								<li><span>HUD:헤드업디스플레이</span></li>
+								<li><span>크루즈컨트롤</span></li>
+								<li><span>ECM룸미러</span></li>
+								<li><span>자동주차시스템</span></li>
+								<li><span>슈퍼비젼계기판</span></li>
+								<li><span>스탑앤고</span></li>
+								<li><span>트립컴퓨터</span></li>
+								<li><span>핸들리모컨</span></li>
+								<li><span>파워윈도우</span></li>
+								<li><span>파워트렁크</span></li>
+								<li><span>4륜구동</span></li>
+								<li><span>스타트-스톱</span></li>
+								<li><span>액티브스티어링</span></li>
+								<li><span>토그백터링</span></li>
+							</ul>
+						</div>
+
+						<div class="item">
+							<dl>
+								<dt>편의/안전관련 옵션</dt>
+								<dd>2개</dd>
+								<dd><button type="button">상세</button></dd>
+							</dl>
+							<ul>
+								<li><span>ABS 브레이크 잠김 방지</span></li>
+								<li><span>ECS 전자제어서스펜션</span></li>
+								<li><span>ESC 차체자세제어장치</span></li>
+								<li><span>TCS 미끄럼방지</span></li>
+								<li><span>TPMS 타이어 공기압센서</span></li>
+								<li><span>운전석 에어백</span></li>
+								<li><span>조수석 에어백</span></li>
+								<li><span>사이드 에어백</span></li>
+								<li><span>커튼 에어백</span></li>
+								<li><span>승객감지에어백</span></li>
+								<li><span>전방카메라</span></li>
+								<li><span>자동긴급제동</span></li>
+								<li><span>후측방 경보 시스템</span></li>
+								<li><span>파워도어록</span></li>
+								<li><span>어라운드뷰</span></li>
+								<li><span>전자주차브레이크(EPB)</span></li>
+								<li><span>경사로밀림방지</span></li>
+								<li><span>자동도어잠금</span></li>
+								<li><span>풀오토에어컨</span></li>
+								<li><span>LSD 자동제한장치</span></li>
+								<li><span>에어스프링</span></li>
+								<li><span>도난경보기</span></li>
+								<li><span>무선충전</span></li>
+								<li><span>레인센서와이퍼</span></li>
+								<li><span>공기청정기</span></li>
+								<li><span>전동사이드미러</span></li>
+								<li><span>고스트 도어 클로징</span></li>
+							</ul>
+						</div>
+						<div class="item">
+							<dl>
+								<dt>영상/음향관련 옵션</dt>
+								<dd>2개</dd>
+								<dd><button type="button">상세</button></dd>
+							</dl>
+							<ul>
+								<li><span>AUX 단자</span></li>
+								<li><span>IPOP 단자</span></li>
+								<li><span>USB 단자</span></li>
+								<li><span>CD 플레이어</span></li>
+								<li><span>CD 체인저</span></li>
+								<li><span>DMB</span></li>
+								<li><span>DBD 플레이어</span></li>
+								<li><span>MP3 플레이어</span></li>
+								<li><span>뒷자석 모니터</span></li>
+								<li><span>앞좌석 모니터</span></li>
+								<li><span>텔레매티기스</span></li>
+								<li><span>엠프</span></li>
+								<li><span>우퍼</span></li>
+								<li><span>튜닝스피커</span></li>
+								<li><span>AV시스템</span></li>
+							</ul>
+						</div>
+						<div class="item">
+							<dl>
+								<dt>내·외장 옵션</dt>
+								<dd>2개</dd>
+								<dd><button type="button">상세</button></dd>
+							</dl>
+							<ul>
+								<li><span>HID램프</span></li>
+								<li><span>LED램프</span></li>
+								<li><span>제논램프</span></li>
+								<li><span>하이빔어시스트</span></li>
+								<li><span>어댑티드헤드램프</span></li>
+								<li><span>데이라이트</span></li>
+								<li><span>열선시트:뒷자석</span></li>
+								<li><span>열선시트:앞좌석</span></li>
+								<li><span>통풍시트:뒷자석</span></li>
+								<li><span>통풍시트:앞좌석</span></li>
+								<li><span>전동시트 뒷자석</span></li>
+								<li><span>전동시트 앞좌석</span></li>
+								<li><span>폴딩시트</span></li>
+								<li><span>메모리시트</span></li>
+								<li><span>안마시트</span></li>
+								<li><span>가죽시트</span></li>
+								<li><span>메탈그레인</span></li>
+								<li><span>우드그레인</span></li>
+								<li><span>알루미늄휠</span></li>
+								<li><span>크롬휠</span></li>
+								<li><span>파노라마썬루프</span></li>
+								<li><span>루프랙</span></li>
+								<li><span>리어스포일러</span></li>
+								<li><span>범퍼가드</span></li>
+								<li><span>스트럿바</span></li>
+								<li><span>냉장고</span></li>
+								<li><span>광폭타이어</span></li>
+								<li><span>에어댐</span></li>
+								<li><span>패들시프트</span></li>
+								<li><span>썬팅</span></li>
+								<li><span>루프캐리어</span></li>
+								<li><span>버켓시트</span></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- // ui_content -->
+	</div><!-- // section -->
+	
+</div><!-- // ui_popup -->
+
+
+<script>
+$(document).ready(function(){
+	$(".perf_chk button").click(function(){
+		if($(this).html() == "상세"){
+			$(this).html("닫기");
+		} else {
+			$(this).html("상세");
+		}
+		$(this).parent().parent().parent().find("ul").toggle();
+	})
+})
+</script>
+
+
+<script src="../../js/temp.js"></script>
+</body>
+</html>

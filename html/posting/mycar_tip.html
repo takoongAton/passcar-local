@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+	<title>PASS 자동차</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="../../css/jquery-ui.css">
+	<link rel="stylesheet" href="../../css/common.css">
+	<link rel="stylesheet" href="../../css/passcar.css">
+	<link rel="stylesheet" href="../../css/passcar_skt_lgup.css">
+	<link rel="stylesheet" href="../../css/popup.css">
+	<script src="../../js/jquery-1.12.4.min.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.min.js"></script>
+</head>
+<body>
+
+<div class="ui_popup"><!-- 기본 -->
+	<div class="ui_header">
+		<div class="inner">
+			<span class="close"><button type="button">닫기</button></span>
+		</div>
+	</div>
+
+	<div class="section">
+
+		<!-- <div class="pageTit reduction">
+			<div class="inner">
+				<h2 class="tit">감가사유와 금액</h2>
+				<div class="txtBox">
+					<div class="txt"><strong>현장 감가가 없으려면?</strong><br />
+					견적요청시 정확히 기재된 차량단점, 사고 교환부위는 감가되지 않습니다.</div>
+				</div>
+			</div>
+		</div> -->
+
+		<div class="ui_content">
+
+
+			<div class="preserveTip_wrap">
+				<div class="preserve_tit">
+					<dl>
+						<dt>자동차관리팁</dt>
+						<dd>누구나 손쉽게 할 수 있는 자동차 관리 10가지 팁!</dd>
+					</dl>
+				</div>
+				<div class="preserve_item">
+					<div class="img"><img src="../../img/common/preserve_img1.png" alt=""></div>
+					<div class="tit">1. 적정타이어 공기압 유지</div>
+					<div class="inner_txt">
+						<p>타이어 불량으로 인한 사고는 자칫 목숨을 잃을 수 있기에 수
+						시로 점검이 필요하다. 무엇보다 타이어의 공기압이 적정한지 
+						살피는 것이 중요한데 과도하게 주입되어 있으면 승차감과 그
+						립이 떨어질 수 있다. 또한, 운행 여건에 따라 타이어가 팽창할 
+						수 있으며, 작은 측면 접촉이 폭발로 이어질 가능성도 있다. 반
+						면 공기압이 지나치게 낮을 경우 편마모가 일어나기 쉽고, 연
+						비가 나빠지며 고속주행시 마찰열로 파열되기도 한다. 한 발 
+						더 나가 급브레이크나 급코너시 타이어가 벗겨지는 최악의 상
+						황을 맞을 수도 있다.</p>
+					</div>
+					
+					<div class="img"><img src="../../img/common/preserve_img2.png" alt=""></div>
+					<div class="inner_txt"><p>반면 공기압이 지나치게 낮을 경우 편마모가 일어나기 쉽고, 
+						연비가 나빠지며 고속주행시 마찰열로 파열되기도 한다. 한 발 
+						더 나가 급브레이크나 급코너시 타이어가 벗겨지는 최악의 상
+						황을 맞을 수도 있다</p></div>
+
+					<div class="box">
+						<div class="tit">외관 수리비 감가기준</div>
+						<ul>
+							<li>국산차 : 8~10만원/판</li>
+							<li>수입차 : 13~15만원/판</li>
+							<li>휠복원 : 5~10만원/휠</li>
+						</ul>
+						<p>* 단지별 수리비는 시세차이가 있을 수 있습니다.</p>
+					</div>
+
+				</div><!-- // preserve_item -->
+			</div><!-- // preserveTip_wrap -->
+
+			
+		</div><!-- // ui_content -->
+	</div><!-- // section -->
+
+</div><!-- // ui_page -->
+
+<script>
+
+/* 샘플 */
+$(".region_depth1").click(function(e){
+	$(this).toggleClass("on");
+	console.log("aaa");
+	e.preventDefault();
+	var test = $(this).next().slideToggle(100);
+})
+
+</script>
+<script src="../../js/temp.js"></script>
+</body>
+</html>

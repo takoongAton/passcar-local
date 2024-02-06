@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+	<title>PASS 자동차</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="../../css/jquery-ui.css">
+	<link rel="stylesheet" href="../../css/common.css">
+	<link rel="stylesheet" href="../../css/passcar.css">
+	<script src="../../js/jquery-1.12.4.min.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.min.js"></script>
+
+
+<style>
+/* 페에지 하단 고정 버튼 */
+.btn_fixed3 {position:relative;}
+.btn_fixed3 .inner {/* position:fixed; right:0; bottom:0; left:0; */ padding:10px 20px 0; background-color:#fff;}
+.btn_fixed3 .inner div.btn {text-align:center;}
+.btn_fixed3 .inner div.btn button {display:block; width:100%; height:52px; background-color:#222; color:#fff; border-radius:8px;}
+.btn_fixed3 .inner div.btn + div.btn button {background-color:#fff; color:#7a7a7a;}
+.btn_fixed3 .inner div.btn:last-child {margin-bottom:20px;}
+.btn_fixed3 .inner div.btn + div.btn:last-child {margin-bottom:4px;}
+.btn_fixed3 .inner div.btn button.dim,
+.btn_fixed3 .inner div.btn button.false {background-color:#a7a7a7;}
+.btn_fixed3 .inner p.txt {padding-bottom: 14px; font-size:.875em;}
+</style>
+
+
+</head>
+<body>
+<!--
+btn_fixed3 (X, btn_fixed2 (O)
+inner안에  btn은 최대 2개
+inner의 높이값을 btn_fixed2에 전달합니다.
+-->
+<div class="innerBoxV">
+
+		<div class="btn_fixed3">
+			<div class="inner">
+				<div class="btn"><button type="button">저장</button></div>
+			</div>
+		</div><!-- // btn_fixed3 -->
+
+		-----<br />
+
+		<div class="btn_fixed3">
+			<div class="inner">
+				<div class="btn"><button type="button" class="dim">다음</button></div>
+			</div>
+		</div><!-- // btn_fixed3 -->
+
+		-----<br />
+
+		<div class="btn_fixed3">
+			<div class="inner">
+				<div class="btn"><button type="button">다음</button></div>
+			</div>
+		</div><!-- // btn_fixed3 -->
+
+		-----<br />
+
+
+		<div class="btn_fixed3">
+			<div class="inner">
+				<div class="btn"><button type="button">저장</button></div>
+				<div class="btn"><button type="button">취소</button></div>
+			</div>
+		</div><!-- // btn_fixed3 -->
+
+		-----<br />
+
+
+		<div class="btn_fixed3">
+			<div class="inner">
+				<div class="not_option"><label><input type="radio" name="name"><span class="txt">선택사항이 없습니다.</span></label></div>
+				<div class="btn"><button type="button" class="dim">다음</button></div>
+			</div>
+		</div><!-- // btn_fixed3 -->
+
+		-----<br />
+
+
+		<div class="btn_fixed3">
+			<div class="inner">
+				<p class="txt">심사반려된 차량은 최대 3개월동안 저장됩니다.</p>
+				<div class="btn"><button type="button">재심사 요청하기</button></div>
+			</div>
+		</div><!-- // btn_fixed3 -->
+
+
+
+
+</div>
+
+<script src="../../js/temp.js"></script>
+</body>
+</html>

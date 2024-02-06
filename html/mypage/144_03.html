@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+	<title>PASS 자동차</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="../../css/jquery-ui.css">
+	<link rel="stylesheet" href="../../css/common.css">
+	<link rel="stylesheet" href="../../css/passcar.css">
+	<link rel="stylesheet" href="../../css/passcar_skt_lgup.css">
+	<script src="../../js/jquery-1.12.4.min.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.min.js"></script>
+</head>
+<body>
+
+<div class="ui_page">
+
+	<div class="ui_header">
+		<div class="inner">
+			<span class="prev"><button type="butto">이전</button></span>
+		</div>
+	</div><!-- // ui_header -->
+
+	<div class="section">
+		<div class="pageTit mypage">
+			<div class="inner">
+				<h2 class="tit">홍길동 님</h2>
+				<div class="txtBox">
+					<div class="btnBox">
+						<button type="button" class="left detail">차량관리<span class="arrow"></span></button>
+						<button type="button" class="left detail like">관심차량<i>3</i><span class="arrow"></span></button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="ui_content">
+
+			<div class="mypage_wrap">
+				
+				<div class="mypage_tab">
+					<div><button type="button" class="on" reg="mytab1"><span>알림내역</span></button></div>
+					<div><button type="button" reg="mytab2"><span>후기내역</span></button></div>
+				</div>
+
+				<div class="myTab_item" id="mytab1">
+					<div class="mypage_alert"><em>최대 30일</em>까지 알림내역을 확인할 수 있습니다.</div>
+					<div class="mystep_list">
+						<p class="content_nul">알림내역이 없습니다.</p>
+					</div>
+					<!-- // mystep_list -->
+					
+					
+					<div class="btn_fixed2">
+						<div class="inner">
+							<div class="btn"><button type="button"><span>닫기</span></button></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="myTab_item" id="mytab2" style="display:none;">
+					<div class="mypage_alert"><em>최대 30일</em>까지 후기내역을 확인할 수 있습니다.</div>
+					<div class="myreview_list">
+						<p class="content_nul">후기내역이 없습니다.</p>
+					</div>
+				</div>
+				
+			</div><!-- // mypage_wrap -->
+		</div><!-- // ui_content -->
+
+	</div><!-- // section -->
+
+</div><!-- // ui_page -->
+
+
+<!-- 팝업 관련 -->
+<div class="dim" style="display:none;"></div>
+
+<div class="modal_default" style="display:none;"><!-- 기본 -->
+
+	<div class="modalCon">
+		<div class="txtWrap Type1">
+			<div class="tit">등록하신 후기를 삭제하시겠습니까?</div>
+			<p class="txt">삭제된 후기는 더 이상 후기 내역에서<br />
+			확인할 수 없습니다.</p>
+		</div>
+	</div><!-- // modalCon -->
+
+	<div class="btn_group type1"><!-- type1,2 버튼 하단 간격이 다름 -->
+		<button type="button" onclick="can_test();">아니요, 닫기</button>
+		<button type="button">네, 삭제</button>
+	</div><!-- // btn_group -->
+</div><!-- // modalCon -->
+
+
+<script>
+/* 삭제요망
+버튼의 reg="mytab1",
+컨텐츠의  class="myTab_item" id="mytab1,2"
+스크립트 임의 생성.
+ */
+$(document).ready(function(){
+	$('.mypage_tab button').click(function(event){
+		console.log("test111")
+		$(".myTab_item").hide();
+	    event.preventDefault();
+	    var id_tab = $(this).attr('reg');
+	    $('.mypage_tab button').removeClass('on');
+	    $(this).addClass('on');
+	    $('#' + id_tab).show();
+	    console.log(id_tab);
+	});
+
+})
+
+
+function del_test(){
+	console.log("del_test");
+	$(".dim").css({"display" : "block"});
+	$(".modal_default").css({"display" : "block"});
+}
+
+function can_test(){
+	$(".dim").css({"display" : "none"});
+	$(".modal_default").css({"display" : "none"});
+}
+
+</script>
+
+<script src="../../js/temp.js"></script>
+</body>
+</html>

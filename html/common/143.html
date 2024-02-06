@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+	<title>PASS 자동차</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="../../css/jquery-ui.css">
+	<link rel="stylesheet" href="../../css/common.css">
+	<link rel="stylesheet" href="../../css/passcar.css">
+	<link rel="stylesheet" href="../../css/passcar_skt_lgup.css">
+	<!-- <link rel="stylesheet" href="../../css/modal.css"> -->
+	<script src="../../js/jquery-1.12.4.min.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.min.js"></script>
+	<script src="../../js/temp.js"></script>
+</head>
+<body>
+
+
+
+
+<!-- 팝업 관련 -->
+<div class="dim" style="display:block;"></div>
+
+<div class="modal_default" style="display:block;"><!-- 기본 -->
+
+	<div class="modalCon">
+		<div class="txtWrap Type3">
+			<div class="img"><img src="../../img/common/img_error.png" alt="오류" /></div>
+			<div class="tit">현재 정보를 불러올 수 없습니다.</div>
+			<p class="txt">잠시후, 다시 시도해주세요.</p>
+		</div>
+	</div><!-- // modalCon -->
+
+	<div class="btn_group type2">
+		<div class="btn"><button type="button">닫기</button></div>
+	</div><!-- // btn_group -->
+</div><!-- // modalCon -->
+
+
+<script>
+$(document).ready(function(){
+	$("button").click(function(){
+		console.log("bbb");
+	})
+});
+</script>
+
+</body>
+</html>

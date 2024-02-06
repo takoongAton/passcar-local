@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+	<title>PASS 자동차</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="../../css/jquery-ui.css">
+	<link rel="stylesheet" href="../../css/common.css">
+	<link rel="stylesheet" href="../../css/passcar.css">
+	<link rel="stylesheet" href="../../css/passcar_skt_lgup.css">
+	<script src="../../js/jquery-1.12.4.min.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.min.js"></script>
+</head>
+<body class="skt">
+
+<div class="wrap"><!-- 모달팝업시 fixed 추가 예)class="wrap fixed" -->
+
+	<header class="header">
+		<div class="ui_header">
+			<div class="inner">
+				<span class="prev"><button type="button">이전</button></span>
+				<div class="title"><strong>PASS 자동차</strong></div>
+				<!-- <span class="close"><button type="button">닫기</button></span> -->
+			</div>
+		</div>
+	</header><!-- // header -->
+
+	<section class="section">
+
+			<div class="naviFixed">
+				<div class="naviWrap">
+					<div class="navi">
+						<ul>
+							<li><a href="#g"><span>시세조회</span></a></li>
+							<li><a href="#g"><span>내차팔기</span></a></li>
+							<li class="on"><a href="#g"><span>내차사기</span></a></li>
+						</ul>
+					</div>
+					<div class="mypage"><span>my</span></div>
+				</div>
+			</div><!-- // naviFixed -->
+
+			<div class="buy_index">
+				
+				<form action="">
+				<div class="pageSearchWrap buy">
+					<div class="input search">
+						<input type="search" class="search" placeholder="모델명으로 검색해보세요!" value="아반"><!-- <button type="button"><span>검색</span></button> -->
+					</div>
+					<!-- 삭제 <div class="pageSearch">
+						<input type="text" class="search" placeholder="차량번호, 판매자, 모델명으로 검색" />
+						<button type="submit"><span>검색</span></button>
+					</div> -->
+					<div class="autocomplete_layer" style="display:none;">
+						<ul>
+							<!-- <li><p>검색 결과가 없습니다.</p></li> -->
+							<li><p>[현대] <span>아반</span>떼</p></li>
+							<li><p>[현대] 올뉴<span>아반</span>떼</p></li>
+							<li><p>[현대] <span>아반</span>떼 XD</p></li>
+							<li><p>[현대] <span>아반</span>떼</p></li>
+							<li><p>[현대] 올뉴<span>아반</span>떼</p></li>
+							<li><p>[현대] <span>아반</span>떼 XD</p></li>
+							<li><p>[현대] <span>아반</span>떼</p></li>
+							<li><p>[현대] 올뉴<span>아반</span>떼</p></li>
+							<li><p>[현대] <span>아반</span>떼 XD</p></li>
+							<li><p>[현대] <span>아반</span>떼</p></li>
+							<li><p>[현대] 올뉴<span>아반</span>떼</p></li>
+							<li><p>[현대] <span>아반</span>떼 XD</p></li>
+							<li><p>[현대] <span>아반</span>떼</p></li>
+							<li><p>[현대] 올뉴<span>아반</span>떼</p></li>
+							<li><p>[현대] <span>아반</span>떼 XD</p></li>
+							<li><p>[현대] <span>아반</span>떼</p></li>
+							<li><p>[현대] 올뉴<span>아반</span>떼</p></li>
+							<li><p>[현대] <span>아반</span>떼 XD</p></li>
+							<li><p>[현대] <span>아반</span>떼</p></li>
+							<li><p>[현대] 올뉴<span>아반</span>떼</p></li>
+							<li><p>[현대] <span>아반</span>떼 XD</p></li>
+							<li><p>[현대] <span>아반</span>떼</p></li>
+							<li><p>[현대] 올뉴<span>아반</span>떼</p></li>
+							<li><p>[현대] <span>아반</span>떼 XD</p></li>
+							<li><p>[현대] <span>아반</span>떼</p></li>
+							<li><p>[현대] 올뉴<span>아반</span>떼</p></li>
+							<li><p>[현대] <span>아반</span>떼 XD</p></li>
+							<li><p>[현대] <span>아반</span>떼</p></li>
+							<li><p>[현대] 올뉴<span>아반</span>떼</p></li>
+							<li><p>[현대] <span>아반</span>떼 XD</p></li>
+							<li><p>[현대] <span>아반</span>떼</p></li>
+							<li><p>[현대] 올뉴<span>아반</span>떼</p></li>
+							<li><p>[현대] <span>아반</span>떼 XD</p></li>
+							<li><p>[현대] <span>아반</span>떼</p></li>
+							<li><p>[현대] 올뉴<span>아반</span>떼</p></li>
+							<li><p>[현대] <span>아반</span>떼 XD</p></li>
+						</ul>
+						<div class="search_footer"><button type="button">닫기</button></div>
+					</div>
+				</div>
+				</form>
+				
+				<!-- <div class="index_addcar">
+					<div class="inner">
+						<p class="txt">이소애님 보유차량 <strong>3대</strong></p>
+						<div class="btn"><button class="add">차량추가</button></div>
+						<div class="btn" style="display:none;"><button class="change">차량추가</button></div>
+					</div>
+				</div> -->
+
+
+
+				
+
+				<div class="search_slide_wrap" style="display:none;">
+					<div class="tit">[현대]산타페 TM 바로 확인!</div>
+					<!-- 주석내용 :  최근 본 차량이 있을 경우 : 이전에 모델명 기준으로 검색했을때 
+					<div class="tit">홍길동님을 위한 맞춤 추천 차량</div>
+					<p class="txt">[현대]소나타(DN8)</p> 
+					-->
+
+					<!-- 주석내용 : 이전 예산 기준으로 검색했을때
+					<div class="tit">홍길동님을 위한 맞춤 추천 차량</div>
+					<p class="txt">500~1,000만원 [현대]소나타(DN8)</p> 
+					-->
+					<div class="list_wrap">
+						<div>
+							<ul>
+								<li onclick="">
+									<div class="thum"><img src="../../img/temp/sam_160x120.png" alt="매물사진"></div>
+									<div class="info">
+										<span>15/06식</span>
+										<span>32,070km</span>
+										<span>경기</span>
+									</div>
+									<div class="price">720만원</div>
+								</li>
+								<li onclick="">
+									<div class="thum"><img src="../../img/temp/sam_160x120.png" alt="매물사진"></div>
+									<div class="info">
+										<span>15/06식</span>
+										<span>32,070km</span>
+										<span>경기</span>
+									</div>
+									<div class="price">720만원</div>
+								</li>
+								<li onclick="">
+									<div class="thum"><img src="../../img/temp/sam_160x120.png" alt="매물사진"></div>
+									<div class="info">
+										<span>15/06식</span>
+										<span>32,070km</span>
+										<span>경기</span>
+									</div>
+									<div class="price">720만원</div>
+								</li>
+								<li onclick="">
+									<div class="thum"><img src="../../img/temp/sam_160x120.png" alt="매물사진"></div>
+									<div class="info">
+										<span>15/06식</span>
+										<span>32,070km</span>
+										<span>경기</span>
+									</div>
+									<div class="price">720만원</div>
+								</li>
+								<li onclick="">
+									<div class="thum"><img src="../../img/temp/sam_160x120.png" alt="매물사진"></div>
+									<div class="info">
+										<span>15/06식</span>
+										<span>32,070km</span>
+										<span>경기</span>
+									</div>
+									<div class="price">720만원</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="hotSearch">
+					<div class="tit">최근 본 차량 <span>더보기</span></div>
+					<p class="txt" style="display:none;">최근 검색한 차량이 없습니다.</p>
+					<div class="search_list">
+						<div class="item">
+							<dl>
+								<dt>[현대] 쏘나타(DN8)</dt>
+								<dd>연식전체 / 20,000km이상 / 1,000만원 이상</dd>
+							</dl>
+							<!-- <button type="button"><span>삭제</span></button> -->
+						</div>
+						<div class="item">
+							<dl>
+								<dt>[현대] 쏘나타(DN8)</dt>
+								<dd>연식전체 / 20,000km이상 / 1,000만원 이상</dd>
+							</dl>
+							<!-- <button type="button"><span>삭제</span></button> -->
+						</div>
+						<div class="item">
+							<dl>
+								<dt>[현대] 쏘나타(DN8)</dt>
+								<dd>연식전체 / 20,000km이상 / 1,000만원 이상</dd>
+							</dl>
+							<!-- <button type="button"><span>삭제</span></button> -->
+						</div>
+					</div>
+				</div>
+
+				<div class="spaceGray"></div>
+
+				<div class="index_info">
+					<div class="tit">추천차량</div>
+					<div class="txt">
+						<div><p>[현대] 2019 싼타페 2019 싼타페</p></div>
+						<!-- <span> /&nbsp;</span> -->
+						<div><p>평균 1,800만원</p></div>
+					</div>
+					<div class="thum_wrap">
+						<!-- <div class="img"><img src="../../img/temp/sam_266x150.png" alt="이미지" /></div> -->
+						<div class="img"><img src="https://images.carmanager.co.kr/REP/CarCodeNew/1001691.png" alt="이미지"></div>
+						<button type="button">추천차량 검색</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="innerBoxH">
+				<div class="btn_fixed">
+					<div class="inner">
+						<div class="btn"><button type="button">원하는 조건으로 검색</button></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="index_footer">
+				<div class="inner">
+					<div class="row">
+						<div class="logo"><img src="../../img/common/logo_passcar.png" alt="패스자동차 로고" /></div>
+						<span>서비스 이용약관</span>
+						<span>개인정보처리방침</span>
+					</div>
+					<p>PASS자동차는 중고차 매매의 당사자가 아니며, 상품거래 정보 및 거래에 관련한 의무와 책임은 각 판매자에게 있습니다.</p>
+				</div>
+			</div><!-- // index_footer -->
+
+	</section><!-- section -->
+
+</div><!-- // wrap -->
+
+
+<script>
+$(document).ready(function(){
+	$(".search_list button").click(function(){
+		$(this).parent().remove();
+	})
+})
+</script>
+
+<script src="../../js/temp.js"></script>
+</body>
+</html>

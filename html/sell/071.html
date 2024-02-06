@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+	<title>PASS 자동차</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="../../css/jquery-ui.css">
+	<link rel="stylesheet" href="../../css/common.css">
+	<link rel="stylesheet" href="../../css/passcar.css">
+	<link rel="stylesheet" href="../../css/passcar_skt_lgup.css">
+	<script src="../../js/jquery-1.12.4.min.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.min.js"></script>
+</head>
+<body>
+
+<div class="ui_page"><!-- 기본 -->
+
+	<div class="ui_header">
+		<div class="inner">
+			<span class="prev"><button type="button">이전</button></span>
+			<!-- <div class="title"><strong>PASS 자동차</strong></div>
+			<span class="close"><button type="button">닫기</button></span> -->
+		</div>
+	</div>
+
+	<div class="section">
+
+		<div class="ui_content">
+			<div class="sell_wrap">
+				
+				<div class="estimate_detail">
+
+					<div class="dealer_item2">
+						<div class="dealer_thum">
+							<div class="thum"><img src="../../img/common/dealer_img2.png" alt=""></div>
+							<button type="button" class="call"><span>전화걸기</span></button>
+						</div>
+						<div class="dealer_info">
+							<div class="name">홍길동 딜러</div>
+							<div class="co">전북 효자단지 / 파크모터스</div>
+							<div class="tel"><span><a href="tel:07005050505">070-0505-0505</a></span></div>
+						</div>
+						<span class="arrow"></span>
+					</div>
+		
+					<div class="pointWrap">
+						<div class="txt">평점</div>
+						<ul class="stars">
+							<li class="star selected" title="Poor" data-value="1"><span class="fa">★</span></li><li class="star selected" title="Fair" data-value="2"><span class="fa">★</span></li><li class="star selected" title="Good" data-value="3"><span class="fa">★</span></li><li class="star selected" title="Excellent" data-value="4"><span class="fa">★</span></li><li class="star" title="WOW!!!" data-value="5"><span class="fa">★</span></li>
+						</ul>
+						<div class="num">4.5</div>
+					</div>
+
+					<!-- 삭제
+					<div class="review_count">
+						<button type="button">후기 15건<span class="arrow"></span></button>
+					</div>
+					-->
+
+					<div class="contact">
+						<!-- <p class="company"><span>국민차 공항점 근무</span><span>02-123-1234</span></p> -->
+						<p class="before">이전 입찰 신청가 : 1,500만원</p>
+						<div>현재 입찰금액<strong>1,950 만원</strong></div>
+					</div>
+				</div>
+
+				<div class="dealer_alert">현재 이용제한중인 딜러입니다.<br />딜러 선택 시 주의하세요. </div>
+
+				<div class="dealer_tab">
+					<div><button type="button" class="on" reg="dealer_tab1"><span>딜러정보</span></button></div>
+					<div><button type="button" reg="dealer_tab2"><span>고객후기<em>(1건)</em></span></button></div>
+				</div>
+
+				<div class="dealerTab_item" id="dealer_tab1">
+					<div class="dealer_word">
+						<div>장사꾼이 돈이 웃는소리에 귀가 멎어버리면 고객이 우는소리를 듣지 못하는 법이다. 고객님을 언제나 내부모 형제라 생각하고 모시겠습니다.</div>
+					</div>
+					
+					<div class="review_wrap_item">
+						<div class="review_item">
+							<div class="title"><span>홍길동 딜러</span> 판매후기</div>
+							<div class="model">그랜저HG HG240 MODERN</div>
+							<ul class="img_list_inReview">
+								<li><img src="../../img/temp/img.png" alt="이미지" /></li>
+								<li><img src="../../img/temp/img.png" alt="이미지" /></li>
+								<li><img src="../../img/temp/img.png" alt="이미지" /></li>
+								<li><img src="../../img/temp/img.png" alt="이미지" /></li>
+							</ul>
+							<div class="txt">처음으로 내차를 팔아봤는데 홍길동 딜러께서 친절하고 꼼꼼하게 안내해주셔서 너무 좋았어요.</div>
+							<div class="date">
+								<span>2019.12.08</span>
+								<span>12시 10분</span>
+							</div>
+							<!-- 삭제 <div class="btn">
+								<button type="button"><span>수정</span></button>
+								<button type="button"><span>삭제</span></button>
+							</div> -->
+						</div><!-- // review_item -->
+
+						<div class="review_item">
+							<div class="title"><span>홍길동 딜러</span> 판매후기</div>
+							<div class="model">그랜저HG HG240 MODERN</div>
+							<ul class="img_list_inReview">
+								<li><img src="../../img/temp/img.png" alt="이미지" /></li>
+								<li><img src="../../img/temp/img.png" alt="이미지" /></li>
+								<li><img src="../../img/temp/img.png" alt="이미지" /></li>
+								<li><img src="../../img/temp/img.png" alt="이미지" /></li>
+							</ul>
+							<div class="txt">처음으로 내차를 팔아봤는데 홍길동 딜러께서 친절하고 꼼꼼하게 안내해주셔서 너무 좋았어요.</div>
+							<div class="date">
+								<span>2019.12.08</span>
+								<span>12시 10분</span>
+							</div>
+							<!-- 삭제 <div class="btn">
+								<button type="button"><span>수정</span></button>
+								<button type="button"><span>삭제</span></button>
+							</div> -->
+						</div><!-- // review_item -->
+					</div>
+				</div>
+
+				<div class="dealerTab_item" id="dealer_tab2" style="display:none;">
+					<div class="dealer_review_list">
+						<div class="dealer_review_item">
+							<div class="title">고객후기</div>
+							<div class="dealer_review">
+								<div class="tit">YF 소나타 2.0 프리미어 판매 고객</div>
+								<div class="rating">
+									<ul class="stars">
+										<li class="star selected"><span class="fa">★</span></li>
+										<li class="star selected"><span class="fa">★</span></li>
+										<li class="star selected"><span class="fa">★</span></li>
+										<li class="star selected"><span class="fa">★</span></li>
+										<li class="star"><span class="fa">★</span></li>
+									</ul>
+								</div>
+								<ul class="img_list_inReview">
+									<li><img src="../../img/temp/img.png" alt="이미지" /></li>
+									<li><img src="../../img/temp/img.png" alt="이미지" /></li>
+									<li><img src="../../img/temp/img.png" alt="이미지" /></li>
+									<li><img src="../../img/temp/img.png" alt="이미지" /></li>
+								</ul>
+								<p class="txt">처음으로 내차를 팔아봤는데 홍길동 딜러께서<br />친절하고 꼼꼼하게 안내해주셔서 너무 좋았어요.</p>
+								<div class="date">201909.23</div>
+							</div>
+							<div class="dealer_coment">
+								<div class="tit"><span>홍길동</span> 딜러</div>
+								<ul>
+									<li><img src="../../img/temp/sam_126x126.png" alt="대표사진"></li>
+									<li><img src="../../img/temp/sam_126x126.png" alt="대표사진"></li>
+									<li><img src="../../img/temp/sam_126x126.png" alt="대표사진"></li>
+								</ul>
+								<p class="txt">고객님! 좋은 가격으로 거래해주셔서 감사합니다. 다음에도 저에게 맡겨주십시오.</p>
+								<div class="date">2019.09.23</div>
+							</div>
+						</div>
+						
+						<div class="dealer_review_item">
+							<div class="title">고객후기</div>
+							<div class="dealer_review">
+								<div class="tit">YF 소나타 2.0 프리미어 판매 고객</div>
+								<div class="rating">
+									<ul class="stars">
+										<li class="star selected"><span class="fa">★</span></li>
+										<li class="star selected"><span class="fa">★</span></li>
+										<li class="star selected"><span class="fa">★</span></li>
+										<li class="star selected"><span class="fa">★</span></li>
+										<li class="star"><span class="fa">★</span></li>
+									</ul>
+								</div>
+								<ul class="img_list_inReview">
+									<li><img src="../../img/temp/img.png" alt="이미지" /></li>
+									<li><img src="../../img/temp/img.png" alt="이미지" /></li>
+									<li><img src="../../img/temp/img.png" alt="이미지" /></li>
+									<li><img src="../../img/temp/img.png" alt="이미지" /></li>
+								</ul>
+								<p class="txt">처음으로 내차를 팔아봤는데 홍길동 딜러께서<br />친절하고 꼼꼼하게 안내해주셔서 너무 좋았어요.</p>
+								<div class="date">201909.23</div>
+							</div>
+							<div class="dealer_coment">
+								<div class="tit">홍길동 딜러</div>
+								<ul>
+									<li><img src="../../img/temp/sam_126x126.png" alt="대표사진"></li>
+									<li><img src="../../img/temp/sam_126x126.png" alt="대표사진"></li>
+									<li><img src="../../img/temp/sam_126x126.png" alt="대표사진"></li>
+								</ul>
+								<p class="txt">고객님! 좋은 가격으로 거래해주셔서 감사합니다. 다음에도 저에게 맡겨주십시오.</p>
+								<div class="date">2019.09.23</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="btn_fixed2">
+					<div class="inner">
+						<div class="btn"><button type="button">홍길동 딜러 선택!</button></div>
+					</div>
+				</div><!-- // btn_fixed2 -->
+
+			</div><!-- // sell_wrap -->
+		</div><!-- // ui_content -->
+
+	</div><!-- // section -->
+	
+</div><!-- // ui_page -->
+
+<script>
+$(document).ready(function(){
+	$('.dealer_tab button').click(function(event){
+		$(".dealerTab_item").hide();
+		event.preventDefault();
+		var id_tab = $(this).attr('reg');
+		$('.dealer_tab button').removeClass('on');
+		$(this).addClass('on');
+		$('#' + id_tab).show();
+		console.log(id_tab);
+	});
+})
+</script>
+
+<script src="../../js/temp.js"></script>
+</body>
+</html>

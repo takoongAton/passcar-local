@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+	<title>PASS 자동차</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="../../css/jquery-ui.css">
+	<link rel="stylesheet" href="../../css/common.css">
+	<link rel="stylesheet" href="../../css/passcar.css">
+	<script src="../../js/jquery-1.12.4.min.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.min.js"></script>
+</head>
+
+<body>
+<div class="innerBoxH innerBoxV">
+
+select1_list, select1_list2 : left 간격이 다름. 이하 동일
+
+	<ul class="select1_list"><!-- 샘플 -->
+		<li class="select1_item"><label><input type="checkbox" name="name"><span class="tit">타이틀</span></label></li>
+		<li class="select1_item"><label><input type="checkbox" name="name"><span class="tit">타이틀</span><span class="txt">텍스트</span></label></li>
+		<li class="select1_item"><label><input type="checkbox" name="name"><span class="checkmark"><!-- 체크표시 --></span><span class="tit">타이틀</span></label></li>
+		<li class="select1_item"><label><input type="checkbox" name="name"><span class="checkmark"><!-- 체크표시 --></span><span class="tit">타이틀</span></label></li>
+		<li class="select1_item"><label><input type="checkbox" name="name"><span class="checkmark"></span><span class="tit">타이틀</span><span class="txt">텍스트</span></label>
+			<ul class="select1_list">
+				<li class="select1_item"><label><input type="checkbox" name="name"><span class="checkmark"></span><span class="tit">2뎁스</span><span class="txt">48,110</span></label></li>
+			</ul>
+		</li>
+	</ul>
+
+<br />--- select1_list2 -- (left 간격이 다름)<br /><br />
+
+	<ul class="select1_list2"><!-- 샘플 -->
+		<li class="select1_item"><label><input type="checkbox" name="name"><span class="tit">타이틀</span></label></li>
+		<li class="select1_item"><label><input type="checkbox" name="name"><span class="tit">타이틀</span><span class="txt">텍스트</span></label></li>
+		<li class="select1_item"><label><input type="checkbox" name="name"><span class="checkmark"><!-- 체크표시 --></span><span class="tit">타이틀</span></label></li>
+		<li class="select1_item"><label><input type="checkbox" name="name"><span class="checkmark"><!-- 체크표시 --></span><span class="tit">타이틀</span></label></li>
+		<li class="select1_item"><label><input type="checkbox" name="name"><span class="checkmark"></span><span class="tit">타이틀</span><span class="txt">텍스트</span></label>
+			<ul class="select1_list">
+				<li class="select1_item"><label><input type="checkbox" name="name"><span class="checkmark"></span><span class="tit">2뎁스</span><span class="txt">48,110</span></label></li>
+			</ul>
+		</li>
+	</ul>
+<br />
+
+-----------------
+
+	<!-- <ul class="select1_list">
+		<li class="select1_item"><label><input type="checkbox" name="name"><span class="checkmark"></span><span class="tit">전체선택</span><span class="txt">48,110</span></label></li>
+		<li class="select1_item"><label><input type="checkbox" name="name"><span class="checkmark"></span><span class="tit">그렌저IG</span><span class="txt">37,712</span></label></li>
+		<li class="select1_item"><label><input type="checkbox" name="name"><span class="checkmark"></span><span class="tit">그렌저IG 하이브리드</span><span class="txt">37,712</span></label></li>
+		<li class="select1_item"><label><input type="checkbox" name="name"><span class="checkmark"></span><span class="tit">그렌저HG</span><span class="txt">37,712</span></label>
+			<ul class="select1_list">
+				<li class="select1_item"><label><input type="checkbox" name="name"><span class="checkmark"></span><span class="tit">전체선택</span><span class="txt">48,110</span></label></li>
+				<li class="select1_item"><label><input type="checkbox" name="name"><span class="checkmark"></span><span class="tit">그렌저IG</span><span class="txt">37,712</span></label></li>
+				<li class="select1_item"><label><input type="checkbox" name="name"><span class="checkmark"></span><span class="tit">그렌저IG 하이브리드</span><span class="txt">37,712</span></label></li>
+				<li class="select1_item"><label><input type="checkbox" name="name"><span class="checkmark"></span><span class="tit">그렌저HG</span><span class="txt">37,712</span></label></li>
+			</ul>
+		</li>
+	</ul> -->
+<br />
+-----------------
+<br /><br />
+
+	<!--
+	<ul class="select1_list2">
+		<li class="select1_item"><label><input type="checkbox" name="name"><span class="checkmark"></span><span class="tit">전체선택</span><span class="txt">48,110</span></label></li>
+		<li class="select1_item"><label><input type="checkbox" name="name"><span class="checkmark"></span><span class="tit">그렌저IG</span><span class="txt">37,712</span></label></li>
+		<li class="select1_item"><label><input type="checkbox" name="name"><span class="checkmark"></span><span class="tit">그렌저IG 하이브리드</span><span class="txt">37,712</span></label></li>
+		<li class="select1_item"><label><input type="checkbox" name="name"><span class="checkmark"></span><span class="tit">그렌저HG</span><span class="txt">37,712</span></label>
+			<ul class="select1_list">
+				<li class="select1_item"><label><input type="checkbox" name="name"><span class="checkmark"></span><span class="tit">전체선택</span><span class="txt">48,110</span></label></li>
+				<li class="select1_item"><label><input type="checkbox" name="name"><span class="checkmark"></span><span class="tit">그렌저IG</span><span class="txt">37,712</span></label></li>
+				<li class="select1_item"><label><input type="checkbox" name="name"><span class="checkmark"></span><span class="tit">그렌저IG 하이브리드</span><span class="txt">37,712</span></label></li>
+				<li class="select1_item"><label><input type="checkbox" name="name"><span class="checkmark"></span><span class="tit">그렌저HG</span><span class="txt">37,712</span></label></li>
+			</ul>
+		</li>
+	</ul>
+-->
+</div>
+
+<script src="../../js/temp.js"></script>
+</body>
+</html>

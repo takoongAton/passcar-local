@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+	<title>PASS 자동차</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="../../css/jquery-ui.css">
+	<link rel="stylesheet" href="../../css/common.css">
+	<link rel="stylesheet" href="../../css/passcar.css">
+	<link rel="stylesheet" href="../../css/passcar_skt_lgup.css">
+	<link rel="stylesheet" href="../../css/slick.css">
+	<script src="../../js/jquery-1.12.4.min.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.min.js"></script>
+	<script src="../../js/slick.min.js"></script>
+
+	<script src="../../js/owl.carousel.js"></script>
+	<link rel="stylesheet" href="../../css/owl.carousel.css">
+	<link rel="stylesheet" href="../../css/owl.theme.default.css">
+</head>
+<body>
+
+<div class="ui_page"><!-- ui_page, ui_popup은 z-index값이 다릅니다. -->
+
+	<div class="ui_header">
+		<div class="inner">
+			<span class="prev"><button type="butto">이전</button></span>
+			<div class="title"><strong>PASS 자동차</strong></div>
+			<!-- <span class="close"><button type="button">닫기</button></span> -->
+		</div>
+	</div><!-- // ui_header -->
+
+
+	<div class="section">
+		<div class="pageTit carTit">
+			<p class="number">12가 1234</p>
+			<h2 class="tit">[현대] 그랜저 HG 3.0 익스클루시브이런젠장</h2>
+			<div class="price">1,220만원</div>
+			<div class="icon">
+				<!-- <button type="button" class="like">좋아요</button> -->
+				<label class="like">
+					<input type="checkbox">
+					<span class="checkmark">좋아요</span>
+				</label>
+				<button type="button" class="share">공유하기</button>
+			</div>
+		</div>
+
+		<div class="ui_content">
+
+			<div class="buy_wrap">
+				<div class="buy_info">
+					<div class="img">
+						<ul class="imgSlider owl-carousel">
+							<li><img src="../../img/temp/img_375x280.png" alt="이미지" /></li>
+							<li><img src="../../img/temp/img_375x280.png" alt="이미지" /></li>
+							<li><img src="../../img/temp/img_375x280.png" alt="이미지" /></li>
+							<li><img src="../../img/temp/img_375x280.png" alt="이미지" /></li>
+							<li><img src="../../img/temp/img_375x280.png" alt="이미지" /></li>
+						</ul>
+						<div class="slider-counter"></div>
+						<span class="trouble">무사고</span>
+					</div>
+					<div class="info">
+						<dl>
+							<dt><p><span>2014년</span></p></dt>
+							<dd>차량 연식</dd>
+						</dl>
+						<dl>
+							<dt><p><span>14.4만Km</span></p></dt>
+							<dd>주행거리</dd>
+						</dl>
+						<dl>
+							<dt><p><span>2회</span></p></dt>
+							<dd>사고이력</dd>
+						</dl>
+					</div>
+				</div><!-- // buy_info -->
+
+				<div class="spaceGray"></div>
+
+				<div class="buy_detail_view">
+					<div class="tit">AI시세 안전구간</div>
+					<div class="txt"><p>1,170~1,500만원</p></div>
+					<!--
+					<dl class="price_txt">
+						<dt>시세평가</dt>
+						<dd><span class="middle">적정</span></dd>
+					</dl>
+					-->
+					<div class="con">
+						<div class="barType4_wrap">
+							<div class="barType4">
+								<!-- <span class="min">2,542</span> -->
+								<div class="bar">
+									<div class="average" style="left:30%; right:15%;"><p>1,170~1,500만원</p></div>
+									<div class="my" style="left:65%;">
+										<p>내차1,400</p>
+									</div>
+								</div>
+								<!-- <span class="max">7,454</span> -->
+								<div class="price_section">
+									<span>1,000</span>
+									<span>1,150</span>
+									<span>1,300</span>
+									<span>1,450</span>
+									<span>1,600</span>
+								</div>
+							</div>
+						</div><!-- // barType4_wrap -->
+
+					</div>
+				</div>
+
+				<div class="innerBoxH">
+					<div class="bnr_wrap">
+						<div class="bnr_inner">
+							<dl class="bnr_type1">
+								<dd class="logo"><img src="../../img/temp/bnr_logo.png" alt="아주캐피탈" /></dd>
+								<dt class="tit">지금 이 차를 구매하고 싶다면,</dt>
+								<dd class="txt1">모바일로 간편하고 빠르게<br />내통장으로 바로 입금!</dd>
+								<!-- <dd class="txt2">신용도 영향없음.</dd> -->
+								<dd class="txt2">신용도 영향없는 대출 조회!</dd>
+							</dl>
+							<span class="arrow"></span>
+						</div>
+					</div>
+				</div>
+
+				<div class="buy_detail_view">
+					<div class="tit">성능점검 정보</div>
+					<div class="txt">
+						<p>무사고</p>
+						<!-- <button type="button">성능점검기록부 확인</button> -->
+						<button type="button" class="not">성능점검기록부 없음</button>
+					</div>
+					<div class="con" style="display:none;">
+						<div class="table1_list">
+							<dl class="table1_item">
+								<dt><span class="tit">성능평가</span></dt>
+								<dd class="on"><span class="txt">무사고</span></dd>
+							</dl>
+							<dl class="table1_item">
+								<dt><span class="tit">침수여부</span></dt>
+								<dd><span class="txt">없음</span></dd>
+							</dl>
+							<dl class="table1_item">
+								<dt><span class="tit">사고여부</span></dt>
+								<dd><span class="txt">없음</span></dd>
+							</dl>
+							<dl class="table1_item">
+								<dt><span class="tit">불법구조변경</span></dt>
+								<dd><span class="txt">없음</span></dd>
+							</dl>
+							<dl class="table1_item">
+								<dt><span class="tit">주요장치상태</span></dt>
+								<dd><span class="txt">1개 확인필요</span></dd>
+							</dl>
+						</div>
+					</div>
+				</div>
+
+				<div class="buy_detail_view">
+					<div class="tit">사고상세내역</div>
+					<div class="con">
+						<div class="con_gray">내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다.</div>
+					</div>
+				</div>
+
+				<div class="buy_detail_view">
+					<div class="tit">기본정보</div>
+					<div class="txt">
+						<p>경기 수원시 권선구 위치</p>
+					</div>
+					<div class="con">
+						<div class="table1_list">
+							<dl class="table1_item small">
+								<dt><span class="tit">차량번호</span></dt>
+								<dd><span class="txt">12가1234</span></dd>
+							</dl>
+							<dl class="table1_item small">
+								<dt><span class="tit">등록번호</span></dt>
+								<dd><span class="txt">1234134</span></dd>
+							</dl>
+							<!-- <dl class="table1_item">
+								<dt><span class="tit">차종/배기량</span></dt>
+								<dd><span class="txt">준중형/2000cc</span></dd>
+							</dl> -->
+							<dl class="table1_item small">
+								<dt><span class="tit">연료/변속기</span></dt>
+								<dd><span class="txt">휘발류/LGP겸/오토</span></dd>
+							</dl>
+							<!-- <dl class="table1_item">
+								<dt><span class="tit">연비/연비등급</span></dt>
+								<dd><span class="txt">없음</span></dd>
+							</dl> -->
+							<dl class="table1_item small">
+								<dt><span class="tit">색상</span></dt>
+								<dd><span class="txt">흰색</span></dd>
+							</dl>
+						</div>
+					</div>
+				</div><!-- // buy_detail_view -->
+
+				<div class="buy_detail_view">
+					<div class="tit">옵션 정보</div>
+					<div class="txt">
+						<p>주요옵션</p>
+						<button type="button">모든 옵션정보 확인</button>
+					</div>
+					<div class="con">
+						<div class="list-type2">
+							<ul class="col3 option2">
+								<li class="on"><label><span class="checkmark blackbox"></span><span class="txt">블랙박스</span></label></li>
+								<li><label><span class="checkmark navi"></span><span class="txt">네비게이션</span></label></li>
+								<li class="on"><label><span class="checkmark sunroof"></span><span class="txt">썬루프</span></label></li>
+								<li><label><span class="checkmark rear"></span><span class="txt">후방카메라</span></label></li>
+								<li><label><span class="checkmark sensor"></span><span class="txt">전/후방감지센서</span></label></li>
+								<!-- <li><label><span class="checkmark breakaway"></span><span class="txt">차선이탈방지</span></label></li> -->
+								<li><label><span class="checkmark hipass"></span><span class="txt">하이패스</span></label></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="txt">
+						<p>추가옵션 정보</p>
+					</div>
+					<div class="car_info_txt" style="display:block;">네비게이션/후방카메라</div>
+				</div><!-- // buy_detail_view -->
+
+				<div class="spaceGray"></div>
+				<div class="buy_detail_view">
+					<div class="tit">차량설명</div>
+					<div class="txt">
+						<p>상세설명 있음</p>
+						<button type="button" class="car_info">상세설명 확인</button>
+					</div>
+					<div class="car_info_txt">완전 무사고, 일반부품까지 6개월 직접 보증합니다.</div>
+				</div>
+				<!-- // buy_detail_view -->
+
+				<!-- 삭제
+				<div class="spaceGray"></div>
+				<div class="buy_detail_view">
+					<div class="tit">사고내역</div>
+					<div class="txt">
+						<p>사고내역 있음</p>
+						<button type="button" class="car_info">사고내역 확인</button>
+					</div>
+					<div class="car_info_txt">완전 무사고, 일반부품까지 6개월 직접 보증합니다.</div>
+				</div> -->
+				<!-- // buy_detail_view -->
+
+				<div class="spaceGray"></div>
+
+				<div class="buy_detail_view">
+					<div class="tit">판매자 정보</div>
+					<div class="txt">
+						<p>홍길동 딜러
+							<span class="txt">010-3899-0307</span>
+						</p>
+					</div>
+					<!-- <div class="seller_info">
+						<div class="thum"><img src="../../img/common/icon_dealer.png" alt="딜러기본이미지 96x96"></div>
+						<div class="info">
+							<dl>
+								<dt>판매자 정보</dt>
+								<dd>홍길동 딜러<span>(ABC모터스)</span></dd>
+							</dl>
+						</div>
+					</div> -->
+					
+					<!-- 삭제
+					<div class="pointWrap">
+						<div class="txt">평점</div>
+						<div class="icon">
+							<span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
+						</div>
+						<div class="num">4.5</div>
+						<div class="review">후기 15건</div>
+					</div>
+					-->
+
+
+					<div class="con">
+						<div class="table1_list">
+							<!-- <dl class="table1_item small">
+								<dt><span class="tit">박수만</span></dt>
+								<dd><span class="txt">010-3899-0307</span></dd>
+							</dl> -->
+							<dl class="table1_item small">
+								<dt><span class="tit">업체명</span></dt>
+								<dd><span class="txt">경기 수원 / ㈜스카이</span></dd>
+							</dl>
+							<dl class="table1_item small">
+								<dt><span class="tit">업체 연락처</span></dt>
+								<dd><span class="txt">031-295-9696</span></dd>
+							</dl>
+						</div>
+					</div>
+
+					<!-- <div class="table1_list">
+						<dl class="table1_item">
+							<dt><span class="tit">종사원증번호</span></dt>
+							<dd><span class="txt">AB12-12345</span></dd>
+						</dl>
+						<dl class="table1_item">
+							<dt><span class="tit">딜러연락처</span></dt>
+							<dd><span class="txt">123-13-123</span></dd>
+						</dl>
+						<dl class="table1_item">
+							<dt><span class="tit">조합정보</span></dt>
+							<dd><span class="txt">xxx조합</span></dd>
+						</dl>
+						<dl class="table1_item">
+							<dt><span class="tit">위치</span></dt>
+							<dd><span class="txt">경기 수원시 권선구 중부대로<br />23-3 함덕동</span></dd>
+						</dl>
+						<dl class="table1_item">
+							<dt><span class="tit">연락처</span></dt>
+							<dd><span class="txt">050-1234-1324</span></dd>
+						</dl>
+					</div> -->
+
+					<!-- <div class="boxbox">
+						<p>고객님의 편리한 시간언제라도 고객님에게 고객님에게 고객님에게 고객님에게 고객님에게 고객님에게 고객님에게<br />달려가서 최선을 다하겠습니다!<br />고객님의 편리한 시간언제라도 고객님에게<br />달려가서 최선을 다하겠습니다!<br />고객님의 편리한 시간언제라도 고객님에게<br />달려가서 최선을 다하겠습니다!<br />고객님의 편리한 시간언제라도 고객님에게<br />달려가서 최선을 다하겠습니다!<br /><br />감사합니다.<br /></p>
+						<button type="button"><span>더보기</span></button>
+					</div> -->
+
+					<ul class="qna">
+						<li><a href="#g">이 차량의 총 구매비용은 얼마나 되나요?</a></li>
+						<li><a href="#g">나의 보험금은 얼마나 되나요?</a></li>
+					</ul>
+
+				</div><!-- // buy_detail_view -->
+
+
+				<div class="btn_fixed2">
+					<div class="inner">
+						<div class="btn"><button type="button">문의하기</button></div>
+					</div>
+				</div><!-- // btn_fixed2 -->
+
+
+			</div><!-- // buy_wrap -->
+
+		</div><!-- // ui_content -->
+	</div><!-- // section -->
+
+</div><!-- // ui_page -->
+
+
+<div class="buy_detail_item">
+	<div class="car_item">
+		<div class="thum"><img src="../../img/temp/sam_126x126.png" alt="대표사진"></div>
+		<div class="info">
+			<div class="tit">[현대] 엑센트 Smart Special 4doors [현대] 엑센트 Smart Special 4doors</div>
+			<div class="txtWrap">
+				<p class="number">18/09식 · 149,370km · 경북</p>
+				<p class="price">1,220만원</p>
+			</div>
+			<button type="button" class="like on">좋아요</button>
+			<!-- <label class="like">
+				<input type="checkbox">
+				<span class="checkmark">좋아요</span>
+			</label> -->
+		</div>
+	</div>
+</div>
+
+<script>
+$(window).scroll(function(event){ 
+    var srcoll_position = $(window).scrollTop();
+    if(srcoll_position > $('body').outerHeight()){
+    	$('.buy_detail_item').addClass('on');
+    }else{
+        $('.buy_detail_item').removeClass('on');
+    }
+});
+</script>
+
+<script type="text/javascript">
+
+	$(".car_info").click(function(){
+		$(".car_info_txt").slideToggle(100);
+	})
+
+	/*$(".boxbox button").click(function(){
+		$(".boxbox p").toggleClass("on");
+		$(this).toggleClass("on")
+	})*/
+
+
+
+
+	/*$('.imgSlider').on('init', function(event, slick) {
+		$(this).append('<div class="slick-counter"><span class="current"></span>/<span class="total"></span></div>');
+		$('.current').text(slick.currentSlide + 1);
+		$('.total').text(slick.slideCount);
+	}) .slick({
+		autoplay: true,
+		autoplaySpeed: 5000,
+		infinite: true,
+		arrows: false,
+		dots:false,
+	})
+	.on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+		$('.current').text(nextSlide + 1);
+	})*/
+
+	/*$(".owl-carousel").owlCarousel();*/
+	/*var owl = $('.imgSlider');
+	owl.owlCarousel({
+		items: 1,
+		autoplay:true,
+		nav: true,
+		loop: true,
+		dots: false
+	})*/
+
+
+$('.imgSlider').on('initialized.owl.carousel changed.owl.carousel', function(e) {
+	if (!e.namespace) {
+		return;
+	}
+	var carousel = e.relatedTarget;
+	$('.slider-counter').text(carousel.relative(carousel.current()) + 1 + '/' + carousel.items().length);
+}).owlCarousel({
+	items: 1,
+	loop:true,
+	margin:0,
+	nav:true,
+	dots:false
+});
+</script>
+
+<script src="../../js/temp.js"></script>
+</body>
+</html>

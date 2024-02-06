@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+	<title>PASS 자동차</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="../../css/jquery-ui.css">
+	<link rel="stylesheet" href="../../css/common.css">
+	<link rel="stylesheet" href="../../css/passcar.css">
+	<link rel="stylesheet" href="../../css/passcar_skt_lgup.css">
+	<script src="../../js/jquery-1.12.4.min.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.min.js"></script>
+</head>
+<body class="skt">
+
+<div class="wrap"><!-- 모달팝업시 fixed 추가 예)class="wrap fixed" -->
+
+	<header class="header">
+		<div class="ui_header">
+			<div class="inner">
+				<span class="prev"><button type="button">이전</button></span>
+				<div class="title"><strong>PASS 자동차</strong></div>
+				<!-- <span class="close"><button type="button">닫기</button></span> -->
+				<span class="btn_more"><button type="button">보기</button></span>
+				<div class="gnb">
+					<ul >
+						<li>알림설정</li>
+						<li>이용약관 및 정책</li>
+						<li>부가서비스 설정/해지</li>
+						<li>문의하기</li>
+						<li>나가기</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header><!-- // header -->
+
+	<section class="section">
+
+			<div class="naviFixed">
+				<div class="naviWrap">
+					<div class="navi">
+						<ul>
+							<li><a href="#g"><span>시세조회</span></a></li>
+							<li class="on"><a href="#g"><span>내차팔기</span></a></li>
+							<li><a href="#g"><span>내차사기</span></a></li>
+						</ul>
+					</div>
+					<div class="mypage"><span>my</span></div>
+				</div>
+			</div>
+
+	<!-- <div class="index_addcar">
+		<div class="inner">
+			<p class="txt">이소애님 보유차량 <strong>3건</strong></p>
+			<div class="btn">
+				<button type="button" class="add">차량추가</button>
+				<button type="button" class="change" style="display:none;">차 변경</button>
+			</div>
+		</div>
+	</div> -->
+
+			<div class="sell_index before">
+
+				<!-- <div class="info2">
+					<div class="tit">
+						<span>평일 10:00 - 15:30</span>
+						<strong>실시간 비교견적, 최고가 판매 도전!</strong>
+					</div>
+					<p class="txt">
+						<span>허위입찰 없는 전국 PASS 인증딜러</span>
+						<span>오프라인 대비 10% 높은가격</span>
+					</p>
+					<button type="button"><span>내차팔기 시작하기</span></button>
+				</div> -->
+
+				<div class="info3">
+					<div class="inwrap">
+						<div class="tit">비교견적으로<strong>내차가격 UP!</strong></div>
+						<p class="txt">전화상담없이 간편하게 견적받으세요</p>
+						<div class="btn"><button type="button"><span>지금바로 견적 받기</span></button></div>
+						<div class="img"></div>	
+					</div>
+				</div>
+
+				<!-- <div class="in_dealer_wrap2">
+					<div class="area">서울특별시</div>
+					<div class="tit_wrap">
+						<div class="tit">인증딜러 소개</div>
+						<span>지역선택</span>
+					</div>
+				
+					<div class="dealer_list2 scroll_wrapper">
+						<div class="scroll_wrap">
+							<div class="item scroll_item">
+								<div class="thum"><img src="../../img/temp/sam_49x60_1.png" alt="딜러사진" /></div>
+								<div>
+									<div class="point">
+										<ul class="stars">
+											<li class="star selected"><span class="fa">★</span></li>
+											<li class="star selected"><span class="fa">★</span></li>
+											<li class="star selected"><span class="fa">★</span></li>
+											<li class="star selected"><span class="fa">★</span></li>
+											<li class="star"><span class="fa">★</span></li>
+										</ul>
+									</div>
+									<div class="name">박새로이 딜러</div>
+									<div class="co">경기 국민차매매단지(부천점) 경기 국민차매매단지(부천점)</div>
+								</div>
+							</div>
+							<div class="item scroll_item">
+								<div class="thum"><img src="../../img/temp/sam_49x60_2.png" alt="딜러사진" /></div>
+								<div>
+									<div class="point">
+										<ul class="stars">
+											<li class="star selected"><span class="fa">★</span></li>
+											<li class="star selected"><span class="fa">★</span></li>
+											<li class="star selected"><span class="fa">★</span></li>
+											<li class="star selected"><span class="fa">★</span></li>
+											<li class="star"><span class="fa">★</span></li>
+										</ul>
+									</div>
+									<div class="name">박새로이 딜러</div>
+									<div class="co">경기 국민차매매단지(부천점)</div>
+								</div>
+							</div>
+							<div class="item scroll_item">
+								<div class="thum"><img src="../../img/temp/sam_49x60_1.png" alt="딜러사진" /></div>
+								<div>
+									<div class="point">
+										<ul class="stars">
+											<li class="star selected"><span class="fa">★</span></li>
+											<li class="star selected"><span class="fa">★</span></li>
+											<li class="star selected"><span class="fa">★</span></li>
+											<li class="star selected"><span class="fa">★</span></li>
+											<li class="star"><span class="fa">★</span></li>
+										</ul>
+									</div>
+									<div class="name">박새로이 딜러</div>
+									<div class="co">경기 국민차매매단지(부천점)</div>
+								</div>
+							</div>
+							<div class="item scroll_item">
+								<div class="thum"><img src="../../img/temp/sam_49x60_1.png" alt="딜러사진" /></div>
+								<div>
+									<div class="point">
+										<ul class="stars">
+											<li class="star selected"><span class="fa">★</span></li>
+											<li class="star selected"><span class="fa">★</span></li>
+											<li class="star selected"><span class="fa">★</span></li>
+											<li class="star selected"><span class="fa">★</span></li>
+											<li class="star"><span class="fa">★</span></li>
+										</ul>
+									</div>
+									<div class="name">박새로이 딜러</div>
+									<div class="co">경기 국민차매매단지(부천점)</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div> --><!-- // in_dealer_wrap2 -->
+
+				<div class="sell_index_faq">
+					<div class="tit">자주하는 질문</div>
+					<div class="item">
+						<div class="quest">
+							<div>
+								<span>질문</span>
+								<p>내차팔기는 어떻게 진행되나요?</p>
+							</div>
+						</div>
+						<div class="ans">
+							<div>
+								<span>답변</span>
+								<div>
+									내차팔기는 <i><strong>차량심사</strong>→<strong>견적진행</strong>→<strong>검차</strong>→<strong>판매결정</strong></i> 순으로 진행됩니다.<br /><br />
+
+									<strong>차량심사</strong> : 차량 설명과 차량 사진의 정상여부를 판단하여, 관리자가 평일 24시간 이내 심사를 진행합니다.<br />
+
+									<strong>견적진행</strong> : 당일 오전 10시까지 심사 완료된 건에 한하여, 오전 10시부터 오후 3시 30분까지 진행되고, 최종 금액은 오후 3시 30분 견적 종료 후 확인하실 수 있습니다.<br />
+
+									* 주말/공휴일 신청 건은 익 영업일에 진행됩니다.<br />
+
+									<strong>검차</strong> : 고객님이 선택한 딜러가 5일 내 직접 방문하여 무료로 검차를 진행합니다.<br />
+
+									<strong>판매결정</strong> : 검차내역과 감가사유를 통해, 최종 판매금액를 확인하고 판매를 결정합니다.
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="quest">
+							<div>
+								<span>질문</span>
+								<p>별도로 비용이 발생하는 부분이 있나요?</p>
+							</div>
+						</div>
+						<div class="ans">
+							<div>
+								<span>답변</span>
+								<div>내차팔기에서 진행되는 모든 과정은 고객님께 무료로 제공됩니다.</div>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="quest">
+							<div>
+								<span>질문</span>
+								<p>견적 가격이 마음에 들지 않을 경우, 어떻게 하나요?</p>
+							</div>
+						</div>
+						<div class="ans">
+							<div>
+								<span>답변</span>
+								<div>내차팔기를 신청하는 과정에서 가격이 마음에 들지 않을 경우, 견적 취소를 통해 견적 서비스를 중단 할 수 있습니다.<br />
+								이 후, 재심사 과정을 통해 재견적 요청이 가능하나 매 견적 신청 시마다 견적 가격은 달라질 수 있다는 점 참고하세요!</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				
+				<!-- <div class="in_dealer_wrap">
+					<div class="tit">신뢰도 100% 인증딜러를 소개합니다.</div>
+					<div class="list_wrap">
+						<div>
+							<ul>
+								<li onclick="">
+									<div class="thum"><img src="../../img/temp/sam_in.jpg" alt="딜러 사진"></div>
+									<div class="name">
+										<span>홍길동 딜러</span>
+										<span>경력6년차</span>
+									</div>
+									<div class="co">경기 국민차매매단지(부천점)</div>
+								</li>
+								<li onclick="">
+									<div class="thum"><img src="../../img/temp/sam_120x180.png" alt="딜러 사진"></div>
+									<div class="name">
+										<span>홍길동 딜러</span>
+										<span>경력6년차</span>
+									</div>
+									<div class="co">경기 국민차매매단지(부천점)</div>
+								</li>
+								<li onclick="">
+									<div class="thum"><img src="../../img/temp/sam_in.jpg" alt="딜러 사진"></div>
+									<div class="name">
+										<span>홍길동 딜러</span>
+										<span>경력6년차</span>
+									</div>
+									<div class="co">경기 국민차매매단지(부천점)</div>
+								</li>
+								<li onclick="">
+									<div class="thum"><img src="../../img/temp/sam_180x120.png" alt="딜러 사진"></div>
+									<div class="name">
+										<span>홍길동 딜러</span>
+										<span>경력6년차</span>
+									</div>
+									<div class="co">경기 국민차매매단지(부천점)</div>
+								</li>
+								<li onclick="">
+									<div class="thum"><img src="../../img/temp/sam_120x180.png" alt="딜러 사진"></div>
+									<div class="name">
+										<span>홍길동 딜러</span>
+										<span>경력6년차</span>
+									</div>
+									<div class="co">경기 국민차매매단지(부천점)</div>
+								</li>
+								<li onclick="">
+									<div class="thum"><img src="../../img/temp/sam_in.jpg" alt="딜러 사진"></div>
+									<div class="name">
+										<span>홍길동 딜러</span>
+										<span>경력6년차</span>
+									</div>
+									<div class="co">경기 국민차매매단지(부천점)</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div> -->
+
+				<!-- <div class="spaceGray"></div>
+				<div class="afterStepWrap">
+					<div class="after_wrap">
+						<div class="tit">내차팔기는 이렇게 진행돼요!</div>
+						<div class="after_list">
+							<dl class="after_item">
+								<dt><span>1</span>차량조회</dt>
+								<dd>소유하신 차량번호를 입력하세요.</dd>
+							</dl>
+							<dl class="after_item">
+								<dt><span>2</span>차량등록</dt>
+								<dd>차량정보를 자세히 입력하세요.</dd>
+							</dl>
+							<dl class="after_item">
+								<dt><span>3</span>차량심사</dt>
+								<dd>24시간 내 차량심사가 완료됩니다.</dd>
+							</dl>
+							<dl class="after_item">
+								<dt><span>4</span>차량견적 진행</dt>
+								<dd>실시간 비교견적이 진행됩니다.<br />(10:00-15:30/주말 및 공휴일 제외)</dd>
+							</dl>
+							<dl class="after_item">
+								<dt><span>5</span>딜러 선택 및 예약</dt>
+								<dd>견적완료 시 24시간 내 마음에 드는 딜러를 선택해 주세요.</dd>
+							</dl>
+							<dl class="after_item">
+								<dt><span>6</span>상세견적 진행 및 검차</dt>
+								<dd>선택된 딜러가 5일내 방문하여 검차합니다.</dd>
+							</dl>
+							<dl class="after_item">
+								<dt><span>7</span>판매완료</dt>
+								<dd>계약금액과 대금지급이 이루어집니다.</dd>
+							</dl>
+						</div>
+					</div>
+				</div> -->
+
+				<div class="innerBoxH">
+					<div class="btn_fixed">
+						<div class="inner">
+							<div class="btn"><button type="button" class="ok">시세보다 정확한 내차팔기</button></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="index_footer">
+					<div class="inner">
+						<div class="row">
+							<div class="logo"><img src="../../img/common/logo_passcar.png" alt="패스자동차 로고" /></div>
+							<span>서비스 이용약관</span>
+							<span>개인정보처리방침</span>
+						</div>
+						<p>PASS자동차는 중고차 매매의 당사자가 아니며, 상품거래 정보 및 거래에 관련한 의무와 책임은 각 판매자에게 있습니다.</p>
+					</div>
+				</div><!-- // index_footer -->
+
+			</div><!-- // sell_index before -->
+
+			<div class="sell_index after" style="display:none;">
+				<div class="sell_ing">
+					<dl>
+						<dt>판매차량</dt>
+						<dd>총 3건이 진행중입니다.</dd>
+					</dl>
+					<a href="#"><span>+</span>차량추가</a>
+				</div>
+
+				<div class="sell_my_step">
+					<div class="item">
+						<div class="thum"><img src="../../img/temp/sam_126x126.png" alt="대표사진"></div>
+						<div class="info">
+							<div class="tit"><span class="ing">승인대기</span><span>견적비교</span><span>판매요청</span></div>
+							<div class="txtWrap">
+								<p class="number">12가1234</p>
+								<p class="txt1">대기번호 243번</p>
+								<p class="txt2">7월 29일(월) 18시 전 승인예정이에요.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="item">
+						<div class="thum"><img src="../../img/temp/sam_126x126.png" alt="대표사진"></div>
+						<div class="info">
+							<div class="tit"><span class="ing">견적진행 중</span><span>판매요청</span></div>
+							<div class="txtWrap">
+								<p class="number">12가1234 (9명 입찰)</p>
+								<p class="txt1">최고 <span>1,800</span>만원 / 최저 <span>1,200</span>만원</p>
+								<p class="txt2">지금까지 딜러 136명이 조회했어요.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="item">
+						<div class="thum"><img src="../../img/temp/sam_126x126.png" alt="대표사진"></div>
+						<div class="info">
+							<div class="tit"><span class="ing">견적완료</span><span>판매요청</span></div>
+							<div class="txtWrap">
+								<p class="number">12가1234 (9명 입찰)</p>
+								<p class="txt1">최고 <span>1,800</span>만원 / 최저 <span>1,200</span>만원</p>
+								<p class="txt2">119시간 59분 내 판매요청이 가능해요</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="item">
+						<div class="thum"><img src="../../img/temp/sam_126x126.png" alt="대표사진"></div>
+						<div class="info">
+							<div class="tit"><span class="ing">판매요청</span></div>
+							<div class="txtWrap">
+								<p class="number">12가1234</p>
+								<p class="txt1">최고 <span>1,800</span>만원 / 홍길동 대표선택</p>
+								<p class="txt2">8월 3일(토) 방문드릴 예정이에요.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="item">
+						<div class="thum"><img src="../../img/temp/sam_126x126.png" alt="대표사진"></div>
+						<div class="info">
+							<div class="tit"><span class="ing">등록중</span></div>
+							<div class="txtWrap">
+								<p class="number">12가1234</p>
+								<p class="txt1"><span>37</span>% 진행중</p>
+								<p class="txt2">1분이면 높은 가격에 팔 수 있어요.</p>
+							</div>
+						</div>
+					</div>
+					<div class="go_new"><a href="#g">새 견적 요청하기+</a></div>
+				</div>
+
+			</div><!-- // sell_index after -->
+
+
+	</section><!-- section -->
+
+</div><!-- // wrap -->
+
+
+<script>
+$(document).ready(function(){
+	$(".ui_header span.btn_more").on("click", function(){
+		$(".gnb").show();
+	})
+	$(".gnb li:last-child").on("click", function(){
+		$(".gnb").hide();
+	})
+
+	$(".sell_index_faq .quest").on("click", function(){
+		$(this).parent().toggleClass("on");
+	})
+})
+</script>
+
+<script src="../../js/temp.js"></script>
+</body>
+</html>

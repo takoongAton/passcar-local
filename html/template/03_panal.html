@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+	<title>PASS 자동차</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="../../css/jquery-ui.css">
+	<link rel="stylesheet" href="../../css/common.css">
+	<link rel="stylesheet" href="../../css/passcar.css">
+	<script src="../../js/jquery-1.12.4.min.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.min.js"></script>
+
+<style>
+.dealer_item div.dealer_thum div.thum {position:relative; border-radius:100%; overflow:hidden;}
+.dealer_item div.dealer_thum div.thum img {position:absolute; width:auto; height:auto; max-width:none; border-radius:0;}
+
+.dealer_item2 div.dealer_thum div.thum {position:relative; border-radius:100%; overflow:hidden;}
+.dealer_item2 div.dealer_thum div.thum img {position:absolute; width:auto; height:auto; max-width:none; border-radius:0;}
+</style>
+
+</head>
+
+<body>
+<div class="innerBoxH innerBoxV">
+
+
+
+	<div class="dealer_list">
+
+		<div class="dealer_item">
+			<div class="dealer_thum">
+				<div class="thum"><img src="https://d3kxs6kpbh59hp.cloudfront.net/community/COMMUNITY/c3eb195dd72b468ea4b27df89fda0cf4/5b7638405621476b9eb5e1196277ed77_1577200972.jpg" onload="fitImage(this)" /></div>
+				<button type="button" class="call"><span>전화걸기</span></button>
+			</div>
+			<div class="dealer_info">
+				<div class="price">1,950 만원</div>
+				<div class="info">
+					<p class="name">홍길동 딜러</p>
+					<p>평점 4.5 · 후기 2건</p>
+				</div>
+			</div>
+			<span class="arrow"></span>
+		</div>
+
+		<div class="dealer_item">
+			<div class="dealer_thum">
+				<div class="thum"><img src="https://www.waglebagle.net/uploads/editor/20190611142816.png" onload="fitImage(this)" /></div>
+				<button type="button" class="call"><span>전화걸기</span></button>
+			</div>
+			<div class="dealer_info">
+				<div class="price">1,950 만원</div>
+				<div class="info">
+					<p class="name">홍길동 딜러</p>
+					<p>평점 4.5 · 후기 2건</p>
+				</div>
+			</div>
+			<span class="arrow"></span>
+		</div>
+
+		<div class="dealer_item">
+			<div class="dealer_thum">
+				<div class="thum"><img src="../../img/common/dealer_base.png" alt="딜러기본이미지 96x96"></div>
+				<button type="button" class="call"><span>전화걸기</span></button>
+			</div>
+			<div class="dealer_info">
+				<div class="price">1,950 만원</div>
+				<div class="info">
+					<p class="name">홍길동 딜러</p>
+					<p>평점 4.5 · 후기 2건</p>
+				</div>
+			</div>
+			<span class="arrow"></span>
+		</div>
+
+	</div><!-- // dealer_list -->
+
+<br />-----<br />
+
+	<div class="dealer_item2">
+		<div class="dealer_thum"><div class="thum"><img src="https://d3kxs6kpbh59hp.cloudfront.net/community/COMMUNITY/c3eb195dd72b468ea4b27df89fda0cf4/5b7638405621476b9eb5e1196277ed77_1577200972.jpg" onload="fitImage(this)" /></div>
+			<button type="button" class="call"><span>전화걸기</span></button>
+		</div>
+		<div class="dealer_info">
+			<div class="price">1,950 만원</div>
+			<div class="tel"><span>070-0505-0505</span></div>
+			<div class="mobile">070-0505-0505</div>
+		</div>
+		<span class="arrow"></span>
+	</div>
+
+<br />-----<br />
+
+	<div class="dealer_item2">
+		<div class="dealer_thum">
+			<div class="thum"><img src="https://www.waglebagle.net/uploads/editor/20190611142816.png" onload="fitImage(this)" /></div>
+			<button type="button" class="call"><span>전화걸기</span></button>
+		</div>
+		<div class="dealer_info">
+			<div class="info">판매자 정보</div>
+			<div class="name">
+				<span>홍길동 딜러</span>
+				<div>(<span>ABC모터스</span>)</div>
+			</div>
+		</div>
+		<span class="arrow"></span>
+	</div>
+
+
+
+</div>
+
+<script src="../../js/temp.js"></script>
+
+
+<script>
+function fitImage(obj){
+
+	var naturalWidth = obj.naturalWidth; // img 너비
+
+	var naturalHeight = obj.naturalHeight; // img 높이
+
+	var imgWidth = $(obj).parent().width(); // div 너비
+
+	var imgHeight = $(obj).parent().height(); // div 높이
+// (img 너비 / div 너비) 와 (img 높이 / div 높이) 를 이용해 비율을 구한다.
+
+	if(Math.abs(naturalWidth / imgWidth) < Math.abs(naturalHeight / imgHeight)){
+
+// 작게 나온 쪽으로 크기를 100% 맞춘다.
+
+		$(obj).css('width', '100%')
+
+// 너비가 100%일때 높이가 가변적이므로 top 속성을 이용해 높이를 구해 가운데로 위치시킨다.
+
+		var fitHeight = $(obj).height();
+
+		$(obj).css('top', ((imgHeight - fitHeight) / 2) + 'px');
+
+		$(obj).css('left', '0');
+
+	}else{
+
+		$(obj).css('height', '100%')
+
+		var fitWidth = $(obj).width();
+
+		$(obj).css('top', '0');
+
+		$(obj).css('left', ((imgWidth - fitWidth) / 2) + 'px');
+
+	}
+
+}
+
+</script>
+
+</body>
+</html>

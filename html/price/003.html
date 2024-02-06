@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+	<title>PASS 자동차</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="../../css/jquery-ui.css">
+	<link rel="stylesheet" href="../../css/common.css">
+	<link rel="stylesheet" href="../../css/passcar.css">
+	<link rel="stylesheet" href="../../css/passcar_skt_lgup.css">
+	<script src="../../js/jquery-1.12.4.min.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.min.js"></script>
+</head>
+<body>
+
+<div class="ui_page"><!-- 기본 -->
+	<div class="ui_header">
+		<div class="inner">
+			<span class="prev"><button type="button">이전</button></span>
+			<div class="title"><strong>PASS 자동차</strong></div>
+			<span class="close"><button type="button">닫기</button></span>
+		</div>
+	</div>
+
+	<div class="section">
+		<div class="ui_content">
+
+			<div class="joinWrap">
+				<div class="tit">차량번호 입력하고<br />시세조회부터 판매까지<br />한번에!</div>
+				<div class="inputWrap">
+					<div class="input">
+						<input type="text" placeholder="차량 번호를 입력하세요.">
+						<p>!) 올바른 차량번호 형식이 아닙니다.</p>
+					</div>
+					<p class="txt"><a href="#">관심있는 차량이 있으신가요?</a></p>
+				</div>
+			</div>
+
+		</div><!-- // ui_content -->
+	</div><!-- // section -->
+	<div class="btn_fixed2">
+		<div class="inner">
+			<div class="btn"><button type="button">다음</button></div>
+		</div>
+	</div>
+</div><!-- // ui_page -->
+
+
+<div class="dim" style="display:block;"></div>
+<div class="popup join">
+	<div class="tit">시세 조회를 위한<br />약관 동의가 필요합니다.</div>
+	<div class="agreeWrap">
+		<div class="all"><label><input type="checkbox" class="self2"><span class="checkmark"></span><span class="txt">모든 약관에 전체 동의 합니다.</span></label></div>
+		<ul>
+			<li><label><input type="checkbox" class="self2" name="agree"><span class="checkmark"></span><span class="txt">서비스 이용 약관 동의</span></label><button type="button" onclick="agree_open();">보기</button></li>
+			<li><label><input type="checkbox" class="self2" name="agree"><span class="checkmark"></span><span class="txt">개인정보 수집 및 이용 동의</span></label><button type="button" onclick="agree_open();">보기</button></li>
+			<li><label><input type="checkbox" class="self2" name="agree"><span class="checkmark"></span><span class="txt">마케팅 및 광고 수집 이용 동의(선택)</span></label><button type="button" onclick="agree_open();">보기</button></li>
+		</ul>
+	</div>
+	<div class="btn_group">
+		<button class="btn">동의하고 계속하기</button>
+		<button class="close">닫기</button>
+	</div>
+</div>
+
+
+<div class="ui_popup agree" style="display:block">
+	<div class="ui_header">
+		<div class="inner">
+			<span class="title">서비스 이용 약관</span>
+			<span class="close"><a href="#g" onclick="agree_close()">닫기</a></span>
+		</div>
+	</div>
+
+	<div class="section">
+		<div class="ui_content">
+
+			<div class="agreement">
+				<div class="set_input">
+					<select name="" id="">
+						<option value="버전 1.0">1.0</option>
+						<option value="버전 1.1">1.1</option>
+						<option value="버전 1.2">1.2</option>
+					</select>
+				</div>
+				<div class="tit">총장(약관)</div>
+				<div class="con">
+					이용약관이란 특정 서비스의 이용조건과 절차 등에 관한 사항을 규정하고 이를 명시한 문서를 말한다. 이용약관은 서비스 이용자에게 공시함으로써 효력이 발생하며, 영업상 중요 사유가 있을 시 변경할 수 있다.<br /><br />
+					이용약관에는 이용계약의 체결, 서비스 이용, 이용자의 의무 등에 관한 조항을 상세히 명시해야 한다. 또 이용 요금 납부, 계약 해지 등의 사항을 구체적으로 기재하도록 한다.<br /><br />
+					그 밖에 면책조항을 기재하여 차후 발생할 수 있는 고객과의 갈등 상황을 사전에 방지하도록 한다.<br /><br />
+					이용약관이란 특정 서비스의 이용조건과 절차 등에 관한 사항을 규정하고 이를 명시한 문서를 말한다. 이용약관은 서비스 이용자에게 공시함으로써 효력이 발생하며, 영업상 중요 사유가 있을 시 변경할 수 있다.<br /><br />
+					이용약관에는 이용계약의 체결, 서비스 이용, 이용자의 의무 등에 관한 조항을 상세히 명시해야 한다. 또 이용 요금 납부, 계약 해지 등의 사항을 구체적으로 기재하도록 한다.<br /><br />
+					그 밖에 면책조항을 기재하여 차후 발생할 수 있는 고객과의 갈등 상황을 사전에 방지하도록 한다.
+				</div>
+			</div>
+
+		</div><!-- // ui_content -->
+
+	</div><!-- // section -->
+</div>
+
+<script>
+$(document).ready(function(){
+
+	$(".popup .close").click(function(){
+		$(".dim").hide();
+		$(".popup").hide();
+		$("body").removeClass("fixed");
+	});
+
+	$(".btn_sample").click(function(){
+		$(".dim").show();
+		$(".popup").show();
+		$("body").addClass("fixed");
+	})
+
+});
+</script>
+
+
+<script src="../../js/temp.js"></script>
+</body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ko" lang="en-150">
+	<head>
+	<title>PASS 자동차</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="../../css/jquery-ui.css">
+	<link rel="stylesheet" href="../../css/common.css">
+	<link rel="stylesheet" href="../../css/passcar.css">
+	<script src="../../js/jquery-1.12.4.min.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.min.js"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/autonumeric/4.1.0/autoNumeric.min.js"></script> -->
+<style>
+.input input:focus::-webkit-input-placeholder {color: transparent;}
+
+.textarea textarea:focus::-webkit-input-placeholder {color: transparent;}
+</style>
+</head>
+<body>
+
+<div class="innerBoxH innerBoxV">
+	-- 기본 셀렉트 --
+	<div class="input select">
+		<select>
+			<option value="강원">강원</option>
+			<option value="경기">경기</option>
+			<option value="경남">경남</option>
+			<option value="경북">경북</option>
+			<option value="광주">광주</option>
+			<option value="대구">대구</option>
+			<option value="대전">대전</option>
+			<option value="부산">부산</option>
+			<option value="서울">서울</option>
+			<option value="세종">세종</option>
+		</select>
+	</div>
+
+	<div class="input select">
+		<select>
+			<option value="100cc미만">1000cc 미만</option>
+			<option value="100cc미만">1600cc 미만</option>
+			<option value="100cc미만">2000cc 미만</option>
+			<option value="100cc미만">2000cc 이상</option>
+			<option value="100cc미만">11~15인증 미만</option>
+			<option value="100cc미만">11~15인증 미만</option>
+			<option value="100cc미만">11~15인증 미만</option>
+			<option value="100cc미만">11~15인증 미만</option>
+		</select>
+	</div>
+	
+	-- 기본 입력 --
+	<div class="input"><input type="text" placeholder="텍스트"></div>
+
+	<br />
+
+	-- 검색 --
+	<div class="input search">
+		<input type="text" placeholder="텍스트"><button type="button"><span>검색</span></button>
+	</div>
+
+	<br />
+
+	-- 거리입력 --
+	<div class="input mile">
+		<input type="text" placeholder="12,000">
+	</div>
+number
+	<div class="input mile">
+
+			<input type="number" lang="en-150" pattern="[0-9]+([\.,][0-9]+)?*">
+
+	</div>
+
+	<div class="input mile">
+
+			<input type="number" pattern="\d*" value="10000">
+			<span class="number" style="box-sizing:border-box; position:absolute; top:0; left:0; bottom:0; padding:10px;">10,000</span>
+
+	</div>
+
+	<div class="inputNumber">
+	</div>
+
+	<div class="input mile">
+
+			<input type="number" lang="en-150" pattern="\d*" placeholder="10,000 en150">
+
+	</div>
+
+	<div class="input mile">
+
+			<input id="number" type="number" pattern="\d*" placeholder="12,000" value="10,000" style="color:#fff;">
+
+	</div>
+tel
+	<div class="input mile">
+		<input type="tel" class="tel_test" autocomplete="off" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');">
+	</div>
+
+	<br />
+
+	-- 팝업창 등 새창 --
+	<div class="input more"><input type="text" placeholder="텍스트"></div>
+	
+	<br />
+
+	-- 자동완성 검색 입력 --
+	<div class="input select"><input type="text" placeholder="텍스트"></div>
+	
+	<br />
+
+	-- textarea --
+	<div class="textarea">
+		<textarea name="" id="" cols="30" rows="10"></textarea>
+	</div>
+	<br />111<br />111<br />111<br />111
+	<div class="textarea">
+		<label>
+			<textarea name="" id="" cols="30" rows="10"></textarea>
+			<div class="placeholder">텍스트 내용이 들어갑니다.텍스트 내용이 들어갑니다.텍스트 내용이 들어갑니다.텍스트 내용이 들어갑니다.텍스트 내용이 들어갑니다.텍스트 내용이 들어갑니다.텍스트 내용이 들어갑니다.텍스트 내용이 들어갑니다.텍스트 내용이 들어갑니다.텍스트 내용이 들어갑니다.텍스트 내용이 들어갑니다.</div>
+		</label>
+	</div><br />111<br />111<br />111<br />111
+
+	-- textarea --
+<style>
+.textarea textarea {}
+.textarea textarea + label {box-sizing:border-box; position:absolute; top:20px; right:20px; bottom:20px; left:20px; color: #a7a7a7; line-height:1.5; overflow-y:auto; word-break:keep-all;}
+.textarea textarea:invalid + label {display:none;}
+</style>
+	<div class="textarea">
+		<textarea name="" id="input_textarea" cols="30" rows="10"></textarea>
+		<label for="input_textarea">텍스트 내용이 들어갑니다.텍스트 내용이 들어갑니다.텍스트 내용이 들어갑니다.텍스트 내용이 들어갑니다.텍스트 내용이 들어갑니다.텍스트 내용이 들어갑니다.텍스트 내용이 들어갑니다.텍스트 내용이 들어갑니다.텍스트 내용이 들어갑니다.텍스트 내용이 들어갑니다.텍스트 내용이 들어갑니다.</label>
+	</div><br />111<br />111<br />111<br />111
+
+	 <input type="number" id="DEMO" data-a-sign="" data-a-dec="," data-a-sep="." class="form-control"> 
+</div>
+
+<script>
+/*
+jQuery(function($) {
+$('#DEMO').autoNumeric('init');   
+});
+*/
+
+$(document).ready(function(){
+
+	$(".tel_test").on("focus", function(e){
+		$(this).attr('type', 'text');
+		console.log(this);
+		console.log($(this).val());
+		console.log("-------");
+	})
+	$(".tel_test").blur(function(e){
+		$(this).attr('type', 'tel');
+		console.log(this);
+		console.log($(this).val());
+		console.log("-------");
+	})
+
+})
+
+
+</script>
+
+
+<script>
+$(document).ready(function() {
+	function form_placeholder(){
+		var $form_placeholder = "input, textarea";
+		$($form_placeholder).each(function(){
+			$(this).bind("focus",function(){
+				test123($(this));
+			});
+			$(this).bind("blur",function(){
+				if($(this).val() == ""){
+					$(this).siblings(".placeholder, label").css({
+						"display" : "block"
+					})
+				}
+			});
+		});
+
+		function test123(ele){
+			if(ele.val() != ""){
+				console.log("내용있음.")
+			} else {
+				ele.siblings(".placeholder, label").css({
+					"display" : "none"
+				})
+			}
+		}
+	}
+	form_placeholder();
+});
+</script>
+
+<script src="../../js/temp.js"></script>
+
+</body>
+</html>

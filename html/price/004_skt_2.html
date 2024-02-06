@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+	<title>PASS 자동차</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="../../css/jquery-ui.css">
+	<link rel="stylesheet" href="../../css/common.css">
+	<link rel="stylesheet" href="../../css/passcar.css">
+	<link rel="stylesheet" href="../../css/passcar_skt_lgup.css">
+	<script src="../../js/jquery-1.12.4.min.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js" integrity="sha256-Uv9BNBucvCPipKQ2NS9wYpJmi8DTOEfTA/nH2aoJALw=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="wrap"><!-- 모달팝업시 fixed 추가 예)class="wrap fixed" -->
+
+	<section class="section">
+
+			<div class="price_index after">
+				<div class="index_addcar">
+					<div class="inner">
+						<p class="txt">이소애님 보유차량 <strong>3대</strong></p>
+						<div class="btn">
+							<!-- <button type="button" class="add">차량추가</button> -->
+							<button type="button" class="change">차량변경</button>
+						</div>
+					</div>
+				</div>
+				<div class="innerBoxH">
+					<div class="mycar">
+						<div class="info">
+							<dl class="sk_table">
+								<dt>내차팔기</dt>
+								<dd><span class="state on">견적진행중</span></dd>
+							</dl>
+							<dl class="sk_table">
+								<dt>내차 차량정보</dt>
+								<dd><span class="model">[현대] 그랜저 HG</span></dd>
+							</dl>
+							<dl class="sk_table">
+								<dt>내차 시세정보</dt>
+								<dd>2,500만원</dd>
+							</dl>
+							<div class="img"><img src="../../img/temp/temp_car.png" alt="차량사진" /></div>
+						</div>
+						<div class="graph2">
+							<div>
+								<dl>
+									<dt>중고차 시세</dt>
+									<dd>1,670~2,592만원</dd>
+								</dl>
+								<dl>
+									<dt>신차 시세</dt>
+									<dd>7,370~8,592만원</dd>
+								</dl>
+							</div>
+						</div>
+					</div><!-- // mycar -->
+				</div><!-- // innerBoxH -->
+
+				<div class="spaceGray"></div>
+				
+				<div class="innerBoxH">
+					<div class="mycarPrice">
+						<div class="info">
+							<div class="tit">내차 시세</div>
+							<div class="price">2,500만원</div>
+						</div>
+
+						<div class="barType4_wrap">
+							<div class="barType4">
+								<!-- <span class="min">최소<em>2,542</em></span> -->
+								<div class="bar">
+									<div class="average" style="right:10%; left:20%;"><p>평균 3,500 ~ 4,000만원</p></div>
+									<div class="my" style="left:75%;">
+										<p>내차</p>
+									</div>
+								</div>
+								<div class="price_section">
+									<span>1,000</span>
+									<span>2,000</span>
+									<span>3,000</span>
+									<span>4,000</span>
+									<span>5,000</span>
+								</div>
+								<!-- <span class="max">최대<em>7,454</em></span> -->
+							</div>
+						</div>
+
+						<div class="used">
+							<dl>
+								<dt>잔존가치</dt>
+								<dd>22.0%</dd>
+							</dl>
+							<dl>
+								<dt>감가율</dt>
+								<!-- <dd><div class="up">78.0%</div></dd> -->
+								<dd><div class="down">78.0%</div></dd>
+							</dl>
+						</div>
+						
+
+						<div class="changePrice">
+							<div class="info">
+								<div class="tit">주행거리 기준 예측 시세</div>
+							</div>
+							<div class="chart"><canvas id="myChart"></canvas></div>
+							<div class="tableType1">
+								<dl>
+									<dt>1년 후</dt>
+									<dd>1,650만원</dd>
+									<dd><span class="down">78.0%</span><!-- <span class="up">78.0%</span> --></dd>
+								</dl>
+								<dl>
+									<dt>2년 후</dt>
+									<dd>1,650만원</dd>
+									<dd><span class="down">78.0%</span><!-- <span class="up">78.0%</span> --></dd>
+								</dl>
+								<dl>
+									<dt>3년 후</dt>
+									<dd>1,650만원</dd>
+									<dd><span class="down">78.0%</span><!-- <span class="up">78.0%</span> --></dd>
+								</dl>
+							</div>
+						</div><!-- // changePrice -->
+
+						<div class="bnr">
+							<div class="img"><img src="../../img/temp/bnr_passcar.png" alt="PASS에서 견적받고 최고가로 내차 판매하세요!" /></div>
+						</div>
+
+
+						<div class="btn_fixed2">
+							<div class="inner">
+								<div class="btn"><button type="button">최고가로 내차 팔기</button></div>
+							</div>
+						</div>
+
+					</div><!-- // mycarPrice -->
+				</div><!-- // innerBoxH -->
+			</div><!-- // price_index after -->
+
+
+	</section><!-- section -->
+
+	<footer class="footer"></footer><!-- // footer -->
+
+</div><!-- // wrap -->
+
+
+<script>
+var ctx = document.getElementById('myChart').getContext('2d');
+var myChart = new Chart(ctx, {
+    
+    type: 'line',
+    data: {
+        labels: ['현재', '1년후', '2년후', '3년후'],
+        datasets: [{
+            data: [6500, 6000, 3350, 1300],
+            backgroundColor: [
+                'rgba(230,98,0,0.1)',
+            ],
+            borderColor: [
+                'rgba(230,98,0,0.25)'
+            ],
+            borderWidth: [1],
+            pointBackgroundColor: [
+            	'rgba(230,98,0,1)',
+            	'rgba(230,98,0,0.4)',
+            	'rgba(230,98,0,0.4)',
+            	'rgba(230,98,0,0.4)'
+            ],
+            strokeColor: 'rgba(1,1,1,1)'
+        }]
+    },
+    options: {
+    	animation:{duration:1000},
+    	layout: {
+    		
+    	},
+    	legend: {
+	        display: false
+	    },
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        }
+    }
+});
+</script>
+
+
+<script src="../../js/temp.js"></script>
+</body>
+</html>

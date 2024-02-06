@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+	<title>PASS 자동차</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="../../css/jquery-ui.css">
+	<link rel="stylesheet" href="../../css/common.css">
+	<link rel="stylesheet" href="../../css/passcar.css">
+	<link rel="stylesheet" href="../../css/passcar_skt_lgup.css">
+	<script src="../../js/jquery-1.12.4.min.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.min.js"></script>
+<style>
+
+</style>
+</head>
+<body>
+
+<div class="ui_page">
+
+	<div class="ui_header">
+		<div class="inner">
+			<!-- <span class="prev"><button type="butto">이전</button></span>
+			<div class="title"><strong>마이페이지</strong></div> -->
+			<span class="close"><button type="butto">닫기</button></span>
+		</div>
+	</div><!-- // ui_header -->
+
+	<div class="section">
+
+
+<style>
+.myDriving {margin-top:45px;}
+.myDriving > div.tit {display:flex; justify-content:space-between; align-items:center; height:40px;}
+.myDriving > div.tit > span {font-weight:bold; font-weight:bold;;}
+.myDriving > div.tit div.help {color:#222;}
+.myDriving > div.tit div.help img {width:19px; height:19px; margin-left:10px;}
+.myDriving_con {display:flex; flex-direction:column; justify-content: space-between; margin-top:10px; border-radius:8px; background-color:#fff; box-shadow:0 0 10px rgba(0,0,0,0.06); overflow:hidden;}
+.myDriving_con > div {display:flex;  align-items:center;;}
+.myDriving_con > div:first-of-type {justify-content:space-between; align-items:center;; padding:13px 20px 17px;}
+.myDriving_con > div:first-of-type dl {}
+.myDriving_con > div:first-of-type dl dt {color:#222; font-size:0.875em; font-size:14px;}
+.myDriving_con > div:first-of-type dl dd {margin-top:4px; color:#a7a7a7; font-size:0.75em; font-size:12px;;}
+.myDriving_con > div:first-of-type div {display:inline-flex; justify-content:center; align-items:center; width:50px; height:50px;  border-radius:100%; background-color:#f4f4f4;}
+.myDriving_con > div:first-of-type div span {display:block; border-bottom:1px solid #cc0000; color:#cc0000; font-size:1.625em; font-weight:bold; line-height:1;;}
+
+.myDriving_con > div:last-of-type {justify-content:space-around; background-color:#f4f4f4; height:3.75em;}
+.myDriving_con > div:last-of-type dl {display:flex; justify-content:space-around; align-items:center; height:2.25em;}
+.myDriving_con > div:last-of-type dl + dl {border-left:1px solid #fff;}
+.myDriving_con > div:last-of-type dl dt,
+.myDriving_con > div:last-of-type dl dd {padding:0 1.53125em;}
+.myDriving_con > div:last-of-type dl dd {font-weight:bold;}
+.myDriving_con > div:last-of-type dl dd span {position:relative; border-bottom:1px solid #222;}
+
+.myLicenseCard {margin-top:15px;}
+.myLicenseCard div.tit {display:flex; justify-content:space-between; font-size:0.75em;}
+.myLicenseCard div.tit div {color:#222;}
+.myLicenseCard div.tit span.date {color:#1d65de; font-weight:bold;;}
+
+.myLicenseCard div.cont {position:relative; width:83.2vw; margin:21px auto 0;}
+.myLicenseCard div.cont div.license_card {position:relative; width:83.2vw; height:52vw; margin:0 auto; background:url('../../img/temp/img_licence_bg_ok.png') no-repeat left top; background-size:cover; border:1px solid #e8e8e8; border-radius:12px; overflow:hidden; box-shadow:0 4px 10px rgba(0,0,0,0.1);}
+.myLicenseCard div.cont div.license_card::before {content:""}
+.myLicenseCard div.cont div.license_card .card_tit {position:absolute; top:7.6923%; left:7.05128%; color:#666; font-size:3.46666vw; line-height:1.46153; letter-spacing:-0.02em;}
+.myLicenseCard div.cont button {position:absolute; right:0; bottom:0; width:13.33333vw; height:13.33333vw; background-color:#ff3782; border-radius:100%; color:#fff; font-size:3.2vw; transform:translate(18%, 18%);}
+
+.myLicenseCard div.cont div.license_card .user_info {position:absolute; top:24.10256%; width:100%; display:flex; align-items:center;}
+.myLicenseCard div.cont div.license_card .user_info .thum {display:inline-flex; width:27.56410%; height:30.4vw; margin-left:7.05128%; margin-right:5.33333vw;}
+.myLicenseCard div.cont div.license_card .user_info div.user_txt {height:100%; flex:1; display:flex; flex-direction:column; justify-content:space-between;}
+.myLicenseCard div.cont div.license_card .user_info div.user_txt dl.name {color:#000; font-size:5.06666vw; line-height:1.47368;}
+.myLicenseCard div.cont div.license_card .user_info div.user_txt dl.name dt {font-weight:bold;}
+.myLicenseCard div.cont div.license_card .user_info div.user_txt dl.name dd {margin-top:1px; line-height:1.47368;}
+.myLicenseCard div.cont div.license_card .user_info div.user_txt dl.name + div {margin-top:4.8vw;}
+.myLicenseCard div.cont div.license_card .user_info div.user_txt dl.name + div dl {display:flex; justify-content:start; align-items:center; margin-top:1px; font-size:3.46666vw; line-height:1.46153;}
+.myLicenseCard div.cont div.license_card .user_info div.user_txt dl.name + div dl dt {margin-right:1.33333vw; color:#999;}
+.myLicenseCard div.cont div.license_card .user_info div.user_txt dl.name + div  dl dd {color:#000}
+</style>
+
+		<div class="ui_content">
+
+			<div class="mypage_wrap">
+
+				<div class="innerBoxH">
+					<div class="myLicenseCard">
+						<div class="tit">
+							<div>적성검가기간(갱신) 시작일</div>
+							<span class="date">2030.01.01</span>
+						</div>
+						<div class="cont">
+							<div class="license_card">
+								<div class="card_tit">자동차 운전면허증(Driver's License)</div>
+								<div class="user_info">
+									<div class="thum"><img src="../../img/temp/user_picture.png" alt="증명사진"></div>
+									<div class="user_txt">
+										<dl class="name">
+											<dt>김패스</dt>
+											<dd>11-22-333333-**</dd>
+										</dl>
+										<div>
+											<dl>
+												<dt>생년월일</dt>
+												<dd>2000.01.01</dd>
+											</dl>
+											<dl>
+												<dt>성별</dt>
+												<dd>여</dd>
+											</dl>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<button type="button"><span>자세히</span></button>
+						</div>
+					</div><!-- // myLicenseCard -->
+				</div>
+
+				<div class="innerBoxH">
+					<div class="myDriving">
+						<div class="tit">
+							<span>나의 운전현황</span>
+							<div class="help"><span>맞춤 운전 관리팁</span><img src="../../img/common/icon_help.png" alt="도움말"></div>
+						</div>
+						<div class="myDriving_con">
+							<div>
+								<dl>
+									<dt>현재 운전상태</dt>
+									<dd>면허정지까지 벌점 40점 남았습니다.</dd>
+								</dl>
+								<div><p><span>0</span></p></div>
+							</div>
+							<div>
+								<dl>
+									<dt>범칙금</dt>
+									<dd><span>1건</span></dd>
+								</dl>
+								<dl>
+									<dt>과태료</dt>
+									<dd><span>1건</span></dd>
+								</dl>
+							</div>
+						</div>
+					</div><!-- // myDriving -->
+				</div>
+
+
+				<div class="innerBoxH">
+					<div class="withCar">
+						<div class="tit">내차로 서비스</div>
+						<div class="item-list">
+							<dl class="item">
+								<dt>시세가 더 떨어지기 전</dt>
+								<dd class="txt">인증딜러에게 내차 팔기</dd>
+								<dd class="icon"><img src="../../img/common/withcar_img1.png" alt="이미지"></dd>
+							</dl>
+							<dl class="item">
+								<dt>비대면 간편 대출</dt>
+								<dd class="txt">내차로 돈 빌리기</dd>
+								<dd class="icon"><img src="../../img/common/withcar_img2.png" alt="이미지"></dd>
+							</dl>
+							<dl class="item">
+								<dt>김패스님꼐 추천하는 팁!</dt>
+								<dd class="txt">속도위반 Vs 과태료 비교표</dd>
+								<dd class="icon"><img src="../../img/common/withcar_img3.png" alt="이미지"></dd>
+							</dl>
+							<dl class="item">
+								<dt>운전면허 등록</dt>
+								<dd class="txt">운전관리 소식 확인하기</dd>
+								<dd class="icon"><img src="../../img/common/withcar_img4.png" alt="이미지"></dd>
+							</dl>
+						</div>
+					</div><!-- // mycarlo 내차로 서비스 -->
+				</div>
+
+				<div class="index_footer">
+					<div><img src="../../img/temp/bnr_376x99.png" alt=""></div>
+					<div class="inner">
+						<div class="row">
+							<div class="logo"><img src="../../img/common/logo_passcar.png" alt="패스자동차 로고" /></div>
+							<span>서비스 이용약관</span>
+							<span>개인정보처리방침</span>
+						</div>
+						<p>PASS자동차는 중고차 매매의 당사자가 아니며, 상품거래 정보 및 거래에 관련한 의무와 책임은 각 판매자에게 있습니다.</p>
+					</div>
+				</div><!-- // index_footer -->
+				
+			</div><!-- // mypage_wrap -->
+		</div><!-- // ui_content -->
+
+	</div><!-- // section -->
+
+</div><!-- // ui_page -->
+
+
+<script>
+$(function(){
+	
+})
+</script>
+
+<script src="../../js/temp.js"></script>
+</body>
+</html>

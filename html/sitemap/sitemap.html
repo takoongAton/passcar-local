@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+	<title>passcar</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="../../css/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="sitemap.css" />
+	<script src="../../js/jquery-1.12.4.min.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.min.js"></script>
+	<script src="../../js/temp.js"></script>
+<style>
+span.del {text-decoration:line-through;}
+</style>
+</head>
+<body>
+	<div id="wrap">
+		<!-- container --> 
+		<div id="container">
+			<!-- treeWrap -->
+			<div class="treeWrap">
+				<!-- <div id="header">
+					<p>Fresh FORYOU</p>
+					<h1><img src="logo.png" alt=""></h1>
+				</div> -->
+				<!-- html URL --> 
+				<div class="htmlURL">해당파일 디렉토리 위치</div>
+				<!-- //html URL -->
+
+				<!-- treeMenu -->
+				<ul class="treeMenu">
+					<li><a href="#" target="treeFrame">인덱스</a></li>
+					<!--
+					<li>
+						<a href="#" target="treeFrame">뎁스</a>
+						<ul>
+							<li><a href="../price/ㅇㅇㅇ.html" target="treeFrame">000_ㅇㅇㅇㅇ<span>예정</span></a></li>
+							<li><a href="../price/ㅇㅇㅇ.html" target="treeFrame">000_ㅇㅇㅇㅇ<span>작업중</span></a></li>
+							<li><a href="../price/ㅇㅇㅇ.html" target="treeFrame">000_ㅇㅇㅇㅇ<span class="on">완료</span></a></li>
+						</ul>
+					</li>
+					-->
+					<!--
+					<li>
+						<a href="#" target="treeFrame">페이지 샘플</a>
+						<ul>
+							<li><a href="../common/00_sample.html" target="treeFrame">인덱스성 페이지</a></li>
+							<li><a href="../common/01_uipage.html" target="treeFrame">팝업성 페이지.</a></li>
+							<li><a href="../common/02_popup.html" target="treeFrame">모달팝업</a></li>
+						</ul>
+					</li>
+				-->
+					<li>
+						<a href="#" target="treeFrame">내자산탭</a>
+						<ul>
+							<li><a href="../sitemap/error.html" target="treeFrame">차량번호 입력전</a></li>
+							<li><a href="../sitemap/error.html" target="treeFrame">차량번호 입력후</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#" target="treeFrame">마이페이지</a>
+						<ul>
+							<li><a href="../mypage/144.html" target="treeFrame">144_알림내역</a></li>
+							<li><a href="../mypage/145.html" target="treeFrame">145_후기내역</a></li>
+							<li><a href="../mypage/144_01.html" target="treeFrame">144_01_후기삭제</a></li>
+						</ul>
+					</li>
+					<li><a href="#" target="treeFrame">최초진입</a>
+						<ul>
+							<li><a href="../price/001.html" target="treeFrame">001_차량번호입력</a></li>
+							<li><a href="../price/001.html" target="treeFrame">001_차량번호입력(오류)</a></li>
+							<li><a href="../price/002.html" target="treeFrame">002_약관동의</a></li>
+							<li><a href="../price/003.html" target="treeFrame">003_약관상세</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#" target="treeFrame">시세조회</a>
+						<ul>
+							<li><a href="../sitemap/error.html" target="treeFrame">차량번호 입력전</a></li>
+							<li><a href="../price/004.html" target="treeFrame">004_차량번호 입력후</a></li>
+							<li><a href="#" target="treeFrame">차량상세</a>
+								<ul>
+									<li><a href="../price/005_01.html" target="treeFrame">005_01_상세등급 입력전</a></li>
+									<li><a href="../price/005_02.html" target="treeFrame">005_02_상세등급 입력후</a></li>
+									<li><a href="../price/005_03.html" target="treeFrame">005_03_사고여부 입력후</a></li>
+									<li><a href="../price/006.html" target="treeFrame">006_수정</a></li>
+									<li><a href="../price/007.html" target="treeFrame">007_상세등급 입력전</a></li>
+									<li><a href="../price/008.html" target="treeFrame">008_상세등급 입력후</a></li>
+								</ul>
+							</li>
+							<!--
+							<li><a href="#" target="treeFrame">차량상세 팝업</a>
+								<ul>
+									<li><a href="../price/ㅇㅇㅇ.html" target="treeFrame">사고여부</a></li>
+									<li><a href="../price/ㅇㅇㅇ.html" target="treeFrame">주행거리</a></li>
+									<li><a href="../price/ㅇㅇㅇ.html" target="treeFrame">색상선택</a></li>
+								</ul>
+							</li>
+							-->
+						</ul>
+					</li>
+					<li>
+						<a href="#" target="treeFrame">내차팔기</a>
+						<ul>
+							<li><a href="../sell/012.html" target="treeFrame">012_내차팔기 등록전</a></li>
+							<li><a href="#" target="treeFrame">내차팔기 등록STEP</a>
+								<ul>
+									<li><a href="../sell/013.html" target="treeFrame">013_STEP1(차량정보)</a></li>
+									<li><a href="../sell/118.html" target="treeFrame">118_내차팔기-종료</a></li>
+									<li><a href="../sell/014.html" target="treeFrame">014_STEP1(차량변경)</a></li>
+									<li><a href="../sell/015.html" target="treeFrame">015_SETP2(등급선택)</a></li>
+									<li><a href="../price/007.html" target="treeFrame">007_SETP2(세부등급)</a></li>
+									<li><a href="../sell/016.html" target="treeFrame">016_STEP3(주행거리)</a></li>
+									<li><a href="../sell/017.html" target="treeFrame">017_STEP4(변속기)</a></li>
+									<li><a href="../sell/018.html" target="treeFrame">018_STEP5(연료)</a></li>
+									<li><a href="../sell/019.html" target="treeFrame">019_STEP6(옵션)</a></li>
+									<li><a href="../sell/020.html" target="treeFrame">020_STEP7(색상)</a></li>
+									<li><a href="../sell/021.html" target="treeFrame">021_STEP8(판매지역)</a></li>
+									<li><a href="../common/022.html" target="treeFrame">022_STEP8(지역선택)</a></li>
+									<li><a href="../sell/023.html" target="treeFrame">023_STEP9(결제상태)</a></li>
+									<li><a href="../sell/024.html" target="treeFrame"><span class="del">024_STEP10(사고이력)</span></a></li>
+									<li><a href="../sell/025_01.html" target="treeFrame">025_01_STEP10(보험이력O)</a></li>
+									<li><a href="../sell/025_02.html" target="treeFrame">025_02_STEP10(보험이력X)</a></li>
+									<li><a href="../sell/134.html" target="treeFrame">134_STEP10(사고이력추가)</a></li>
+									<li><a href="../sell/026.html" target="treeFrame">026_STEP10(보험이력 상세)</a></li>
+									<li><a href="../sell/027.html" target="treeFrame">027_STEP11(장단점)</a></li>
+									<li><a href="../sell/028.html" target="treeFrame">028_STEP12(사진)</a></li>
+									<!-- <li><a href="../sell/ㅇㅇㅇ.html" target="treeFrame">STEP12(사진등록_팝업)</a></li>
+									<li><a href="../sell/ㅇㅇㅇ.html" target="treeFrame">STEP12(앨범에서 선택전)</a></li>
+									<li><a href="../sell/ㅇㅇㅇ.html" target="treeFrame">STEP12(앨범에서 선택후)</a></li> -->
+									<li><a href="../sell/031.html" target="treeFrame">031_STEP12(내차판매등록완료)</a></li>
+								</ul>
+							</li>
+							<li><a href="../sell/032.html" target="treeFrame">032_내차팔기 등록후</a></li>
+							<li><a href="#" target="treeFrame">내차팔기 상세</a>
+								<ul>
+									<li><a href="../sell/033.html" target="treeFrame">033_검토중</a></li>
+									<li><a href="../sell/039.html" target="treeFrame">039_승인대기</a></li>
+									<li><a href="../sell/040.html" target="treeFrame">040_견적진행중</a></li>
+									<li><a href="../sell/041.html" target="treeFrame">041_견적완료</a></li>
+									<li><a href="../sell/042.html" target="treeFrame">042_판매요청</a></li>
+									<li><a href="../sell/124.html" target="treeFrame">124_심사반려</a></li>
+									<li><a href="../sell/125.html" target="treeFrame">125_판매중지팝업</a></li>
+									<li><a href="../sell/127.html" target="treeFrame">127_방문예정</a></li>
+									<li><a href="../sell/128.html" target="treeFrame">128_검차완료</a></li>
+									<li><a href="../sell/129.html" target="treeFrame">129_구매철회</a></li>
+									<li><a href="../sell/130.html" target="treeFrame">130_판매완료</a></li>
+									<li><a href="../sell/131.html" target="treeFrame">131_후기작성</a></li>
+									<li><a href="../sell/132.html" target="treeFrame">132_판매취소</a></li>
+									<li><a href="../sell/136.html" target="treeFrame">136_등록정보 확인</a></li>
+									<li><a href="../sell/137.html" target="treeFrame">137_견적완료(없음)</a></li>
+									<li><a href="../sell/138.html" target="treeFrame">138_견적취소(딜러선택X)</a></li>
+									<li><a href="../sell/139.html" target="treeFrame">139_견적취소(견적확정X)</a></li>
+									<li><a href="../sell/140.html" target="treeFrame">140_판매취소</a></li>
+									<li><a href="../sell/141.html" target="treeFrame">141_유효기간만료</a></li>
+									<li><a href="../sell/142.html" target="treeFrame">142_재견적</a></li>
+								</ul>
+							</li>
+							<li><a href="#" target="treeFrame">상세수정</a>
+								<ul>
+									<li><a href="../sell/034.html" target="treeFrame">034_기본정보수정</a></li>
+									<li><a href="../sell/035_01.html" target="treeFrame">035_팝업(변속기 선택)</a></li>
+									<li><a href="../sell/035_02.html" target="treeFrame">035_팝업(연료 선택)</a></li>
+									<li><a href="../sell/035_03.html" target="treeFrame">035_팝업(주행거리 선택)</a></li>
+									<li><a href="../sell/035_04.html" target="treeFrame">035_팝업(색상 선택)</a></li>
+									<li><a href="../sell/035_05.html" target="treeFrame">035_팝업(결제상태 선택)</a></li>
+									<li><a href="../common/036.html" target="treeFrame">036_차량모델수정</a></li>
+									<li><a href="../common/022.html" target="treeFrame">022_판매지역수정</a></li>
+									<li><a href="../sell/037.html" target="treeFrame">037_사진수정</a></li>
+									<li><a href="../sell/122.html" target="treeFrame">122_옵션수정</a></li>
+									<li><a href="../sell/038.html" target="treeFrame">038_사고정보,차량정보 수정</a></li>
+									<li><a href="../sell/039.html" target="treeFrame">039_견적중_견적X</a></li>
+									<li><a href="../sell/118_02.html" target="treeFrame"><span class="del">118_02_내차 판매 중단</span></a></li>
+									<li><a href="../sell/125.html" target="treeFrame">125_내차 판매 중단</a></li>
+									<li><a href="../sell/040.html" target="treeFrame">040_견적중_견적O</a></li>
+									<li><a href="../sell/071.html" target="treeFrame">071_견적상세</a></li>
+									<li><a href="../sell/126.html" target="treeFrame">126_딜러후기</a></li>
+									<li><a href="../sell/041.html" target="treeFrame">041_견적완료</a></li>
+									<li><a href="../sell/042.html" target="treeFrame">042_판매요청</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#" target="treeFrame">내차사기</a>
+						<ul>
+							<li><a href="../buy/043.html" target="treeFrame">043_최근검색차량 X,O</a></li>
+							<li><a href="../buy/044.html" target="treeFrame">044_차량검색</a>
+								<ul>
+									<li><a href="../buy/045.html" target="treeFrame">045_예산으로검색STEP1</a>
+										<ul>
+											<li><a href="../buy/046.html" target="treeFrame">046_예산검색STEP2</a></li>
+											<li><a href="../buy/123.html" target="treeFrame">123_예산검색STEP3</a></li>
+										</ul>
+									</li>
+									<li><a href="../buy/047.html" target="treeFrame">047_모델명검색STEP1</a>
+										<ul>
+											<li><a href="../buy/048.html" target="treeFrame">048_모델명검색(기본)</a></li>
+											<li><a href="../buy/049.html" target="treeFrame">049_모델명검색(자동완성)</a></li>
+											<li><a href="../buy/050.html" target="treeFrame">050_모델명검색STEP2</a></li>
+											<li><a href="../buy/051.html" target="treeFrame">051_모델명검색STEP3</a></li>
+											<li><a href="../buy/052.html" target="treeFrame">052_모델명검색STEP4</a></li>
+										</ul>
+									</li>
+									<li><a href="../buy/053.html" target="treeFrame">053_상세조건선택</a></li>
+									<li><a href="../buy/054.html" target="treeFrame">054_최소,최대연식선택</a></li>
+									<li><a href="../buy/055.html" target="treeFrame">055,056_검색결과</a></li>
+									<li><a href="../buy/057.html" target="treeFrame">057,058_검색결과상세</a></li>
+									<li><a href="../buy/059.html" target="treeFrame">059_사진팝업</a></li>
+									<li><a href="../buy/062.html" target="treeFrame">062_옵션정보조회</a></li>
+									<li><a href="../buy/064.html" target="treeFrame">064_문의신청</a></li>
+									<li><a href="../buy/065.html" target="treeFrame">065_구매비용계산</a></li>
+								</ul>
+							</li>
+							<!-- <li><a href="../buy/ㅇㅇㅇ.html" target="treeFrame">000_ㅇㅇㅇㅇ</a>
+								<ul>
+									<li><a href="../buy/ㅇㅇㅇ.html" target="treeFrame">000_ㅇㅇㅇㅇ</a></li>
+									<li><a href="../buy/ㅇㅇㅇ.html" target="treeFrame">000_ㅇㅇㅇㅇ</a></li>
+									<li><a href="../buy/ㅇㅇㅇ.html" target="treeFrame">000_ㅇㅇㅇㅇ</a></li>
+									<li><a href="../buy/ㅇㅇㅇ.html" target="treeFrame">000_ㅇㅇㅇㅇ</a></li>
+								</ul>
+							</li>
+							<li><a href="../buy/ㅇㅇㅇ.html" target="treeFrame">000_ㅇㅇㅇㅇ</a></li>
+							<li><a href="../buy/ㅇㅇㅇ.html" target="treeFrame">000_ㅇㅇㅇㅇ</a></li>
+							<li><a href="../buy/ㅇㅇㅇ.html" target="treeFrame">000_ㅇㅇㅇㅇ</a></li> -->
+						</ul>
+					</li>
+
+					<!-- <li>
+						<a href="#" target="treeFrame">보험</a>
+						<ul>
+							<li><a href="../sitemap/error.html" target="treeFrame">000_ㅇㅇㅇㅇ</a></li>
+							<li><a href="../sitemap/error.html" target="treeFrame">000_ㅇㅇㅇㅇ</a></li>
+							<li><a href="../sitemap/error.html" target="treeFrame">000_ㅇㅇㅇㅇ</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#" target="treeFrame">대출</a>
+						<ul>
+							<li><a href="../sitemap/error.html" target="treeFrame">000_ㅇㅇㅇㅇ</a></li>
+							<li><a href="../sitemap/error.html" target="treeFrame">000_ㅇㅇㅇㅇ</a></li>
+							<li><a href="../sitemap/error.html" target="treeFrame">000_ㅇㅇㅇㅇ</a></li>
+						</ul>
+					</li> -->
+					<li>
+						<a href="#" target="treeFrame">공통</a>
+						<ul>
+							<li><a href="../common/070.html" target="treeFrame">오류화면</a></li>
+							<li><a href="../common/117.html" target="treeFrame">로딩화면</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#" target="treeFrame">template</a>
+						<ul>
+							<li><a href="../template/00_header.html" target="treeFrame">00_header</a></li>
+							<li><a href="../template/01_button.html" target="treeFrame">01_button</a></li>
+							<li><a href="../template/02_table.html" target="treeFrame">02_table</a></li>
+							<li><a href="../template/03_panal.html" target="treeFrame">03_panal</a></li>
+							<li><a href="../template/04_form.html" target="treeFrame">04_form</a></li>
+							<li><a href="../template/05_list_txt.html" target="treeFrame">05_list_txt</a></li>
+							<li><a href="../template/06_list_car_thum.html" target="treeFrame">06_list_car_thum</a></li>
+							<li><a href="../template/07_list_model.html" target="treeFrame">07_list_model</a></li>
+							<li><a href="../template/08_checkbox.html" target="treeFrame">08_checkbox</a></li>
+							<li><a href="../template/09_tree.html" target="treeFrame">09_tree</a></li>
+							<li><a href="../template/10_colorpicker.html" target="treeFrame">10_colorpicker</a></li>
+							<li><a href="../template/11_slider.html" target="treeFrame">11_slider</a></li>
+							<li><a href="../template/12_customer.html" target="treeFrame">12_customer</a></li>
+							<li><a href="../template/13_banner.html" target="treeFrame">13_banner</a></li>
+							<li><a href="../template/14_addphoto.html" target="treeFrame">14_addphoto</a></li>
+							<li><a href="../template/15_after_step.html" target="treeFrame">15_after_step</a></li>
+						</ul>
+					</li>
+
+				</ul> 
+				<!-- //treeMenu -->
+			</div> 
+			<!-- //treeWrap -->
+		
+			<div class="contents">
+				<iframe src="../common/00_sample.html" frameborder="0" marginwidth="0" marginheight="0" scrolling="auto" name="treeFrame"></iframe>
+			</div>
+		</div> 
+		<!-- //container -->
+	</div>
+
+	<div class="message"></div>
+<script type="text/javascript" src="sitemap.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+	<title>PASS 자동차</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="../../css/jquery-ui.css">
+	<link rel="stylesheet" href="../../css/common.css">
+	<link rel="stylesheet" href="../../css/passcar.css">
+	<link rel="stylesheet" href="../../css/passcar_skt_lgup.css">
+	<script src="../../js/jquery-1.12.4.min.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.min.js"></script>
+</head>
+<body>
+
+<div class="ui_page"><!-- 기본 -->
+
+	<div class="ui_header">
+		<div class="inner">
+			<span class="prev"><button type="button">이전</button></span>
+			<div class="title"><strong>PASS 자동차</strong></div>
+			<span class="close"><button type="button">닫기</button></span>
+		</div>
+	</div>
+
+	<div class="section">
+
+		<div class="setpBox">
+			<div class="stepBar"><span class="bar" style="left:93%;"></span></div>
+			<div class="tit">내차팔기 진행상태</div>
+			<p><span>93</span>%</p>
+		</div>
+
+		<div class="ui_content">
+			<div class="sell_wrap">
+
+				<div class="sell_step_wrap">
+					<div class="pageTit">
+						<h2 class="tit">마지막이에요!<br />차량 사진을 올려주세요!</h2>
+						<div class="txtBox">
+							<p><span class="em">*필수 차량사진 5장</span>을 업로드 해주세요.</p>
+							<!-- <p>최소 5장의 사진이 필요합니다.</p> -->
+						</div>
+					</div>
+					<div class="addphoto_wrap">
+						<div><button type="button">사진 전체삭제</button></div>
+						<ul class="addphoto_list">
+							<li class="addphoto_item on"><!-- 사진이 첨부 됐을때 on -->
+								<input type="file" id="camera1" name="camera" />
+								<div class="thum"><img src="../../img/temp/temp_car.png" alt="대표사진"></div>
+								<div class="txt">
+									<p><em>*</em>정면</p>
+									<button><span>삭제</span></button>
+								</div>
+							</li>
+							<li class="addphoto_item on">
+								<input type="file" id="camera2" name="camera" />
+								<div class="thum"><img src="../../img/temp/img111.jpg" alt="대표사진"></div>
+								<div class="txt">
+									<p><em>*</em>측면(좌)</p>
+									<button><span>삭제</span></button>
+								</div>
+							</li>
+							<li class="addphoto_item on">
+								<input type="file" id="camera2" name="camera" />
+								<div class="thum"><img src="../../img/temp/sam_126x126.png" alt="대표사진"></div>
+								<div class="txt">
+									<p><em>*</em>측면(후)</p>
+									<button><span>삭제</span></button>
+								</div>
+							</li>
+							<!-- <li class="addphoto_item">
+								<input type="file" id="camera2" name="camera" />
+								<img src="image.png" alt="후면 사진" />
+								<div class="txt">
+									<p><em>*</em>후면</p>
+									<button><span>삭제</span></button>
+								</div>
+							</li> -->
+							<li class="addphoto_item">
+								<input type="file" id="camera2" name="camera" />
+								<!-- <img src="image.png" alt="계기판 사진" /> -->
+								<div class="txt">
+									<p><em>*</em>계기판</p>
+									<button><span>삭제</span></button>
+								</div>
+							</li>
+							<li class="addphoto_item">
+								<input type="file" id="camera2" name="camera" />
+								<div class="txt">
+									<p>+추가사진<span>(선택)</span></p>
+								</div>
+							</li>
+						</ul><!-- // addphoto_list -->
+					</div><!-- // addphoto_wrap -->
+				</div><!-- // sell_step_wrap -->
+
+				<div class="btn_fixed2">
+					<div class="inner">
+						<div class="btn"><button type="button" class="dim">다음</button></div>
+					</div>
+				</div><!-- // btn_fixed2 -->
+
+			</div><!-- // sell_wrap -->
+		</div><!-- // ui_content -->
+		
+	</div><!-- // section -->
+
+</div><!-- // ui_page -->
+
+
+<script src="../../js/temp.js"></script>
+</body>
+</html>

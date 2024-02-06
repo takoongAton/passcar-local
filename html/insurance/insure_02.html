@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+	<title>PASS 자동차</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="../../css/jquery-ui.css">
+	<link rel="stylesheet" href="../../css/common.css">
+	<link rel="stylesheet" href="../../css/passcar.css">
+	<link rel="stylesheet" href="../../css/passcar_skt_lgup.css">
+	<script src="../../js/jquery-1.12.4.min.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.min.js"></script>
+</head>
+<body>
+
+<div class="ui_popup"><!-- ui_page, ui_popup은 z-index값이 다릅니다. -->
+
+	<div class="ui_header">
+		<div class="inner">
+			<span class="close"><button type="button">닫기</button></span>
+		</div>
+	</div><!-- // ui_header -->
+
+
+	<div class="section">
+		<div class="pageTit"><!-- 페이지 타이틀은 상황에 따라서 ui_content 안으로 들어가는 경우가 있습니다. 예) 내차팔기 step -->
+			<h2 class="tit">12가1234의<br />보험 가입월을 선택해주세요.</h2>
+			<div class="txtBox">
+				<div class="txt">가입월을 입력하면,<br />포인트 발급이 완료됩니다.</div>
+			</div>
+		</div>
+
+		<div class="ui_content">
+
+			<div class="calenter_wrap">
+				<div class="year_tab">
+					<div class="tab on"><span>2019년</span></div>
+					<div class="tab"><span>2020년</span></div>
+				</div>
+				<div class="month_wrap">
+					<ul>
+						<li><label><input type="radio" name="radio2" disabled="disabled" /><span class="checkmark"></span><span class="txt">01월</span></label></li>
+						<li><label><input type="radio" name="radio2" disabled="disabled" /><span class="checkmark"></span><span class="txt">02월</span></label></li>
+						<li><label><input type="radio" name="radio2" disabled="disabled" /><span class="checkmark"></span><span class="txt">03월</span></label></li>
+						<li><label><input type="radio" name="radio2" disabled="disabled" /><span class="checkmark"></span><span class="txt">04월</span></label></li>
+						<li><label><input type="radio" name="radio2" disabled="disabled" /><span class="checkmark"></span><span class="txt">05월</span></label></li>
+						<li><label><input type="radio" name="radio2" /><span class="checkmark"></span><span class="txt">06월</span></label></li>
+						<li><label><input type="radio" name="radio2" /><span class="checkmark"></span><span class="txt">07월</span></label></li>
+						<li><label><input type="radio" name="radio2" /><span class="checkmark"></span><span class="txt">08월</span></label></li>
+						<li><label><input type="radio" name="radio2" /><span class="checkmark"></span><span class="txt">09월</span></label></li>
+						<li><label><input type="radio" name="radio2" /><span class="checkmark"></span><span class="txt">10월</span></label></li>
+						<li><label><input type="radio" name="radio2" /><span class="checkmark"></span><span class="txt">11월</span></label></li>
+						<li><label><input type="radio" name="radio2" /><span class="checkmark"></span><span class="txt">12월</span></label></li>
+					</ul>
+					<ul style="display:none;">
+						<li><label><input type="radio" name="radio2" /><span class="checkmark"></span><span class="txt">01월</span></label></li>
+						<li><label><input type="radio" name="radio2" /><span class="checkmark"></span><span class="txt">02월</span></label></li>
+						<li><label><input type="radio" name="radio2" /><span class="checkmark"></span><span class="txt">03월</span></label></li>
+						<li><label><input type="radio" name="radio2" /><span class="checkmark"></span><span class="txt">04월</span></label></li>
+						<li><label><input type="radio" name="radio2" /><span class="checkmark"></span><span class="txt">05월</span></label></li>
+						<li><label><input type="radio" name="radio2" /><span class="checkmark"></span><span class="txt">06월</span></label></li>
+						<li><label><input type="radio" name="radio2" disabled="disabled" /><span class="checkmark"></span><span class="txt">07월</span></label></li>
+						<li><label><input type="radio" name="radio2" disabled="disabled" /><span class="checkmark"></span><span class="txt">08월</span></label></li>
+						<li><label><input type="radio" name="radio2" disabled="disabled" /><span class="checkmark"></span><span class="txt">09월</span></label></li>
+						<li><label><input type="radio" name="radio2" disabled="disabled" /><span class="checkmark"></span><span class="txt">10월</span></label></li>
+						<li><label><input type="radio" name="radio2" disabled="disabled" /><span class="checkmark"></span><span class="txt">11월</span></label></li>
+						<li><label><input type="radio" name="radio2" disabled="disabled" /><span class="checkmark"></span><span class="txt">12월</span></label></li>
+					</ul>
+				</div>
+			</div><!-- // calenter_wrap -->
+
+			<div class="btn_fixed2">
+				<div class="inner">
+					<div class="btn"><button type="buttom">다음</button></div>
+				</div>
+			</div><!-- // btn_fixed2 -->
+
+		</div><!-- // ui_content -->
+	</div><!-- // section -->
+	
+</div><!-- // ui_page -->
+
+
+
+<script src="../../js/temp.js"></script>
+
+<script>
+/* 테스트 샘플 */
+$(document).ready(function(){
+	var p_tab = $(".year_tab div");
+	var p_con = $(".month_wrap ul");
+	p_tab.each(function(){
+		var idx = p_tab.index($(this));
+		$(this).on("click", function(){
+			$(this).siblings().removeClass("on");
+			$(this).addClass("on");
+			p_con.hide();
+			p_con.eq(idx).show();
+		})
+	})
+})
+</script>
+
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+	<title>PASS 자동차</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="../../css/jquery-ui.css">
+	<link rel="stylesheet" href="../../css/common.css">
+	<link rel="stylesheet" href="../../css/passcar.css">
+	<link rel="stylesheet" href="../../css/passcar_skt_lgup.css">
+	<link rel="stylesheet" href="../../css/popup.css">
+	<script src="../../js/jquery-1.12.4.min.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.min.js"></script>
+</head>
+<body>
+
+<div class="ui_popup"><!-- 기본 -->
+	<div class="ui_header">
+		<div class="inner">
+			<span class="close"><button type="button">닫기</button></span>
+		</div>
+	</div>
+
+	<div class="section">
+
+		<div class="pageTit reduction">
+			<div class="inner">
+				<h2 class="tit">감가사유와 금액</h2>
+				<div class="txtBox">
+					<div class="txt"><strong>현장 감가가 없으려면?</strong><br />
+					견적요청시 정확히 기재된 차량단점, 사고 교환부위는 감가되지 않습니다.</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="ui_content">
+
+			<div class="reduction_wrap">
+				<div class="reduction_item">
+					<div class="tit">외판감가</div>
+					<div class="img"><img src="../../img/common/reduction_img1.png" alt="외판감가 샘플" /></div>
+					<div class="inner_txt">
+						<p>중고차 매장에서 판매기간에 큰 영향을 미치는 것이 외관입니다. 그래서 광택시공에서 안 없어지는 도색 손상, 패인 손상은 감가요소가 됩니다.</p>
+						<p>
+							외판 감가는 ‘판’단위로 이루어지는데요.<br />
+							‘판’은 차량의 외판이 분리되는 기준입니다.<br />
+							<span>* 승용기준 약 13판이 있습니다. (앞범퍼, 본넷 등)</span>
+						</p>
+						<p>
+							예를 들어, 운전석 앞도어에 2개의 수리부위가 있으면, 1판 감가입니다.<br />
+							만약 운전석 앞도어 1개, 앞범퍼 1개씩 수리부위가 있다면, 2판 감가입니다.
+						</p>
+					</div>
+					<div class="box">
+						<div class="tit">외관 수리비 감가기준</div>
+						<ul>
+							<li>국산차 : 8~10만원/판</li>
+							<li>수입차 : 13~15만원/판</li>
+							<li>휠복원 : 5~10만원/휠</li>
+						</ul>
+						<p>*단지별 수리비는 시세차이가 있을 수 있습니다.</p>
+					</div>
+				</div><!-- // reduction_item -->
+
+				<div class="reduction_item">
+					<div class="tit">사고감가</div>
+					<div class="img"><img src="../../img/common/reduction_img2.png" alt="사고감가 샘플" /></div>
+					<div class="inner_txt">
+						<p>교환부위 당 약 2%~3%씩 감가가 적정수준  입니다.<br />
+							<span>* 2%가 15만원 미만이라면, 최소 감가금액은 15~30만원 선 입니다.</span><br />
+						<span>* 범퍼교환은 시세에 영향을 미치지 않습니다.</span></p>
+						<p>매매상사를 통해 중고차로 구입했다면, 구입시 받은 성능점검 기록부로 이전 차주 교환내역을 알 수 있습니다.</p>
+						<p>차종에 따라서 사고감가율에 차이가 납니다.</p>
+						<p>경차/스포츠카는 사고감가율이 낮고 에쿠스, 그랜저 같은 대형차는 높습니다.<br />
+							<span>* 오래된 연식일 경우에도 감가율이 낮습니다.</span></p>
+					</div>
+
+					<div class="box">
+						<div class="tit">사고분류</div>
+						<ul>
+							<li>완전무사고 : 교환부위 0곳</li>
+							<li>단순교환 무사고 : 외관 교환부위 5곳 이하<br />
+							외관 : 라디에이터, 앞휀다, 본넷, 도어, 트렁크 등</li>
+							<li>유사고 : 골격 교환부위 존재<br />
+							골격 : 뒤휀다, 백판넬, 사이드실패널 등</li>
+						</ul>
+						<div class="tit">사고교환 감가기준</div>
+						<ul>
+							<li>외관교환 : 견적금액의 -2%~3%/부위</li>
+							<li>골격교환 : 견적금액의 -4%~5%/부위</li>
+							<li>휠복원 : 5~10만원/휠</li>
+						</ul>
+						<p>* 최소 감가금액은 교환부위 별 약 15~30만원이며, 시장상황과 차종별로 달라질 수 있습니다.<br />
+						(차종별 다소 상이할 수 있습니다.)</p>
+					</div>
+				</div><!-- // reduction_item -->
+
+				<div class="reduction_item">
+					<div class="tit">이 외 감가</div>
+					<div class="img"><img src="../../img/common/reduction_img3.png" alt="이 외 감가 샘플" /></div>
+					<div class="inner_txt">
+						<p>이 외에도 감가가 될 수 있는 요소는 아래와 같습니다.</p>
+					</div>
+
+					<div class="box">
+						<div class="tit">기타 감가요소(빈번한 순)</div>
+						<ul>
+							<li>미납 과태료가 있음</li>
+							<li>타이어 트레드 20%미만</li>
+							<li>네비게이션, 썬루프 등 전자장비 고장</li>
+							<li>미세누유 아닌 수리필요한 심한누유 등의 고장</li>
+							<li>10km이상 타이밍벨트 미교환</li>
+						</ul>
+					</div>
+				</div><!-- // reduction_item -->
+			</div><!-- // reduction_wrap -->
+
+
+		</div><!-- // ui_content -->
+	</div><!-- // section -->
+
+</div><!-- // ui_page -->
+
+<script>
+
+/* 샘플 */
+$(".region_depth1").click(function(e){
+	$(this).toggleClass("on");
+	console.log("aaa");
+	e.preventDefault();
+	var test = $(this).next().slideToggle(100);
+})
+
+</script>
+<script src="../../js/temp.js"></script>
+</body>
+</html>

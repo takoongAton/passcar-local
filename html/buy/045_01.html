@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+	<title>PASS 자동차</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="../../css/jquery-ui.css">
+	<link rel="stylesheet" href="../../css/common.css">
+	<link rel="stylesheet" href="../../css/passcar.css">
+	<link rel="stylesheet" href="../../css/passcar_skt_lgup.css">
+	<script src="../../js/jquery-1.12.4.min.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.min.js"></script>
+</head>
+<body>
+
+<div class="ui_page"><!-- ui_page, ui_popup은 z-index값이 다릅니다. -->
+
+	<div class="ui_header">
+		<div class="inner">
+			<span class="prev"><button type="butto">이전</button></span>
+		</div>
+	</div><!-- // ui_header -->
+
+
+	<div class="section">
+		<div class="pageTit"><!-- 페이지 타이틀은 상황에 따라서 ui_content 안으로 들어가는 경우가 있습니다. 예) 내차팔기 step -->
+			<h2 class="tit">차량 구입에 사용하실<br />구매 예산은 어느 정도 인가요?</h2>
+		</div>
+
+		<div class="spaceT"></div>
+
+		<div class="ui_content">
+
+			<div class="buy_wrap">
+
+				<div class="innerBoxH">
+					<div class="rangeWrap">
+						<div class="tit">현재예산</div>
+						<div class="direct_chk">
+							<span class="tit">직접입력</span>
+							<div class="label on"><input type="checkbox"><span class="checkmark"></span></div>
+						</div>
+
+						<div class="mile_type2">
+							<div class="mile_item">
+								<div>
+									<label><input type="number" pattern="\d*" placeholder="0" value="0"><span class="value">2,000</span></label>
+								</div><span>만원</span>
+							</div>
+							<div class="or">~</div>
+							<div class="mile_item">
+								<div>
+									<label><input type="number" pattern="\d*" placeholder="0" value="0"><span class="value">2,000</span></label>
+								</div><span>만원</span>
+							</div>
+						</div>
+					</div><!-- // rangeWrap -->
+				</div>
+
+				<div class="btn_fixed2">
+					<div class="inner">
+						<div class="btn"><button type="buttom">다음</button></div>
+					</div>
+				</div><!-- // btn_fixed2 -->	
+
+			</div><!-- // buy_wrap -->
+		</div><!-- // ui_content -->
+
+	</div><!-- // section -->
+
+
+
+</div><!-- // ui_page -->
+
+<script>
+
+	$(".label").on("click", function(){
+		$(this).toggleClass("on");
+		console.log(this)
+		var $ck = $(".label input");
+		console.log($ck);
+	})
+	$(".ui_header").on("click", function(){
+		var xx = $("body").height();
+		alert("body : " + xx)
+		console.log("section : " + $("div.section").height())
+	})
+$(function(){
+	var $mileageTxt = $("#mileageTxt");
+	$( "#range-budget" ).slider({
+		range: true,
+		min: 0,
+		max: 1200,
+		values: [0, 1200],
+		step: 100,
+		slide: function( event, ui ) {
+			$("#amount").val(ui.values[0] + "$" + "-"  + ui.values[1] + "$");
+			$mileageTxt.html('<span class="value mileage_min">' + ui.values[0] + "</span>" + "<span>만원</span><span> ~ </span>" + '<span class="value mileage_max">' + ui.values[1] + "</span>" + "<span>만원</span>");
+		}
+	});
+});
+</script>
+
+<script src="../../js/temp.js"></script>
+</body>
+</html>

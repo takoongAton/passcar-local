@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+	<title>PASS 자동차</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="../../css/jquery-ui.css">
+	<link rel="stylesheet" href="../../css/common.css">
+	<link rel="stylesheet" href="../../css/passcar.css">
+	<link rel="stylesheet" href="../../css/passcar_skt_lgup.css">
+	<script src="../../js/jquery-1.12.4.min.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.min.js"></script>
+</head>
+<body>
+
+<div class="ui_page"><!-- ui_page, ui_popup은 z-index값이 다릅니다. -->
+
+	<div class="ui_header">
+		<div class="inner">
+			<span class="prev"><button type="butto">이전</button></span>
+		</div>
+	</div><!-- // ui_header -->
+
+
+	<div class="section">
+		<div class="pageTit"><!-- 페이지 타이틀은 상황에 따라서 ui_content 안으로 들어가는 경우가 있습니다. 예) 내차팔기 step -->
+			<h2 class="tit">연락처를 남겨 주시면 담당 딜러가<br />업무시간(평일오전10시~오후 5시)에 연락드릴 거예요!</h2>
+
+			<div class="customer">
+				<div class="cus_inner">
+					<dl>
+						<dt>상담시간 :</dt>
+						<dd>평일 10시~18시</dd>
+					</dl>
+				</div>
+			</div>			
+		</div>
+
+		<div class="spaceT"></div>
+
+		<div class="ui_content">
+			<div class="buy_wrap">
+
+				<div class="innerBoxH">
+					<div class="input"><input type="number" pattern="\d*" placeholder="01056781234"></div>     
+				</div>
+
+				<div class="btn_fixed2">
+					<div class="inner">
+						<div class="btn"><button type="buttom">문의신청</button></div>
+					</div>
+				</div><!-- // btn_fixed2 -->
+
+			</div><!-- // buy_wrap -->
+		</div><!-- // ui_content -->
+
+	</div><!-- // section -->
+	
+</div><!-- // ui_page -->
+
+
+
+<script src="../../js/temp.js"></script>
+</body>
+</html>

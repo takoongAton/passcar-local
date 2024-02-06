@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+	<title>PASS 자동차</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="../../css/jquery-ui.css">
+	<link rel="stylesheet" href="../../css/common.css">
+	<link rel="stylesheet" href="../../css/passcar.css">
+	<link rel="stylesheet" href="../../css/passcar_skt_lgup.css">
+	<script src="../../js/jquery-1.12.4.min.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.min.js"></script>
+</head>
+<body>
+
+<div class="ui_popup"><!-- ui_page, ui_popup은 z-index값이 다릅니다. -->
+
+	<div class="ui_header">
+		<div class="inner">
+			<!-- <span class="prev"><button type="butto">이전</button></span> -->
+			<div class="title"><strong>PASS 자동차</strong></div>
+			<span class="close"><button type="button">닫기</button></span>
+		</div>
+	</div><!-- // ui_header -->
+
+
+	<div class="section">
+		<div class="pageTit"><!-- 페이지 타이틀은 상황에 따라서 ui_content 안으로 들어가는 경우가 있습니다. 예) 내차팔기 step -->
+			<h2 class="tit">상세정보 입력하고<br />더 정확한 조건으로 검색하세요!</h2>
+			<div class="txtBox">
+				<div class="btnBox">
+					<button type="button" class="left">상세조건 초기화</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="spaceT"></div>
+
+		<div class="ui_content">
+			<div class="buy_wrap">
+
+				<div class="innerBoxH">
+
+					<div class="miniBox_buy">
+						<div class="tit">연식</div>
+						<div class="con">
+							<div class="model_input_wrap">
+								<div><div class="input more"><input type="text" class="" readonly placeholder="최소 연식" value="2012.05"></div></div>
+								<div></div>
+								<div><div class="input more"><input type="text" class="" readonly placeholder="최대 연식" value="2018.04"></div></div>
+							</div>
+						</div>
+					</div><!-- // miniBox_buy -->
+					
+					<div class="miniBox_buy">
+						<div class="tit">주행거리</div>
+						<div class="direct_chk">
+							<span class="tit">직접입력</span>
+							<div class="label"><input type="checkbox"><span class="checkmark"></span></div>
+							<!-- <label><input type="checkbox"><span class="checkmark"></span></label> -->
+						</div>
+
+						<div>
+							<div class="value_txt" id="mileageTxt">
+								<span class="value mileage_min">0</span><span>km</span>
+								<span> ~ </span>
+								<span class="value mileage_max">30</span><span>km</span>
+							</div>
+							<div class="con">
+								<div class="rangeSlider">
+									<div id="range-mileage"></div>
+								</div>
+							</div>
+						</div>
+
+						<!-- <div class="mile_type2">
+							<div class="mile_item">
+								<div><input type="number" pattern="\d*" placeholder="20,000"></div><span>km</span>
+							</div>
+							<div class="or">~</div>
+							<div class="mile_item">
+								<div><input type="number" pattern="\d*" placeholder="32,000"></div><span>km</span>
+							</div>
+						</div> -->
+					</div><!-- // miniBox_buy -->
+					
+					<div class="miniBox_buy">
+						<div class="tit">가격</div>
+						<div class="direct_chk">
+							<span class="tit">직접입력</span>
+							<div class="label"><input type="checkbox"><span class="checkmark"></span></div>
+							<!-- <label><input type="checkbox"><span class="checkmark"></span></label> -->
+						</div>
+						<div>
+							<div class="value_txt" id="budgetTxt">
+								<span class="value budget_min">0</span><span>만원</span>
+								<span> ~ </span>
+								<span class="value budget_max">30</span><span>만원</span>
+							</div>
+							<div class="con">
+								<div class="rangeSlider">
+									<div id="range-budget"></div>
+								</div>
+							</div>
+						</div>
+
+						<!--
+						<div class="mile_type2">
+							<div class="mile_item">
+								<div><input type="number" pattern="\d*" placeholder="20,000"></div><span>만원</span>
+							</div>
+							<div class="or">~</div>
+							<div class="mile_item">
+								<div><input type="number" pattern="\d*" placeholder="32,000"></div><span>만원</span>
+							</div>
+						</div>
+					-->
+					</div><!-- // miniBox_buy -->
+					
+					<div class="miniBox_buy">
+						<div class="tit">색상</div>
+						
+						<div class="con">
+							<div class="setColorWrap notscroll">
+								<div class="selColor">
+									<ul class="radio">
+										<li>
+											<label><input type="checkbox" name="chColor" checked="" value="전체">
+												<span class="checkmark all"></span><span class="txt">전체</span>
+											</label>
+										</li>
+										<li>
+											<label><input type="checkbox" name="chColor" value="검정">
+												<span class="checkmark wh" style="background-color:#fff border-color:#fff;"></span><span class="txt">흰색</span>
+											</label>
+										</li>
+										<li>
+											<label><input type="checkbox" name="chColor" value="검정색">
+												<span class="checkmark" style="background-color:#000000;  border-color:#000000;"></span><span class="txt">검정색</span>
+											</label>
+										</li>
+										<li>
+											<label><input type="checkbox" name="chColor" value="은색">
+												<span class="checkmark" style="background-color:#939499; border-color:#939499 ;"></span><span class="txt">은색</span>
+											</label>
+										</li>
+										<li>
+											<label><input type="checkbox" name="chColor" value="회색">
+												<span class="checkmark" style="background-color:#828282; border-color:#828282;"></span><span class="txt">회색</span>
+											</label>
+										</li>
+										<li>
+											<label><input type="checkbox" name="chColor" value="진주색">
+												<span class="checkmark wh" style="background-color:#ececde; border-color:#ececde;"></span><span class="txt">진주색</span>
+											</label>
+										</li>
+										<li>
+											<label><input type="checkbox" name="chColor" value="빨간색">
+												<span class="checkmark" style="background-color:#d41729; border-color:#d41729;"></span><span class="txt">빨간색</span>
+											</label>
+										</li>
+										<li>
+											<label><input type="checkbox" name="chColor" value="노란색">
+												<span class="checkmark" style="background-color:#e09f15; border-color:#e09f15;"></span><span class="txt">노란색</span>
+											</label>
+										</li>
+										<li>
+											<label><input type="checkbox" name="chColor" value="파란색">
+												<span class="checkmark" style="background-color:#428fb8; border-color:#428fb8;"></span><span class="txt">파란색</span>
+											</label>
+										</li>
+										<li>
+											<label><input type="checkbox" name="chColor" value="갈색">
+												<span class="checkmark" style="background-color:#5d3b2d; border-color:#5d3b2d;"></span><span class="txt">갈색</span>
+											</label>
+										</li>
+										<li>
+											<label><input type="checkbox" name="chColor" value="녹색">
+												<span class="checkmark" style="background-color:#1e734c; border-color:#1e734c;"></span><span class="txt">녹색</span>
+											</label>
+										</li>
+										<li>
+											<label><input type="checkbox" name="chColor" value="주황색">
+												<span class="checkmark" style="background-color:#da762d; border-color:#da762d;"></span><span class="txt">주황색</span>
+											</label>
+										</li>
+										<li>
+											<label><input type="checkbox" name="chColor" value="보라색">
+												<span class="checkmark" style="background-color:#403152; border-color:#403152;"></span><span class="txt">보라색</span>
+											</label>
+										</li>
+									</ul>
+								</div><!-- // selColor -->
+							</div><!-- // setColorWrap -->
+						</div>
+					</div><!-- // miniBox_buy -->
+					
+					<div class="miniBox_buy">
+						<div class="tit">연료</div>
+						<div class="con">
+							<div class="list-type2">
+								<ul class="col3 addAll">
+									<li><label><input type="checkbox" name="name"><span class="checkmark"></span><span class="txt">전체</span></label></li>
+									<li><label><input type="checkbox" name="name"><span class="checkmark"></span><span class="txt">휘발유</span></label></li>
+									<li><label><input type="checkbox" name="name"><span class="checkmark"></span><span class="txt">경유</span></label></li>
+									<li><label><input type="checkbox" name="name"><span class="checkmark"></span><span class="txt">LPG</span></label></li>
+									<li><label><input type="checkbox" name="name"><span class="checkmark"></span><span class="txt">휘발유/LPG겸</span></label></li>
+									<li><label><input type="checkbox" name="name"><span class="checkmark"></span><span class="txt">휘발유/CNG겸</span></label></li>
+									<li><label><input type="checkbox" name="name"><span class="checkmark"></span><span class="txt">휘발유<br />하이브리드</span></label></li>
+									<li><label><input type="checkbox" name="name"><span class="checkmark"></span><span class="txt">LPG<br />하이브리드</span></label></li>
+									<li><label><input type="checkbox" name="name"><span class="checkmark"></span><span class="txt">경유<br />하이브리드</span></label></li>
+									<li><label><input type="checkbox" name="name"><span class="checkmark"></span><span class="txt">전기</span></label></li>
+									<li><label><input type="checkbox" name="name"><span class="checkmark"></span><span class="txt">CNG</span></label></li>
+									<li><label><input type="checkbox" name="name"><span class="checkmark"></span><span class="txt">수소</span></label></li>
+								</ul>
+							</div>
+						</div>
+					</div><!-- // miniBox_buy -->
+					
+					<div class="miniBox_buy">
+						<div class="tit">변속기</div>
+						<div class="con">
+							<div class="list-type2">
+								<ul class="col3">
+									<li><label><input type="checkbox" name="name"><span class="checkmark"></span><span class="txt">전체</span></label></li>
+									<li><label><input type="checkbox" name="name"><span class="checkmark"></span><span class="txt">오토</span></label></li>
+									<li><label><input type="checkbox" name="name"><span class="checkmark"></span><span class="txt">수동</span></label></li>
+									<li><label><input type="checkbox" name="name"><span class="checkmark"></span><span class="txt">세미오토</span></label></li>
+									<li><label><input type="checkbox" name="name"><span class="checkmark"></span><span class="txt">무단변속기</span></label></li>
+								</ul>
+							</div>
+						</div>
+					</div><!-- // miniBox_buy -->
+					
+					<div class="miniBox_buy">
+						<div class="tit">거래지역</div>
+						<div class="con">
+							<div class="input more"><input type="text" class="" readonly placeholder="거래지역 선택" value=""></div>
+						</div>
+					</div><!-- // miniBox_buy -->
+					
+					<div class="miniBox_buy">
+						<div class="tit">옵션</div>
+						<div class="con">
+							<div class="list-type2">
+								<ul class="col3 option hiddenAll">
+									<li style="position:absolute; left:0; top:0; opacity:0;"><label><input type="checkbox" name="name"><span class="checkmark blackbox"></span><span class="txt">블랙박스</span></label></li>
+									<li><label><input type="checkbox" name="name"><span class="checkmark blackbox"></span><span class="txt">블랙박스</span></label></li>
+									<li><label><input type="checkbox" name="name"><span class="checkmark navi"></span><span class="txt">네비게이션</span></label></li>
+									<li><label><input type="checkbox" name="name"><span class="checkmark sunroof"></span><span class="txt">썬루프</span></label></li>
+									<li><label><input type="checkbox" name="name"><span class="checkmark rear"></span><span class="txt">후방카메라</span></label></li>
+									<li><label><input type="checkbox" name="name"><span class="checkmark sensor"></span><span class="txt">전/후방감지센서</span></label></li>
+									<li><label><input type="checkbox" name="name"><span class="checkmark hipass"></span><span class="txt">하이패스</span></label></li>
+								</ul>
+							</div>
+						</div>
+					</div><!-- // miniBox_buy -->
+				</div>
+
+				<div class="btn_fixed2">
+					<div class="inner">
+						<div class="btn"><button type="buttom">적용</button></div>
+					</div>
+				</div><!-- // btn_fixed2 -->
+
+			</div><!-- // buy_wrap -->
+		</div><!-- // ui_content -->
+
+	</div><!-- // section -->
+	
+</div><!-- // ui_page -->
+
+
+<script>
+
+
+$(".label").on("click", function(){
+	$(this).toggleClass("on");
+	console.log(this)
+	var $ck = $(".label input");
+	console.log($ck);
+})
+
+
+$(function(){
+	var $mileageTxt = $("#mileageTxt");
+	$( "#range-mileage" ).slider({
+		range: true,
+		min: 0,
+		max: 30,
+		values: [0, 30],
+		step: 1,
+		slide: function( event, ui ) {
+			$("#amount").val(ui.values[0] + "$" + "-"  + ui.values[1] + "$");
+			$mileageTxt.html('<span class="value mileage_min">' + ui.values[0] + "</span>" + "<span>km</span><span> ~ </span>" + '<span class="value mileage_max">' + ui.values[1] + "</span>" + "<span>km</span>");
+		}
+	});
+
+	var $budgetTxt = $("#budgetTxt");
+	$( "#range-budget" ).slider({
+		range: true,
+		min: 0,
+		max: 10000,
+		values: [0,10000],
+		step: 100,
+		slide: function( event, ui ) {
+			$("#amount").val(ui.values[0] + "$" + "-"  + ui.values[1] + "$");
+			$budgetTxt.html('<span class="value budget_min">' + ui.values[0] + "</span>" + "<span>만원</span><span> ~ </span>" + '<span class="value budget_max">' + ui.values[1] + "</span>" + "<span>만원</span>");
+		}
+	});
+});
+</script>
+
+<script src="../../js/temp.js"></script>
+</body>
+</html>

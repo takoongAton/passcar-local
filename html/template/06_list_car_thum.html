@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+	<title>PASS 자동차</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="../../css/jquery-ui.css">
+	<link rel="stylesheet" href="../../css/common.css">
+	<link rel="stylesheet" href="../../css/passcar.css">
+	<script src="../../js/jquery-1.12.4.min.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.min.js"></script>
+
+
+</head>
+<body>
+<div class="innerBoxH innerBoxV">
+
+	<div class="car_thum_list">
+		<div class="car_thum_item"><!-- 기본 -->
+			<div class="thum"><img src="../../img/temp/sam_126x126.png" alt="대표사진"></div>
+			<div class="info">
+				<div class="tit">2018 현대 엑센트 Smart<br />Special 4doors</div>
+				<div class="txtWrap">
+					<p class="number">18/09식 · 149,370km · 경북</p>
+					<p class="price">대기번호 243번</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="car_thum_item line"><!-- 하단 line 추가 -->
+			<div class="thum"><img src="../../img/temp/sam_126x126.png" alt="대표사진"></div>
+			<div class="info">
+				<div class="tit">2018 현대 엑센트 Smart<br />Special 4doors</div>
+				<div class="txtWrap">
+					<p class="number">18/09식 · 149,370km · 경북</p>
+					<p class="price">대기번호 243번</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="car_thum_item line"><!-- 하단 line 추가 -->
+			<div class="thum"><img src="../../img/temp/sam_126x126.png" alt="대표사진"></div>
+			<div class="info">
+				<div class="tit">2018 현대 엑센트 Smart<br />Special 4doors</div>
+				<div class="txtWrap">
+					<p class="number">18/09식 · 149,370km · 경북</p>
+					<p class="price">대기번호 243번</p>
+				</div>
+			</div>
+		</div>
+	</div><!-- // car_thum_list -->
+
+
+<style>
+/* 내차팔기 등록 후 */
+div.sell_ing_list div.sell_ing_item {padding:16px 0;}
+div.sell_ing_item {display:table; display:flex; width:100%; margin:0 auto; background-color:#fff; align-items:center;}
+div.sell_ing_item.line {border-bottom:1px solid #f4f4f4;}
+div.sell_ing_item div.thum {display:table-cell; width:96px; align-self:flex-start;}
+div.sell_ing_item div.thum * {}
+div.sell_ing_item div.info {display:table-cell; display:flex; flex-direction:column; justify-content:space-between; flex:1; padding-left:16px;}
+div.sell_ing_item div.info  div.tit {color:#222; align-self:flex-start; width:100%;}
+div.sell_ing_item div.info  div.tit strong {color:#418CF3;}
+div.sell_ing_item div.info  div.tit span {display:inline-block; position:relative; color:#a7a7a7; font-size:0.875em; line-height:1.5em;}
+div.sell_ing_item div.info  div.tit span:first-child {font-weight:500; color:#222; font-size:1em;}
+div.sell_ing_item div.info  div.tit span.ing {color:#418CF3;}
+div.sell_ing_item div.info  div.tit span:not(:first-child) {padding-left:15px;}
+div.sell_ing_item div.info  div.tit span:not(:first-child)::before {content:""; display:block; position:absolute; left:4px; top:50%; width:8px; height:8px; border:solid #D3D3D3; border-width:0 2px 2px 0; -webkit-transform:rotate(-45deg) translateY(-50%); -ms-transform:rotate(-45deg) translateY(-50%); transform:rotate(-45deg) translateY(-50%);}
+div.sell_ing_item div.info  div.tit + div {width:100%;}
+div.sell_ing_item div.info  p {font-size:0.875em;}
+div.sell_ing_item div.info  p span {font-weight:700;}
+div.sell_ing_item div.info  p.number {padding:8px 0 6px; color:#7a7a7a;}
+div.sell_ing_item div.info  p.txt1 {color:#222;}
+div.sell_ing_item div.info  p.txt2 {padding:4px 0 0 0; color:#a7a7a7;}
+</style>
+
+
+		<div class="sell_ing_list">
+			<div class="sell_ing_item line">
+				<div class="thum"><img src="../../img/temp/sam_126x126.png" alt="대표사진"></div>
+				<div class="info">
+					<div class="txtWrap">
+						<p class="number2">12가1234</p>
+						<p class="name">아반떼 AD 1.6GDI</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="sell_ing_list">
+			<div class="sell_ing_item line">
+				<div class="thum"><img src="../../img/temp/sam_126x126.png" alt="대표사진"></div>
+				<div class="info">
+					<div class="tit"><span class="ing">승인대기</span><span>견적비교</span><span>판매요청</span></div>
+					<div class="txtWrap">
+						<p class="number">12가1234</p>
+						<p class="txt1">대기번호 243번</p>
+						<p class="txt2">7월 29일(월) 18시 전 승인예정이에요.</p>
+					</div>
+				</div>
+			</div>
+			<div class="sell_ing_item line">
+				<div class="thum"><img src="../../img/temp/sam_126x126.png" alt="대표사진"></div>
+				<div class="info">
+					<div class="tit"><span class="ing">승인대기</span><span>견적비교</span><span>판매요청</span></div>
+					<div class="txtWrap">
+						<p class="number">12가1234</p>
+						<p class="txt1">대기번호 243번</p>
+						<p class="txt2">7월 29일(월) 18시 전 승인예정이에요.</p>
+					</div>
+				</div>
+			</div>
+		</div><!-- // sell_ing_list -->
+
+
+</div>
+
+<script src="../../js/temp.js"></script>
+</body>
+</html>
