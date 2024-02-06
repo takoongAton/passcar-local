@@ -8,6 +8,7 @@
 
 button {letter-spacing:-0.025em;}
 
+.naviWrap {position:sticky; top:0; left:0; z-index:10;}
 .naviWrap .navi ul {justify-content:flex-start; gap:18px;}
 .naviWrap .navi ul li span {color:#999; font-size:14px; font-weight:bold;}
 .naviWrap .navi ul li.on span {color:#000; font-weight:bold;}
@@ -144,7 +145,7 @@ header .ui_header .close button {display:block; width:24px; height:24px; backgro
 .modal_default .btn_group > button.disabled {background-color:#d3d3d3; color:#fff;}
 
 .modal_default .btn_group .btn {display:table-cell; width:100%; min-width:50%; text-align:center;}
-.modal_default .btn_group .btn button {display:block; width:100%; height:60px; text-align:center; color:#000; font-size:1.125em;}
+.modal_default .btn_group .btn button {display:block; width:100%; height:60px; text-align:center; color:#000; font-size:18px;}
 .modal_default .btn_group .btn:last-child button {color:#000;}
 .modal_default .btn_group .btn:first-child button {/* color:#ff3a4a; */ color:var(--main-txt-color); font-weight:700;}
 

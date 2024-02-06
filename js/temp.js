@@ -116,3 +116,16 @@ window.addEventListener("load", function(){
 	}
 })
 /* // 하단 GNB 효과구현 샘플 */
+
+
+
+
+/* 상단 메뉴 고정시키기 샘플 */
+let naviWrap = document.querySelector(".naviWrap");
+if(naviWrap) {
+	let header_temp = document.querySelector("header.header");
+	if(header_temp) {
+		naviWrap.style.top = header_temp.clientHeight + 'px';
+	}
+}
+/* // 상단 메뉴 고정시키기 샘플 */
