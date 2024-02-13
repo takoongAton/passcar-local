@@ -225,7 +225,7 @@ header .ui_header .close button {display:block; width:24px; height:24px; backgro
 .layer.slideUp .setting_list .setting_item {}
 .layer.slideUp .setting_list .setting_item button {position:relative; width:100%; height:48px; padding:0 18px; text-align:left;}
 .layer.slideUp .setting_list .setting_item button::before {content:""; display:block; position:absolute; top:50%; right:18px; width:14px; height:14px; background:url('../img/common/ico_arrow_list_small_right.png') no-repeat left top / contain; transform:translateY(-50%);}
-.layer.slideUp .setting_list .setting_item button span {color:0000; font-size:16px;}
+.layer.slideUp .setting_list .setting_item button span {color:#000; font-size:16px;}
 /* // 24.01 U+ PASS CP 가이드 */
 
 
